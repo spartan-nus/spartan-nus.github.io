@@ -5,6 +5,7 @@ import { cn } from "@/lib/utils";
 interface CarouselImage {
   url: string;
   alt: string;
+  link?: string;
 }
 
 const images: CarouselImage[] = [
@@ -19,6 +20,11 @@ const images: CarouselImage[] = [
   {
     url: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158",
     alt: "AI research in progress",
+  },
+  {
+    url: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158",
+    alt: "AutoCodeRover: from research on Automatic Programming to Spinoff Acquisition",
+    link: "https://www.youtube.com/watch?v=o8B6q8FNC70&t=2s",
   },
 ];
 
@@ -55,11 +61,21 @@ const ImageCarousel: React.FC = () => {
             currentIndex === index ? "opacity-100" : "opacity-0",
           )}
         >
-          <img
-            src={image.url}
-            alt={image.alt}
-            className="w-full h-full object-cover"
-          />
+          {image.link && currentIndex == index ? (
+            <a href={image.link} target="_blank" rel="noopener noreferrer">
+              <img
+                src={image.url}
+                alt={image.alt}
+                className="w-full h-full object-cover"
+              />
+            </a>
+          ) : (
+            <img
+              src={image.url}
+              alt={image.alt}
+              className="w-full h-full object-cover"
+            />
+          )}
           <div className="absolute bottom-0 left-0 right-0 bg-black bg-opacity-50 text-white p-4">
             {index === 1 && (
               <h2 className="text-xl font-bold">Featured: AutoCodeRover</h2>

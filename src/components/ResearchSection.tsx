@@ -18,6 +18,7 @@ const researchProjects = [
     description: "PLACEHOLDER",
     link: "#fuzzing",
   },
+  
 ];
 
 const ResearchSection: React.FC = () => {
