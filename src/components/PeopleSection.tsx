@@ -24,6 +24,34 @@ const teamMembers = [
     imageUrl: "/people/cristian.png",
     initials: "CC",
   },
+  {
+    name: "Haifeng Ruan",
+    position: "PhD Student",
+    description: "",
+    imageUrl: "",
+    initials: "HR",
+  },
+  {
+    name: "Yuntong Zhang",
+    position: "PhD Student",
+    description: "",
+    imageUrl: "",
+    initials: "YZ",
+  },
+  {
+    name: "Sungmin Kang",
+    position: "Postdoctoral Researcher",
+    description: "",
+    imageUrl: "",
+    initials: "SK",
+  },
+  {
+    name: "Haoxin Tu",
+    position: "Postdoctoral Researcher",
+    description: "",
+    imageUrl: "",
+    initials: "HT",
+  },
 ];
 
 const PeopleSection: React.FC = () => {
