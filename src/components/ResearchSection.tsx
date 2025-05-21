@@ -19,7 +19,7 @@ const researchProjects = [
     description: "Position paper in TOSEM",
     link: "https://dl.acm.org/doi/pdf/10.1145/3708519",
   },
-  { title: "Agentic Programming",
+  { title: "Agentic Programming with Trust",
     description: "Opinion Piece",
     link: " https://arxiv.org/pdf/2502.13767",
   },
