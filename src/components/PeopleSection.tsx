@@ -1,4 +1,3 @@
-
 import React from "react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Avatar, AvatarFallback } from "@/components/ui/avatar";
@@ -6,10 +5,24 @@ import { Avatar, AvatarFallback } from "@/components/ui/avatar";
 const teamMembers = [
   {
     name: "Abhik Roychoudhury",
-    position: "Principal Investigator, Provost's Chair Professor",
+    position: "Principal Investigator, Provost's Chair Professor@NUS",
     description: "",
     imageUrl: "/people/abhik.jpg",
     initials: "AR",
+  },
+  {
+    name: "Baishakhi Ray",
+    position: "Collaborator, Associate Professor@Columbia University",
+    description: "",
+    imageUrl: "/people/baishakhi.jpg",
+    initials: "BR",
+  },
+  {
+    name: "Cristian Cadar",
+    position: "Collaborator, Professor@Imperial College London",
+    description: "",
+    imageUrl: "/people/cristian.png",
+    initials: "CC",
   },
 ];
 
@@ -20,7 +33,10 @@ const PeopleSection: React.FC = () => {
 
       <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
         {teamMembers.map((member, index) => (
-          <Card key={index} className="hover:shadow-lg transition-shadow border-b-4 border-b-nus-orange">
+          <Card
+            key={index}
+            className="hover:shadow-lg transition-shadow border-b-4 border-b-nus-orange"
+          >
             <CardHeader className="flex flex-row items-center gap-4">
               <Avatar className="h-14 w-14 ring-2 ring-nus-orange">
                 {member.imageUrl ? (
