@@ -3,28 +3,11 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 
 const newsItems = [
   {
-    date: "May 15, 2025",
-    title: "AutoCodeRover Achieves Breakthrough in Automated Bug Detection",
+    date: "Feb 19, 2025",
+    title:
+      "Sonar Acquires AutoCodeRover to Supercharge Developers with AI Agents",
     content:
-      "Our flagship project, AutoCodeRover, has demonstrated unprecedented accuracy in detecting complex software vulnerabilities, outperforming existing tools by a significant margin in recent benchmarks.",
-  },
-  {
-    date: "April 3, 2025",
-    title: "NUS AI Lab Receives Major Grant for AutoCodeRover Development",
-    content:
-      "The lab has secured substantial funding to further enhance AutoCodeRover's capabilities in analyzing large-scale codebases and detecting subtle security vulnerabilities across multiple programming languages.",
-  },
-  {
-    date: "March 10, 2025",
-    title: "AutoCodeRover Tool Released as Open Source",
-    content:
-      "We are excited to announce that a core component of AutoCodeRover is now available as an open-source project, enabling researchers and developers worldwide to contribute to its development and benefit from its capabilities.",
-  },
-  {
-    date: "February 22, 2025",
-    title: "New Research Paper on AutoCodeRover Accepted at Top Conference",
-    content:
-      "Our latest research paper detailing AutoCodeRover's novel approach to symbolic execution and state space exploration has been accepted at a prestigious international conference, further validating our innovative methods.",
+      "Sonar, the leading provider of code quality and code security solutions, today announced the acquisition of AutoCodeRover, an autonomous AI agent platform for software development.",
   },
 ];
 
