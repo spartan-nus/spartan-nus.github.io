@@ -41,7 +41,7 @@ const teamMembers = [
   {
     name: "Sungmin Kang",
     position: "Postdoctoral Researcher",
-    description: ""
+    description: "",
     imageUrl: "/people/sungmin.jpg",
     initials: "SK",
   },
