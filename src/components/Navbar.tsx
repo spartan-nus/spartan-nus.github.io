@@ -1,4 +1,3 @@
-
 import React from "react";
 import { Link } from "react-router-dom";
 import { cn } from "@/lib/utils";
@@ -16,8 +15,10 @@ const Navbar: React.FC<NavbarProps> = ({ activeTab, setActiveTab }) => {
       <div className="container mx-auto flex flex-col sm:flex-row justify-between items-center px-4">
         <div className="flex items-center mb-4 sm:mb-0">
           <h1 className="text-xl font-bold">
-            Strategic Platform for Autonomous Resilient and Trusted Agents at
-            NUS
+            <Link to="/" className="">
+              Strategic Platform for Autonomous Resilient and Trusted Agents at
+              NUS
+            </Link>
           </h1>
         </div>
 
