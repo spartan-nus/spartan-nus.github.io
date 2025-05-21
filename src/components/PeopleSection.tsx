@@ -28,29 +28,43 @@ const teamMembers = [
     name: "Haifeng Ruan",
     position: "PhD Student",
     description: "",
-    imageUrl: "",
+    imageUrl: "/people/haifeng.png",
     initials: "HR",
   },
   {
     name: "Yuntong Zhang",
     position: "PhD Student",
     description: "",
-    imageUrl: "",
+    imageUrl: "/people/yuntong.png",
     initials: "YZ",
   },
   {
     name: "Sungmin Kang",
     position: "Postdoctoral Researcher",
-    description: "",
-    imageUrl: "",
+    description: ""
+    imageUrl: "/people/sungmin.png",
     initials: "SK",
   },
   {
     name: "Haoxin Tu",
     position: "Postdoctoral Researcher",
     description: "",
-    imageUrl: "",
+    imageUrl: "/people/haoxin.png",
     initials: "HT",
+  },
+  {
+    name: "Martin Mirchev",
+    position: "PhD student",
+    description: "",
+    imageUrl: "/people/martin.png",
+    initials: "MM",
+  },
+  {
+    name: "Ruijie Meng",
+    position: "Graduating PhD student",
+    description: "Asst Prof, CISPA",
+    imageUrl: "/people/ruijie.png",
+    initials: "RM",
   },
 ];
 
