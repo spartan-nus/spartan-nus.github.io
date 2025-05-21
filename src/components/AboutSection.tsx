@@ -28,7 +28,7 @@ const AboutSection: React.FC = () => {
             with trust being engendered by analysis techniques, contributes to the theme of AI Safety.
           </p>
 
-          <p><b>Watch our Video by clicking <a href = "https://www.youtube.com/watch?v=o8B6q8FNC70&t=1s">HERE</a>.</p>
+          
         </div>
 
         <Card className="overflow-hidden border-2 border-nus-orange">
