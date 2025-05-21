@@ -27,7 +27,7 @@ const AboutSection: React.FC = () => {
 
         <Card className="overflow-hidden border-2 border-nus-orange">
           <img
-            src="/lunch_feb2023.jpg"
+            src="/center_photo_2025_may.jpeg"
             alt="Lab research"
             className="w-full h-auto object-cover"
           />
