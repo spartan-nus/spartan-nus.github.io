@@ -5,27 +5,18 @@ import { ArrowRight } from "lucide-react";
 const researchProjects = [
   {
     title: "AutoCodeRover",
-    description:
-      "An AI-powered tool for automated code analysis, vulnerability detection, and test generation. AutoCodeRover combines symbolic execution with machine learning to identify bugs that traditional static analyzers miss.",
+    description: "PLACEHOLDER",
     link: "#autocoderover",
   },
   {
-    title: "Tier 3 Research Grant: AI for Software Security",
-    description:
-      "A comprehensive research initiative focused on developing next-generation AI techniques for identifying security vulnerabilities in complex software systems before they reach production environments.",
+    title: "MoE Tier 3 Research Grant",
+    description: "PLACEHOLDER",
     link: "#tier3",
   },
   {
-    title: "Advanced Fuzz Testing Framework",
-    description:
-      "Novel approaches to intelligent fuzzing that leverage program structure and semantic information to generate test inputs that achieve higher code coverage and detect more bugs than conventional fuzzers.",
+    title: "Fuzz Testing Grant",
+    description: "PLACEHOLDER",
     link: "#fuzzing",
-  },
-  {
-    title: "Machine Learning for Program Analysis",
-    description:
-      "Research on how deep learning models can be trained to understand code semantics and predict potential issues in software, complementing traditional program analysis techniques.",
-    link: "#ml-program-analysis",
   },
 ];
 
