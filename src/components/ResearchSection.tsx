@@ -12,7 +12,7 @@ const researchProjects = [
   },
   {
     title: "Fixes in OSS-Fuzz",
-    description: "Collaboration with Google on software vulnerability fixing",
+    description: "Collaboration with Google on AI for Security",
     link: "https://arxiv.org/pdf/2411.03346",
   }, 
   { title: "Automatic Programming using LLMs",
@@ -27,11 +27,6 @@ const researchProjects = [
     title: "Proof Agent",
     description: "AI for Program Verification",
     link: "https://openreview.net/pdf?id=5t9HFssPla"
-  },
-  {
-    title: "Program Repair",
-   description: "AI for Security",
-   link: "https://nus-apr.github.io/",
   },
   {
     title: "Unified Agent",
