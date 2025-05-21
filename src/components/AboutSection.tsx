@@ -25,8 +25,8 @@ const AboutSection: React.FC = () => {
             goal of building powerful trusted agents.
             <br><br>
             <i> These analysis capabilities are added with agents to create more effective agents such as 
-            <b><a href="https://autocoderover.dev">AutoCodeRover</a></b></i>. The research on trusted agents, 
-            with trust being engendered by analysis techniques, contributes to the theme of AI Safety.
+            <b><a href="https://autocoderover.dev">AutoCodeRover</a></b>. The research on trusted agents, 
+            with trust being engendered by analysis techniques, contributes to the theme of AI Safety</i>.
           </p>
         </div>
 
