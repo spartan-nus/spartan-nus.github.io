@@ -6,8 +6,8 @@ import { ArrowRight } from "lucide-react";
 
 const researchProjects = [
   {
-    title: "AutoCodeRover",
-    description: "AI Agent for Software Engineering",
+    title: "AutoCodeRover, AI Agent for Software",
+    description: "Being integrated in Production with SonarQube Static Analyzer",
     link: "https://autocoderover.dev",
   },
   {
