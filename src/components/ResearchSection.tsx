@@ -11,6 +11,11 @@ const researchProjects = [
     link: "https://autocoderover.dev",
   },
   {
+    title: "Fixes in OSS-Fuzz",
+    description: "Collaboration with Google on software vulnerability fixing",
+    link: "https://arxiv.org/pdf/2411.03346",
+  }, 
+  {
     title: "Program Repair",
    description: "AI for Security",
    link: "https://nus-apr.github.io/",
