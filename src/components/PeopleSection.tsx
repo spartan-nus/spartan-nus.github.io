@@ -69,21 +69,21 @@ const teamMembers = [
   {
     name: "Zhengxiong Luo",
     position: "Postdoctoral researcher",
-    description: "Proof agents",
+    description: "Proof agents (starting)",
     imageUrl: "/people/zhengxiong.jpg",
     initials: "ZL",
   },
   {
     name: "Dylan Wolff",
     position: "PhD student",
-    description: "Proof Agents",
+    description: "Proof Agents (starting)",
     imageUrl: "/people/dylan.jpeg",
     initials: "RM",
   },
   {
     name: "Huan Zhao",
     position: "PhD student",
-    description: "Proof Agents",
+    description: "Proof Agents (starting)",
     imageUrl: "/people/zhaohuan.jpeg",
     initials: "RM",
   },];
