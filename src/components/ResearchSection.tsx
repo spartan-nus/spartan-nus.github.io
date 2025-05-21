@@ -30,7 +30,7 @@ const researchProjects = [
   },
   {
     title: "Unified Agent",
-    description: "Coming soon",
+    description: "Completed, to release",
     link: "#tier3",
   },
   {
