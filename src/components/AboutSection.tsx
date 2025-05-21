@@ -26,7 +26,7 @@ const AboutSection: React.FC = () => {
 
         <Card className="overflow-hidden">
           <img
-            src="https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d"
+            src="/lunch_feb2023.jpg"
             alt="Lab research"
             className="w-full h-auto object-cover"
           />

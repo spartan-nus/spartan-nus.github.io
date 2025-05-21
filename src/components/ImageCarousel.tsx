@@ -6,31 +6,25 @@ interface CarouselImage {
   url: string;
   alt: string;
   link?: string;
+  title?: string;
 }
 
 const images: CarouselImage[] = [
   {
-    url: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b",
-    alt: "Advanced computing research",
+    url: "/ACR_logo.png",
+    alt: "Agent for Autonomous Program Improvement",
+    title: "Featured: AutoCodeRover"
   },
   {
-    url: "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5",
-    alt: "AutoCodeRover - AI-powered code analysis",
-  },
-  {
-    url: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158",
-    alt: "AI research in progress",
-  },
-  {
-    url: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158",
-    alt: "AutoCodeRover: from research on Automatic Programming to Spinoff Acquisition",
+    url: "/sonar_plus_autocoderover.png",
+    alt: "AutoCodeRover: from Research on Automatic Programming to Spinoff Acquisition",
     link: "https://www.youtube.com/watch?v=o8B6q8FNC70&t=2s",
   },
   {
-    url: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158",
+    url: "/hands.png",
     alt: "Agentic AI Software Engineer: Programming with Trust",
-    link: "https://arxiv.org/abs/2502.13767"
-  }
+    link: "https://arxiv.org/abs/2502.13767",
+  },
 ];
 
 const ImageCarousel: React.FC = () => {
@@ -82,8 +76,8 @@ const ImageCarousel: React.FC = () => {
             />
           )}
           <div className="absolute bottom-0 left-0 right-0 bg-black bg-opacity-50 text-white p-4">
-            {index === 1 && (
-              <h2 className="text-xl font-bold">Featured: AutoCodeRover</h2>
+            {image.title && (
+              <h2 className="text-xl font-bold">{image.title}</h2>
             )}
             <p>{image.alt}</p>
           </div>
