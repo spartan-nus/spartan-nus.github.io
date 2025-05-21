@@ -27,46 +27,66 @@ const teamMembers = [
   {
     name: "Haifeng Ruan",
     position: "PhD Student",
-    description: "",
+    description: "AutoCodeRover",
     imageUrl: "/people/haifeng.jpg",
     initials: "HR",
   },
   {
     name: "Yuntong Zhang",
     position: "PhD Student",
-    description: "",
+    description: "AutoCodeRover, Agent Testing, Unified Agent",
     imageUrl: "/people/yuntong.jpg",
     initials: "YZ",
   },
   {
     name: "Sungmin Kang",
     position: "Postdoctoral Researcher",
-    description: "",
+    description: "Agent Testing",
     imageUrl: "/people/sungmin.jpg",
     initials: "SK",
   },
   {
     name: "Haoxin Tu",
     position: "Postdoctoral Researcher",
-    description: "",
+    description: "Proof Agents",
     imageUrl: "/people/haoxin.png",
     initials: "HT",
   },
   {
     name: "Martin Mirchev",
     position: "PhD student",
-    description: "",
+    description: "AutoCodeRover",
     imageUrl: "/people/martin.jpg",
     initials: "MM",
   },
   {
     name: "Ruijie Meng",
-    position: "Graduating PhD student",
-    description: "Asst Prof, CISPA",
+    position: "Graduating PhD student -> Asst Prof CISPA",
+    description: "Agent Testing",
     imageUrl: "/people/ruijie.png",
     initials: "RM",
   },
-];
+  {
+    name: "Zhengxiong Luo",
+    position: "Postdoctoral researcher",
+    description: "Proof agents",
+    imageUrl: "/people/zhengxiong.jpg",
+    initials: "ZL",
+  },
+  {
+    name: "Dylan Wolff",
+    position: "PhD student",
+    description: "Proof Agents",
+    imageUrl: "/people/dylan.jpeg",
+    initials: "RM",
+  },
+  {
+    name: "Huan Zhao",
+    position: "PhD student",
+    description: "Proof Agents",
+    imageUrl: "/people/zhaohuan.jpeg",
+    initials: "RM",
+  },];
 
 const PeopleSection: React.FC = () => {
   return (
