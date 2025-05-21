@@ -42,7 +42,7 @@ const Index = () => {
       
       <footer className="bg-[#003D7C] text-white py-6">
         <div className="container mx-auto px-4 text-center">
-          <p>© {new Date().getFullYear()} NUS AI Lab - National University of Singapore</p>
+          <p>© {new Date().getFullYear()} SPARTAN - National University of Singapore</p>
           <p className="text-sm mt-2">School of Computing, 13 Computing Drive, Singapore 117417</p>
         </div>
       </footer>
