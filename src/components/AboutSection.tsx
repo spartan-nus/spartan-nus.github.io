@@ -17,8 +17,9 @@ const AboutSection: React.FC = () => {
             at the National University of Singapore (SPARTAN) led by Prof.{" "}
             <a href="https://abhikrc.com/" className="text-nus-blue hover:text-nus-orange underline">Abhik Roychoudhury</a>. In our
             research, we strive to enable <strong className="text-nus-orange">secure</strong> and{" "}
-            <strong className="text-nus-orange">trustworthy software systems</strong>. In line with this, we
-            focus on <strong className="text-nus-orange">software testing and analysis</strong>, and in
+            <strong className="text-nus-orange">trustworthy systems</strong> using powerful agentic AI approaches. 
+            In line with this, we
+            focus on <strong className="text-nus-orange">program analysis</strong> approaches, and in
             particular contribute to the areas of{" "}
             <a href="https://nus-apr.github.io" className="text-nus-blue hover:text-nus-orange underline">Automated Program Repair</a>,{" "}
             <a href="/fuzzing/" className="text-nus-blue hover:text-nus-orange underline">Fuzzing</a> and Symbolic Execution, with the
