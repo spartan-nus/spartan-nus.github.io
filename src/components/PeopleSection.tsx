@@ -4,52 +4,11 @@ import { Avatar, AvatarFallback } from "@/components/ui/avatar";
 
 const teamMembers = [
   {
-    name: "Prof. Jane Doe",
-    position: "Lab Director",
-    description:
-      "Leading researcher in program analysis and software verification with over 15 years of experience.",
-    imageUrl: "",
-    initials: "JD",
-  },
-  {
-    name: "Dr. John Smith",
-    position: "Principal Investigator",
-    description:
-      "Expert in machine learning applications for code analysis and automated bug detection.",
-    imageUrl: "",
-    initials: "JS",
-  },
-  {
-    name: "Dr. Lisa Chen",
-    position: "Senior Researcher",
-    description:
-      "Specializes in symbolic execution and formal methods for software verification.",
-    imageUrl: "",
-    initials: "LC",
-  },
-  {
-    name: "Robert Wang",
-    position: "PhD Candidate",
-    description:
-      "Researching advanced fuzzing techniques for detecting software vulnerabilities.",
-    imageUrl: "",
-    initials: "RW",
-  },
-  {
-    name: "Sarah Johnson",
-    position: "PhD Candidate",
-    description:
-      "Working on deep learning approaches to program understanding and analysis.",
-    imageUrl: "",
-    initials: "SJ",
-  },
-  {
-    name: "Michael Lee",
-    position: "Research Engineer",
-    description:
-      "Developing the AutoCodeRover platform and implementing research prototypes.",
-    imageUrl: "",
-    initials: "ML",
+    name: "Abhik Roychoudhury",
+    position: "Principal Investigator, Provost's Chair Professor",
+    description: "",
+    imageUrl: "/people/abhik.jpg",
+    initials: "AR",
   },
 ];
 
@@ -63,12 +22,17 @@ const PeopleSection: React.FC = () => {
           <Card key={index} className="hover:shadow-lg transition-shadow">
             <CardHeader className="flex flex-row items-center gap-4">
               <Avatar className="h-14 w-14">
-                {member.imageUrl && (
-                  <img src={member.imageUrl} alt={member.name} />
+                {member.imageUrl ? (
+                  <img
+                    src={member.imageUrl}
+                    alt={member.name}
+                    className="w-full h-full object-cover rounded-full"
+                  />
+                ) : (
+                  <AvatarFallback className="bg-blue-100 text-blue-800 text-lg">
+                    {member.initials}
+                  </AvatarFallback>
                 )}
-                <AvatarFallback className="bg-blue-100 text-blue-800 text-lg">
-                  {member.initials}
-                </AvatarFallback>
               </Avatar>
               <div>
                 <CardTitle className="text-lg">{member.name}</CardTitle>
