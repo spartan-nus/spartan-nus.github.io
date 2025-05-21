@@ -26,6 +26,11 @@ const images: CarouselImage[] = [
     alt: "AutoCodeRover: from research on Automatic Programming to Spinoff Acquisition",
     link: "https://www.youtube.com/watch?v=o8B6q8FNC70&t=2s",
   },
+  {
+    url: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158",
+    alt: "Agentic AI Software Engineer: Programming with Trust",
+    link: "https://arxiv.org/abs/2502.13767"
+  }
 ];
 
 const ImageCarousel: React.FC = () => {
