@@ -22,6 +22,9 @@ const AboutSection: React.FC = () => {
             particular contribute to the areas of{" "}
             <a href="https://nus-apr.github.io" className="text-nus-blue hover:text-nus-orange underline">Automated Program Repair</a>,{" "}
             <a href="/fuzzing/" className="text-nus-blue hover:text-nus-orange underline">Fuzzing</a> and Symbolic Execution.
+
+            <i> These analysis capabilities are added with agents to create more effective agents such as 
+            <b><a href="https://autocoderover.dev">AutoCodeRover</a></b></i>.
           </p>
         </div>
 
