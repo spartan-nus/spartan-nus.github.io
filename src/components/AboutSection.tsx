@@ -24,7 +24,7 @@ const AboutSection: React.FC = () => {
             <a href="https://nus-apr.github.io" className="text-nus-blue hover:text-nus-orange underline">Automated Program Repair</a>,{" "}
             <a href="https://nus-tss.github.io/fuzzing/" className="text-nus-blue hover:text-nus-orange underline">Fuzzing</a> and Symbolic Execution.
             These analysis capabilities are added with agents to create more effective agents such as{" "}  
-            <b><a href="https://autocoderover.dev">AutoCodeRover</a></b>. The research on trusted agents, 
+            <a href="https://autocoderover.dev">AutoCodeRover</a>. The research on trusted agents, 
             with trust being engendered by analysis techniques, contributes to the theme of AI Safety.
           </p>
 
