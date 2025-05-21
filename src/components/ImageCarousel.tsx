@@ -58,7 +58,9 @@ const ImageCarousel: React.FC = () => {
           key={index}
           className={cn(
             "absolute w-full h-full transition-opacity duration-500",
-            currentIndex === index ? "opacity-100" : "opacity-0",
+            currentIndex === index
+              ? "opacity-100 pointer-events-auto"
+              : "opacity-0 pointer-events-none",
           )}
         >
           {image.link && currentIndex == index ? (
