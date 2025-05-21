@@ -1,3 +1,4 @@
+
 import React from "react";
 import { Card } from "@/components/ui/card";
 
@@ -10,21 +11,21 @@ const AboutSection: React.FC = () => {
         <div className="space-y-4">
           <p className="text-lg leading-relaxed">
             We are the{" "}
-            <b>
+            <b className="text-nus-orange">
               Strategic Platform for Autonomous Resilient and Trusted Agents
             </b>{" "}
             at the National University of Singapore (SPARTAN) led by Prof.{" "}
-            <a href="https://abhikrc.com/">Abhik Roychoudhury</a>. In our
-            research, we strive to enable <strong>secure</strong> and{" "}
-            <strong>trustworthy software systems</strong>. In line with this, we
-            focus on <strong>software testing and analysis</strong>, and in
+            <a href="https://abhikrc.com/" className="text-nus-blue hover:text-nus-orange underline">Abhik Roychoudhury</a>. In our
+            research, we strive to enable <strong className="text-nus-orange">secure</strong> and{" "}
+            <strong className="text-nus-orange">trustworthy software systems</strong>. In line with this, we
+            focus on <strong className="text-nus-orange">software testing and analysis</strong>, and in
             particular contribute to the areas of{" "}
-            <a href="https://nus-apr.github.io">Automated Program Repair</a>,{" "}
-            <a href="/fuzzing/">Fuzzing</a> and Symbolic Execution.
+            <a href="https://nus-apr.github.io" className="text-nus-blue hover:text-nus-orange underline">Automated Program Repair</a>,{" "}
+            <a href="/fuzzing/" className="text-nus-blue hover:text-nus-orange underline">Fuzzing</a> and Symbolic Execution.
           </p>
         </div>
 
-        <Card className="overflow-hidden">
+        <Card className="overflow-hidden border-2 border-nus-orange">
           <img
             src="/lunch_feb2023.jpg"
             alt="Lab research"

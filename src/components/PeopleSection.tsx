@@ -1,3 +1,4 @@
+
 import React from "react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Avatar, AvatarFallback } from "@/components/ui/avatar";
@@ -19,9 +20,9 @@ const PeopleSection: React.FC = () => {
 
       <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
         {teamMembers.map((member, index) => (
-          <Card key={index} className="hover:shadow-lg transition-shadow">
+          <Card key={index} className="hover:shadow-lg transition-shadow border-b-4 border-b-nus-orange">
             <CardHeader className="flex flex-row items-center gap-4">
-              <Avatar className="h-14 w-14">
+              <Avatar className="h-14 w-14 ring-2 ring-nus-orange">
                 {member.imageUrl ? (
                   <img
                     src={member.imageUrl}
@@ -29,7 +30,7 @@ const PeopleSection: React.FC = () => {
                     className="w-full h-full object-cover rounded-full"
                   />
                 ) : (
-                  <AvatarFallback className="bg-blue-100 text-blue-800 text-lg">
+                  <AvatarFallback className="bg-nus-orange text-white text-lg">
                     {member.initials}
                   </AvatarFallback>
                 )}

@@ -1,3 +1,4 @@
+
 import React, { useState } from "react";
 import Navbar from "@/components/Navbar";
 import ImageCarousel from "@/components/ImageCarousel";
@@ -37,7 +38,7 @@ const Index = () => {
 
       <main className="flex-1 bg-gray-50">{renderContent()}</main>
 
-      <footer className="bg-[#003D7C] text-white py-6">
+      <footer className="bg-nus-blue text-white py-6 border-t-4 border-nus-orange">
         <div className="container mx-auto px-4 text-center">
           <p>
             © {new Date().getFullYear()} SPARTAN - National University of

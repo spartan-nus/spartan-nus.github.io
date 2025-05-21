@@ -1,3 +1,4 @@
+
 import React from "react";
 import { Link } from "react-router-dom";
 import { cn } from "@/lib/utils";
@@ -11,7 +12,7 @@ const Navbar: React.FC<NavbarProps> = ({ activeTab, setActiveTab }) => {
   const navItems = ["About", "News", "Research", "People", "Contact"];
 
   return (
-    <nav className="w-full bg-[#003D7C] text-white py-4 sticky top-0 z-50 shadow-md">
+    <nav className="w-full bg-nus-blue text-white py-4 sticky top-0 z-50 shadow-md border-b-4 border-nus-orange">
       <div className="container mx-auto flex flex-col sm:flex-row justify-between items-center px-4">
         <div className="flex items-center mb-4 sm:mb-0">
           <h1 className="text-xl font-bold">
@@ -28,8 +29,8 @@ const Navbar: React.FC<NavbarProps> = ({ activeTab, setActiveTab }) => {
                 className={cn(
                   "px-3 py-2 rounded-md text-sm font-medium transition-colors",
                   activeTab === item.toLowerCase()
-                    ? "bg-white text-[#003D7C]"
-                    : "text-white hover:bg-blue-800",
+                    ? "bg-nus-orange text-white"
+                    : "text-white hover:bg-blue-800 hover:text-nus-orange",
                 )}
               >
                 {item}

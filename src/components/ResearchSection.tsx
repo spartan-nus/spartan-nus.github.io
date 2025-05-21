@@ -1,3 +1,4 @@
+
 import React from "react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { ArrowRight } from "lucide-react";
@@ -31,7 +32,7 @@ const ResearchSection: React.FC = () => {
 
       <div className="grid md:grid-cols-2 gap-6">
         {researchProjects.map((project, index) => (
-          <Card key={index} className="hover:shadow-lg transition-shadow">
+          <Card key={index} className="hover:shadow-lg transition-shadow border-t-4 border-t-nus-orange">
             <CardHeader>
               <CardTitle>{project.title}</CardTitle>
             </CardHeader>
@@ -40,7 +41,7 @@ const ResearchSection: React.FC = () => {
               {project.link && (
                 <a
                   href={project.link}
-                  className="inline-flex items-center text-blue-600 hover:text-blue-800"
+                  className="inline-flex items-center text-nus-orange hover:text-nus-blue"
                 >
                   Learn more <ArrowRight className="ml-1 h-4 w-4" />
                 </a>
