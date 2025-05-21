@@ -1,3 +1,4 @@
+
 import React, { useState, useEffect } from "react";
 import { ArrowLeft, ArrowRight } from "lucide-react";
 import { cn } from "@/lib/utils";
@@ -51,7 +52,7 @@ const ImageCarousel: React.FC = () => {
   }, []);
 
   return (
-    <div className="relative w-full h-[400px] overflow-hidden">
+    <div className="relative w-full overflow-hidden max-w-6xl mx-auto mt-8 h-[350px]">
       {images.map((image, index) => (
         <div
           key={index}

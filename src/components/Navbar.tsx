@@ -12,7 +12,7 @@ const Navbar: React.FC<NavbarProps> = ({ activeTab, setActiveTab }) => {
   const navItems = ["About", "News", "Research", "People", "Contact"];
 
   return (
-    <nav className="w-full bg-nus-blue text-white py-4 sticky top-0 z-50 shadow-md border-b-4 border-nus-orange">
+    <nav className="w-full bg-nus-blue text-white py-4 sticky top-0 z-50 shadow-md">
       <div className="container mx-auto flex flex-col sm:flex-row justify-between items-center px-4">
         <div className="flex items-center mb-4 sm:mb-0">
           <h1 className="text-xl font-bold">
