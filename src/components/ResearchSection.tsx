@@ -7,7 +7,7 @@ import { ArrowRight } from "lucide-react";
 const researchProjects = [
   {
     title: "AutoCodeRover",
-    description: "Agent for Software Engineering",
+    description: "AI Agent for Software Engineering",
     link: "https://autocoderover.dev",
   },
   {
@@ -15,6 +15,19 @@ const researchProjects = [
     description: "Collaboration with Google on software vulnerability fixing",
     link: "https://arxiv.org/pdf/2411.03346",
   }, 
+  { title: "Automatic Programming using LLMs",
+    description: "Position paper in TOSEM",
+    link: "https://dl.acm.org/doi/pdf/10.1145/3708519",
+  },
+  { title: "Agentic Programming",
+    description: "Opinion Piece",
+    link: " https://arxiv.org/pdf/2502.13767",
+  },
+   {
+    title: "Proof Agent",
+    description: "AI for Program Verification",
+    link: "https://openreview.net/pdf?id=5t9HFssPla"
+  },
   {
     title: "Program Repair",
    description: "AI for Security",
@@ -30,11 +43,7 @@ const researchProjects = [
     description: "Coming soon",
     link: "#fuzzing",
   },
-  {
-    title: "Proof Agent",
-    description: "Coming soon",
-    link: "#fuzzing",
-  },
+  
 ];
 
 const ResearchSection: React.FC = () => {
