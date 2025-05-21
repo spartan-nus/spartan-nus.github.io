@@ -14,7 +14,7 @@ const AboutSection: React.FC = () => {
             <b className="text-nus-orange">
               Strategic Platform for Autonomous Resilient and Trusted Agents
             </b>{" "}
-            at the National University of Singapore (SPARTAN) led by Prof.{" "}
+            @ NUS (SPARTAN) led by Prof.{" "}
             <a href="https://abhikrc.com/" className="text-nus-blue hover:text-nus-orange underline">Abhik Roychoudhury</a>. In our
             research, we strive to enable <strong className="text-nus-orange">secure</strong> and{" "}
             <strong className="text-nus-orange">trustworthy systems</strong> using powerful agentic AI approaches. 
