@@ -18,12 +18,12 @@ const AboutSection: React.FC = () => {
             <a href="https://abhikrc.com/" className="text-nus-blue hover:text-nus-orange underline">Abhik Roychoudhury</a>. In our
             research, we strive to enable <strong className="text-nus-orange">secure</strong> and{" "}
             <strong className="text-nus-orange">trustworthy systems</strong> using powerful agentic AI approaches. 
-            In line with this, we
+            In line with this, we{" "}
             focus on <strong className="text-nus-orange">program analysis</strong> approaches, and in
             particular contribute to the areas of{" "}
             <a href="https://nus-apr.github.io" className="text-nus-blue hover:text-nus-orange underline">Automated Program Repair</a>,{" "}
-            <a href="/fuzzing/" className="text-nus-blue hover:text-nus-orange underline">Fuzzing</a> and Symbolic Execution.
-            These analysis capabilities are added with agents to create more effective agents such as  
+            <a href="https://nus-tss.github.io/fuzzing/" className="text-nus-blue hover:text-nus-orange underline">Fuzzing</a> and Symbolic Execution.
+            These analysis capabilities are added with agents to create more effective agents such as{" "}  
             <b><a href="https://autocoderover.dev">AutoCodeRover</a></b>. The research on trusted agents, 
             with trust being engendered by analysis techniques, contributes to the theme of AI Safety.
           </p>
