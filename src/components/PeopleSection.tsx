@@ -28,14 +28,14 @@ const teamMembers = [
     name: "Haifeng Ruan",
     position: "PhD Student",
     description: "",
-    imageUrl: "/people/haifeng.png",
+    imageUrl: "/people/haifeng.jpg",
     initials: "HR",
   },
   {
     name: "Yuntong Zhang",
     position: "PhD Student",
     description: "",
-    imageUrl: "/people/yuntong.png",
+    imageUrl: "/people/yuntong.jpg",
     initials: "YZ",
   },
   {
@@ -49,14 +49,14 @@ const teamMembers = [
     name: "Haoxin Tu",
     position: "Postdoctoral Researcher",
     description: "",
-    imageUrl: "/people/haoxin.png",
+    imageUrl: "/people/haoxin.jpg",
     initials: "HT",
   },
   {
     name: "Martin Mirchev",
     position: "PhD student",
     description: "",
-    imageUrl: "/people/martin.png",
+    imageUrl: "/people/martin.jpg",
     initials: "MM",
   },
   {
