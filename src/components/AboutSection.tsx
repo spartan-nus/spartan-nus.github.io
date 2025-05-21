@@ -21,10 +21,12 @@ const AboutSection: React.FC = () => {
             focus on <strong className="text-nus-orange">software testing and analysis</strong>, and in
             particular contribute to the areas of{" "}
             <a href="https://nus-apr.github.io" className="text-nus-blue hover:text-nus-orange underline">Automated Program Repair</a>,{" "}
-            <a href="/fuzzing/" className="text-nus-blue hover:text-nus-orange underline">Fuzzing</a> and Symbolic Execution.
-
+            <a href="/fuzzing/" className="text-nus-blue hover:text-nus-orange underline">Fuzzing</a> and Symbolic Execution, with the
+            goal of building powerful trusted agents.
+            <br><br>
             <i> These analysis capabilities are added with agents to create more effective agents such as 
-            <b><a href="https://autocoderover.dev">AutoCodeRover</a></b></i>. 
+            <b><a href="https://autocoderover.dev">AutoCodeRover</a></b></i>. The research on trusted agents, 
+            with trust being engendered by analysis techniques, contributes to the theme of AI Safety.
           </p>
         </div>
 
