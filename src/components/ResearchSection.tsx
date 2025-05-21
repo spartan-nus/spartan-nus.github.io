@@ -15,7 +15,7 @@ const researchProjects = [
     description: "Collaboration with Google on AI for Security",
     link: "https://arxiv.org/pdf/2411.03346",
   }, 
-  { title: "Automatic Programming using LLMs",
+  { title: "Automatic Programming",
     description: "Position paper in TOSEM",
     link: "https://dl.acm.org/doi/pdf/10.1145/3708519",
   },
