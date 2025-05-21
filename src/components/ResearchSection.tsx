@@ -8,12 +8,17 @@ const researchProjects = [
     description: "PLACEHOLDER",
   },
   {
-    title: "MoE Tier 3 Research Grant",
+    title: "Unified Agent",
     description: "PLACEHOLDER",
     link: "#tier3",
   },
   {
-    title: "Fuzz Testing Grant",
+    title: "Agent Testing",
+    description: "PLACEHOLDER",
+    link: "#fuzzing",
+  },
+  {
+    title: "Proof Agent",
     description: "PLACEHOLDER",
     link: "#fuzzing",
   },
