@@ -6,21 +6,21 @@ import { ArrowRight } from "lucide-react";
 const researchProjects = [
   {
     title: "AutoCodeRover",
-    description: "PLACEHOLDER",
+    description: "Coming soon",
   },
   {
     title: "Unified Agent",
-    description: "PLACEHOLDER",
+    description: "Coming soon",
     link: "#tier3",
   },
   {
     title: "Agent Testing",
-    description: "PLACEHOLDER",
+    description: "Coming soon",
     link: "#fuzzing",
   },
   {
     title: "Proof Agent",
-    description: "PLACEHOLDER",
+    description: "Coming soon",
     link: "#fuzzing",
   },
 ];
