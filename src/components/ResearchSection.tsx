@@ -12,7 +12,7 @@ const researchProjects = [
   },
   {
     title: "Program Repair",
-   description: "Vulnerability Remediation",
+   description: "AI for Security",
    link: "https://nus-apr.github.io/",
   },
   {
