@@ -7,6 +7,7 @@ const researchProjects = [
   {
     title: "AutoCodeRover",
     description: "Coming soon",
+    link: "https://autocoderover.dev"
   },
   {
     title: "Unified Agent",
