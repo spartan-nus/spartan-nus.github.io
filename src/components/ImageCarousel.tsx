@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from "react";
 import { ArrowLeft, ArrowRight } from "lucide-react";
 import { cn } from "@/lib/utils";
@@ -11,16 +10,16 @@ interface CarouselImage {
 const images: CarouselImage[] = [
   {
     url: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b",
-    alt: "Advanced computing research"
+    alt: "Advanced computing research",
   },
   {
     url: "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5",
-    alt: "AutoCodeRover - AI-powered code analysis"
+    alt: "AutoCodeRover - AI-powered code analysis",
   },
   {
     url: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158",
-    alt: "AI research in progress"
-  }
+    alt: "AI research in progress",
+  },
 ];
 
 const ImageCarousel: React.FC = () => {
@@ -28,13 +27,13 @@ const ImageCarousel: React.FC = () => {
 
   const goToNext = () => {
     setCurrentIndex((prevIndex) =>
-      prevIndex === images.length - 1 ? 0 : prevIndex + 1
+      prevIndex === images.length - 1 ? 0 : prevIndex + 1,
     );
   };
 
   const goToPrevious = () => {
     setCurrentIndex((prevIndex) =>
-      prevIndex === 0 ? images.length - 1 : prevIndex - 1
+      prevIndex === 0 ? images.length - 1 : prevIndex - 1,
     );
   };
 
@@ -53,7 +52,7 @@ const ImageCarousel: React.FC = () => {
           key={index}
           className={cn(
             "absolute w-full h-full transition-opacity duration-500",
-            currentIndex === index ? "opacity-100" : "opacity-0"
+            currentIndex === index ? "opacity-100" : "opacity-0",
           )}
         >
           <img
@@ -91,7 +90,7 @@ const ImageCarousel: React.FC = () => {
             onClick={() => setCurrentIndex(index)}
             className={cn(
               "w-3 h-3 rounded-full",
-              currentIndex === index ? "bg-white" : "bg-white/50"
+              currentIndex === index ? "bg-white" : "bg-white/50",
             )}
           />
         ))}
