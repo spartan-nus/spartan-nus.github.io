@@ -42,14 +42,14 @@ const teamMembers = [
     name: "Sungmin Kang",
     position: "Postdoctoral Researcher",
     description: ""
-    imageUrl: "/people/sungmin.png",
+    imageUrl: "/people/sungmin.jpg",
     initials: "SK",
   },
   {
     name: "Haoxin Tu",
     position: "Postdoctoral Researcher",
     description: "",
-    imageUrl: "/people/haoxin.jpg",
+    imageUrl: "/people/haoxin.png",
     initials: "HT",
   },
   {
