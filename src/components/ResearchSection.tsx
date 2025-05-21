@@ -6,7 +6,7 @@ import { ArrowRight } from "lucide-react";
 const researchProjects = [
   {
     title: "AutoCodeRover",
-    description: "Coming soon",
+    description: "Agent for Software Engineering",
     link: "https://autocoderover.dev"
   },
   {
