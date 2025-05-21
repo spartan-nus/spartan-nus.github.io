@@ -9,24 +9,18 @@ const AboutSection: React.FC = () => {
       <div className="grid md:grid-cols-2 gap-8">
         <div className="space-y-4">
           <p className="text-lg leading-relaxed">
-            The NUS AI Lab is pioneering research at the intersection of
-            artificial intelligence, software engineering, and automated
-            analysis. Our mission is to build innovative AI-powered tools that
-            enhance software quality, security, and developer productivity.
-          </p>
-
-          <p className="text-lg leading-relaxed">
-            Led by renowned researchers from the National University of
-            Singapore, our lab focuses on developing cutting-edge technologies
-            like AutoCodeRover to tackle complex challenges in automated
-            software testing, verification, and analysis.
-          </p>
-
-          <p className="text-lg leading-relaxed">
-            We collaborate with industry partners and academic institutions
-            worldwide to translate our research into practical applications that
-            benefit both the software engineering community and society at
-            large.
+            We are the{" "}
+            <b>
+              Strategic Platform for Autonomous Resilient and Trusted Agents
+            </b>{" "}
+            at the National University of Singapore (SPARTAN) led by Prof.{" "}
+            <a href="https://abhikrc.com/">Abhik Roychoudhury</a>. In our
+            research, we strive to enable <strong>secure</strong> and{" "}
+            <strong>trustworthy software systems</strong>. In line with this, we
+            focus on <strong>software testing and analysis</strong>, and in
+            particular contribute to the areas of{" "}
+            <a href="https://nus-apr.github.io">Automated Program Repair</a>,{" "}
+            <a href="/fuzzing/">Fuzzing</a> and Symbolic Execution.
           </p>
         </div>
 
