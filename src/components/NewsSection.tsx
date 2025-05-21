@@ -1,5 +1,6 @@
 import React from "react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { ArrowRight } from "lucide-react";
 
 const newsItems = [
   {
@@ -8,6 +9,7 @@ const newsItems = [
       "Sonar Acquires AutoCodeRover to Supercharge Developers with AI Agents",
     content:
       "Sonar, the leading provider of code quality and code security solutions, today announced the acquisition of AutoCodeRover, an autonomous AI agent platform for software development.",
+    link: "https://www.sonarsource.com/company/press-releases/sonar-acquires-autocoderover-to-supercharge-developers-with-ai-agents/",
   },
 ];
 
@@ -27,6 +29,14 @@ const NewsSection: React.FC = () => {
             </CardHeader>
             <CardContent>
               <p>{item.content}</p>
+              {item.link && (
+                <a
+                  href={item.link}
+                  className="inline-flex items-center text-blue-600 hover:text-blue-800"
+                >
+                  Learn more <ArrowRight className="ml-1 h-4 w-4" />
+                </a>
+              )}
             </CardContent>
           </Card>
         ))}

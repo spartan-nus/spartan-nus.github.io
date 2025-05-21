@@ -6,7 +6,6 @@ const researchProjects = [
   {
     title: "AutoCodeRover",
     description: "PLACEHOLDER",
-    link: "#autocoderover",
   },
   {
     title: "MoE Tier 3 Research Grant",
@@ -18,7 +17,6 @@ const researchProjects = [
     description: "PLACEHOLDER",
     link: "#fuzzing",
   },
-  
 ];
 
 const ResearchSection: React.FC = () => {
@@ -34,12 +32,14 @@ const ResearchSection: React.FC = () => {
             </CardHeader>
             <CardContent className="space-y-4">
               <p>{project.description}</p>
-              <a
-                href={project.link}
-                className="inline-flex items-center text-blue-600 hover:text-blue-800"
-              >
-                Learn more <ArrowRight className="ml-1 h-4 w-4" />
-              </a>
+              {project.link && (
+                <a
+                  href={project.link}
+                  className="inline-flex items-center text-blue-600 hover:text-blue-800"
+                >
+                  Learn more <ArrowRight className="ml-1 h-4 w-4" />
+                </a>
+              )}
             </CardContent>
           </Card>
         ))}
