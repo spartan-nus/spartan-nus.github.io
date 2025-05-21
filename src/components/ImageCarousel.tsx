@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from "react";
 import { ArrowLeft, ArrowRight } from "lucide-react";
 import { cn } from "@/lib/utils";
@@ -14,7 +13,8 @@ const images: CarouselImage[] = [
   {
     url: "/ACR_logo.png",
     alt: "Agent for Autonomous Program Improvement",
-    title: "Featured: AutoCodeRover"
+    title: "Featured: AutoCodeRover",
+    link: "https://autocoderover.dev"
   },
   {
     url: "/sonar_plus_autocoderover.png",
