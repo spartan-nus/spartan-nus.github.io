@@ -1,4 +1,5 @@
 import React from "react";
+
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Avatar, AvatarFallback } from "@/components/ui/avatar";
 
@@ -9,6 +10,7 @@ const teamMembers = [
     description: "",
     imageUrl: "/people/abhik.jpg",
     initials: "AR",
+    homepage: "https://abhikrc.com/"
   },
   {
     name: "Baishakhi Ray",
@@ -16,6 +18,7 @@ const teamMembers = [
     description: "",
     imageUrl: "/people/baishakhi.jpg",
     initials: "BR",
+    homepage: "https://www.rayb.info/"
   },
   {
     name: "Cristian Cadar",
@@ -23,6 +26,7 @@ const teamMembers = [
     description: "",
     imageUrl: "/people/cristian.png",
     initials: "CC",
+    homepage: "https://www.doc.ic.ac.uk/~cristic/"
   },
   {
     name: "Haifeng Ruan",
@@ -30,6 +34,7 @@ const teamMembers = [
     description: "AutoCodeRover",
     imageUrl: "/people/haifeng.jpg",
     initials: "HR",
+    homepage: "https://haifengruan.com/"
   },
   {
     name: "Yuntong Zhang",
@@ -37,6 +42,7 @@ const teamMembers = [
     description: "AutoCodeRover, Agent Testing, Unified Agent",
     imageUrl: "/people/yuntong.jpg",
     initials: "YZ",
+    homepage: "https://yuntongzhang.github.io/"
   },
   {
     name: "Sungmin Kang",
@@ -44,6 +50,7 @@ const teamMembers = [
     description: "Agent Testing",
     imageUrl: "/people/sungmin.jpg",
     initials: "SK",
+    homepage: "https://smkang96.github.io/"
   },
   {
     name: "Haoxin Tu",
@@ -51,6 +58,7 @@ const teamMembers = [
     description: "Proof Agents",
     imageUrl: "/people/haoxin.png",
     initials: "HT",
+    homepage: "https://haoxintu.github.io/"
   },
   {
     name: "Martin Mirchev",
@@ -58,6 +66,7 @@ const teamMembers = [
     description: "AutoCodeRover",
     imageUrl: "/people/martin.jpg",
     initials: "MM",
+    homepage: "https://marti2203.github.io"
   },
   {
     name: "Ruijie Meng",
@@ -65,14 +74,14 @@ const teamMembers = [
     description: "Agent Testing",
     imageUrl: "/people/ruijie.png",
     initials: "RM",
+    homepage: "https://mengrj.github.io"
   },
-  ];
+];
 
 const PeopleSection: React.FC = () => {
   return (
     <div className="container mx-auto py-8 px-4">
       <h2 className="text-3xl font-bold mb-8 text-center">Our Team</h2>
-
       <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
         {teamMembers.map((member, index) => (
           <Card
@@ -94,7 +103,7 @@ const PeopleSection: React.FC = () => {
                 )}
               </Avatar>
               <div>
-                <CardTitle className="text-lg">{member.name}</CardTitle>
+                <CardTitle className="text-lg"><a href={member.homepage}>{member.name}</a></CardTitle>
                 <p className="text-sm text-muted-foreground">
                   {member.position}
                 </p>
