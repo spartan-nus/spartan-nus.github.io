@@ -77,6 +77,14 @@ const teamMembers = [
     homepage: "https://marti2203.github.io"
   },
   {
+    name: "Leonhard Applis",
+    position: "Postdoctoral Researcher",
+    description: "Unified Agent",
+    imageUrl: "/people/applis.jpeg",
+    initials: "LA",
+    homepage: "https://github.com/lapplislazuli"
+  },
+  {
     name: "Ruijie Meng",
     position: "Graduating PhD student -> Asst Prof CISPA",
     description: "Agent Testing",
@@ -97,7 +105,7 @@ const teamMembers = [
 const PeopleSection: React.FC = () => {
   return (
     <div className="container mx-auto py-8 px-4">
-      <h2 className="text-3xl font-bold mb-8 text-center">Our Team</h2>
+      <h2 className="text-3xl font-bold mb-8 text-center">Researchers</h2>
       <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
         {teamMembers.map((member, index) => (
           <Card
