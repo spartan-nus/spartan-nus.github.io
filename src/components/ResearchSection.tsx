@@ -13,7 +13,7 @@ const researchProjects = [
   {
     title: "Fixes in OSS-Fuzz",
     description: "Collaboration with Google on AI for Security",
-    link: "https://arxiv.org/pdf/2411.03346",
+    link: "/coderover-s.html",
   }, 
   { title: "Automatic Programming",
     description: "Position paper in TOSEM",
