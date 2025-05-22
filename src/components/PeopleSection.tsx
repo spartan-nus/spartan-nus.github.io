@@ -8,6 +8,7 @@ const teamMembers = [
     position: "Principal Investigator, Provost's Chair Professor@NUS",
     description: "",
     imageUrl: "/people/abhik.jpg",
+    link: "https://abhikrc.com",
     initials: "AR",
   },
   {
