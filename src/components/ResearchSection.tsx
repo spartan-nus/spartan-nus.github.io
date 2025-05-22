@@ -11,8 +11,8 @@ const researchProjects = [
     link: "https://autocoderover.dev",
   },
   {
-    title: "Fixes in OSS-Fuzz",
-    description: "Collaboration with Google on AI for Security",
+    title: "AI for Security",
+    description: "Collaboration with Google on Open Source Security",
     link: "/coderover-s.html",
   }, 
   { title: "Automatic Programming",
