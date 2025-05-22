@@ -29,6 +29,14 @@ const teamMembers = [
     homepage: "https://www.doc.ic.ac.uk/~cristic/"
   },
   {
+    name: "Lin Tan",
+    position: "Collaborator, Professor@Purdue",
+    description: "",
+    imageUrl: "/people/lintan.jpeg",
+    initials: "LT",
+    homepage: "https://www.cs.purdue.edu/homes/lintan/"
+  },
+  {
     name: "Haifeng Ruan",
     position: "PhD Student",
     description: "AutoCodeRover",
@@ -75,6 +83,14 @@ const teamMembers = [
     imageUrl: "/people/ruijie.png",
     initials: "RM",
     homepage: "https://mengrj.github.io"
+  },
+  {
+    name: "Ridwan Shariffdeen",
+    position: "Alumni -> Principal Research Scientist@SonarSource",
+    description: "AutoCodeRover",
+    imageUrl: "/people/ridwan.jpg",
+    initials: "RS",
+    homepage: "https://rshariffdeen.com/"
   },
 ];
 
