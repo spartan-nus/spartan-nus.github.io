@@ -108,6 +108,14 @@ const PeopleSection: React.FC = () => {
             </CardHeader>
             <CardContent>
               <p>{member.description}</p>
+              {member.link && (
+                <a
+                  href={member.link}
+                  className="inline-flex items-center text-nus-orange hover:text-nus-blue"
+                >
+                  Learn more <ArrowRight className="ml-1 h-4 w-4" />
+                </a>
+              )}
             </CardContent>
           </Card>
         ))}
