@@ -70,7 +70,7 @@ const teamMembers = [
   },
   {
     name: "Martin Mirchev",
-    position: "PhD student",
+    position: "PhD student, On leave to SonarSource",
     description: "AutoCodeRover",
     imageUrl: "/people/martin.jpg",
     initials: "MM",
