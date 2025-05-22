@@ -16,6 +16,7 @@ const teamMembers = [
     position: "Collaborator, Associate Professor@Columbia University",
     description: "",
     imageUrl: "/people/baishakhi.jpg",
+    link: "https://www.rayb.info/",
     initials: "BR",
   },
   {
@@ -23,6 +24,7 @@ const teamMembers = [
     position: "Collaborator, Professor@Imperial College London",
     description: "",
     imageUrl: "/people/cristian.png",
+    link: "https://www.doc.ic.ac.uk/~cristic/",
     initials: "CC",
   },
   {
@@ -30,6 +32,7 @@ const teamMembers = [
     position: "PhD Student",
     description: "AutoCodeRover",
     imageUrl: "/people/haifeng.jpg",
+    link: "https://haifengruan.com/",
     initials: "HR",
   },
   {
@@ -37,6 +40,7 @@ const teamMembers = [
     position: "PhD Student",
     description: "AutoCodeRover, Agent Testing, Unified Agent",
     imageUrl: "/people/yuntong.jpg",
+    link: "https://yuntongzhang.github.io/",
     initials: "YZ",
   },
   {
@@ -44,6 +48,7 @@ const teamMembers = [
     position: "Postdoctoral Researcher",
     description: "Agent Testing",
     imageUrl: "/people/sungmin.jpg",
+    link: "https://smkang96.github.io/",
     initials: "SK",
   },
   {
