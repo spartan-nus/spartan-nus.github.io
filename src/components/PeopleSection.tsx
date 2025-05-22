@@ -14,7 +14,7 @@ const teamMembers = [
   },
   {
     name: "Baishakhi Ray",
-    position: "Collaborator, Associate Professor@Columbia University",
+    position: "Collaborator, Associate Professor@Columbia",
     description: "",
     imageUrl: "/people/baishakhi.jpg",
     initials: "BR",
@@ -22,7 +22,7 @@ const teamMembers = [
   },
   {
     name: "Cristian Cadar",
-    position: "Collaborator, Professor@Imperial College London",
+    position: "Collaborator, Professor@Imperial",
     description: "",
     imageUrl: "/people/cristian.png",
     initials: "CC",
