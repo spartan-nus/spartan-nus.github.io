@@ -47,7 +47,7 @@ const teamMembers = [
   {
     name: "Yuntong Zhang",
     position: "PhD Student",
-    description: "AutoCodeRover, Agent Testing, Unified Agent",
+    description: "AutoCodeRover, Agent Testing, Unified Agent, AI for Security",
     imageUrl: "/people/yuntong.jpg",
     initials: "YZ",
     homepage: "https://yuntongzhang.github.io/"
@@ -71,7 +71,7 @@ const teamMembers = [
   {
     name: "Martin Mirchev",
     position: "PhD student, On leave to SonarSource",
-    description: "AutoCodeRover",
+    description: "AutoCodeRover, AI for Security",
     imageUrl: "/people/martin.jpg",
     initials: "MM",
     homepage: "https://marti2203.github.io"
