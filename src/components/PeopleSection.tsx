@@ -41,7 +41,7 @@ const teamMembers = [
     position: "Collaboator@CNRS France",
     description: "",
     imageUrl: "/people/blaise3.jpg",
-    initials: "HR",
+    initials: "BG",
     homepage: "https://perso.crans.org/genest/"
   },
   {
