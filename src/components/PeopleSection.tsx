@@ -37,6 +37,14 @@ const teamMembers = [
     homepage: "https://www.cs.purdue.edu/homes/lintan/"
   },
   {
+    name: "Blaise Genest",
+    position: "Collaboator@CNRS France",
+    description: "",
+    imageUrl: "/people/blaise3.jpg",
+    initials: "HR",
+    homepage: "https://perso.crans.org/genest/"
+  },
+  {
     name: "Haifeng Ruan",
     position: "PhD Student",
     description: "AutoCodeRover",
