@@ -38,7 +38,7 @@ const teamMembers = [
   },
   {
     name: "Blaise Genest",
-    position: "Collaboator@CNRS France",
+    position: "Collaborator@CNRS France",
     description: "",
     imageUrl: "/people/blaise3.jpg",
     initials: "BG",
