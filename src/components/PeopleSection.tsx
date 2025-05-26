@@ -12,6 +12,14 @@ const teamMembers = [
     initials: "AR",
     homepage: "https://abhikrc.com/"
   },
+   {
+    name: "Xiaokui Xiao",
+    position: "Professor@NUS",
+    description: "",
+    imageUrl: "/people/xiaokui.jpg",
+    initials: "AR",
+    homepage: "https://www.comp.nus.edu.sg/~xiaoxk/"
+  },
   {
     name: "Baishakhi Ray",
     position: "Collaborator, Associate Professor@Columbia",
