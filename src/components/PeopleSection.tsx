@@ -17,7 +17,7 @@ const teamMembers = [
     position: "Professor@NUS",
     description: "",
     imageUrl: "/people/xiaokui.jpg",
-    initials: "AR",
+    initials: "XX",
     homepage: "https://www.comp.nus.edu.sg/~xiaoxk/"
   },
   {
