@@ -23,15 +23,15 @@ const researchProjects = [
     description: "Opinion Piece",
     link: " https://arxiv.org/pdf/2502.13767",
   },
+  {
+    title: "Unified Agent as AI Software Engineer (SE)",
+    description: "An agent which can write, fix, patch code and conduct many SE tasks",
+    link: "https://arxiv.org/pdf/2506.14683",
+  },
    {
     title: "Proof Agent",
     description: "AI for Program Verification, in collaboration with Imperial College",
     link: "https://openreview.net/pdf?id=5t9HFssPla"
-  },
-  {
-    title: "Unified Agent",
-    description: "Completed, to release",
-    link: "#tier3",
   },
   {
     title: "Agent Testing",
