@@ -24,7 +24,7 @@ const researchProjects = [
     link: " https://arxiv.org/pdf/2502.13767",
   },
   {
-    title: "Unified Agent as AI Software Engineer (SE)",
+    title: "Unified Software Engineering Agent (USEagent)",
     description: "An agent which can write, fix, patch code and conduct many SE tasks",
     link: "https://arxiv.org/pdf/2506.14683",
   },
