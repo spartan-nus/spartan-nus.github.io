@@ -87,7 +87,7 @@ const teamMembers = [
   {
     name: "Martin Mirchev",
     position: "PhD student, On leave to SonarSource",
-    description: "AutoCodeRover, AI for Security",
+    description: "AutoCodeRover",
     imageUrl: "/people/martin.jpg",
     initials: "MM",
     homepage: "https://marti2203.github.io"
@@ -99,6 +99,22 @@ const teamMembers = [
     imageUrl: "/people/applis.jpeg",
     initials: "LA",
     homepage: "https://github.com/lapplislazuli"
+  },
+  {
+    name: "I.N.B. Yusuf",
+    position: "Postdoctoral Researcher",
+    description: "AI for Security",
+    imageUrl: "/people/yusuf.jpg",
+    initials: "IY",
+    homepage: "https://imamnurby.github.io/"
+  },
+  {
+    name: "Z. Liu (Tony)",
+    position: "(Incoming) PhD student",
+    description: "AI for Security",
+    imageUrl: "/people/tony.jpg",
+    initials: "ZL",
+    homepage: "https://conf.researchr.org/profile/icsme-2025/zhengyaoliu"
   },
   {
     name: "Ruijie Meng",
