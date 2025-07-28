@@ -32,7 +32,8 @@ const ContactSection: React.FC = () => {
 
             <h3 className="text-xl font-semibold mb-4">Location</h3>
             <p className="mb-2">
-              <a href= "https://enterprise.nus.edu.sg/contact-us/">National University of Singapore (NUS) Enterprise </a>
+              <a href= "https://enterprise.nus.edu.sg/contact-us/" className="text-blue-600 hover:underline">
+                National University of Singapore (NUS) Enterprise </a>
               <br />
               i3 Building Level 2, 
               <br />
