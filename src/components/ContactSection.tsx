@@ -20,7 +20,7 @@ const ContactSection: React.FC = () => {
               )
             </p>
             <p className="mb-2">
-              <strong>Administration:</strong> Smitha E(
+              <strong>Administration:</strong> Smitha E (
               <a
                 href="https://abhikrc.com"
                 className="text-blue-600 hover:underline"
