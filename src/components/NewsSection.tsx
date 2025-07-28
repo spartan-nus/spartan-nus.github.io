@@ -15,7 +15,6 @@ const newsItems = [
   { date: "July 28, 2025",
     title: "SPARTAN center moves to i3 building",
     content: "SPARTAN center focusing on agentic AI moves to its new home in the i3 building, housed with NUS Enterprise",
-    link: "https://enterprise.nus.edu.sg/contact-us/",
   },
 ];
 
