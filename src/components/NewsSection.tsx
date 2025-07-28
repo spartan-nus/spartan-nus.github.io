@@ -12,6 +12,12 @@ const newsItems = [
       "Sonar, the leading provider of code quality and code security solutions, today announced the acquisition of AutoCodeRover, an autonomous AI agent platform for software development.",
     link: "https://www.sonarsource.com/company/press-releases/sonar-acquires-autocoderover-to-supercharge-developers-with-ai-agents/",
   },
+  { date: "July 28, 2025",
+    title: "SPARTAN center moves to i3 building",
+    content: "SPARTAN center focusing on agentic AI moves to its new home in the i3 building, housed with NUS Enterprise, 
+      to give additional impetus to innovation apart from agentic AI research."
+    link: "https://enterprise.nus.edu.sg/contact-us/"
+  },
 ];
 
 const NewsSection: React.FC = () => {
