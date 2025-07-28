@@ -12,33 +12,33 @@ const ContactSection: React.FC = () => {
             <p className="mb-2">
               <strong>Principal Investigator:</strong> Abhik Roychoudhury (
               <a
-                href="abhik@comp.nus.edu.sg"
+                href="https://abhikrc.com"
                 className="text-blue-600 hover:underline"
               >
-                abhik@comp.nus.edu.sg
+                abhik@nus.edu.sg
               </a>
               )
             </p>
             <p className="mb-2">
-              <strong>Administration:</strong> Neo Chee Yong (
+              <strong>Administration:</strong> Smitha E(
               <a
-                href="neocy@nus.edu.sg"
+                href="https://abhikrc.com"
                 className="text-blue-600 hover:underline"
               >
-                neocy@nus.edu.sg
+                smithae@nus.edu.sg
               </a>
               )
             </p>
 
             <h3 className="text-xl font-semibold mb-4">Location</h3>
             <p className="mb-2">
-              National University of Singapore
+              National University of Singapore (NUS) Enterprise
               <br />
-              School of Computing
+              i3 Building, Level 2
               <br />
-              Computing 1, 13 Computing Drive
+              21 Heng Mui Keng Terrace
               <br />
-              Singapore 117417
+              Singapore 119613
             </p>
           </CardContent>
         </Card>
@@ -48,7 +48,7 @@ const ContactSection: React.FC = () => {
         {/*     <h3 className="text-xl font-semibold mb-4">Join Us</h3> */}
         {/*     <p className="mb-4"> */}
         {/*       We are always looking for talented researchers and students who */}
-        {/*       are interested in AI, software engineering, and program analysis. */}
+        {/*       are interested in AI, Agents, software engineering, and program analysis. */}
         {/*       If you're interested in joining our lab, please email us with your */}
         {/*       CV and research interests. */}
         {/*     </p> */}
