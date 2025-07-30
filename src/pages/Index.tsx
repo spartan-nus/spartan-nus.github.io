@@ -45,7 +45,16 @@ const Index = () => {
             Singapore
           </p>
           <p className="text-sm mt-2">
-            School of Computing, 13 Computing Drive, Singapore 117417
+            <a
+              href="https://enterprise.nus.edu.sg"
+              className="hover:text-gray-200"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+
+              National University of Singapore (NUS) Enterprise
+            </a> {" "}
+            i3 Building Level 2, 21 Heng Mui Keng Terrace, Singapore 119613, Republic of Singapore.
           </p>
         </div>
       </footer>
