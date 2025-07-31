@@ -28,7 +28,22 @@ const researchProjects = [
     description: "An agent which can write, fix, patch code and conduct many SE tasks",
     link: "https://arxiv.org/pdf/2506.14683",
   },
-   {
+  {
+    title: "Agents with Explanations",
+    description: "An agent which is more trustworthy since it can explain its actions",
+    link: "https://www.arxiv.org/abs/2507.22414"
+  },
+  {
+    title: "Accurate Table Question Answering",
+    description: "Table Question Answering (TQA) is a task that aims to provide accurate answers to natural language questions based on the content of a given (database) table",
+    link: "https://www.comp.nus.edu.sg/~xiaoxk/projects/tqa/tqa_project.html"
+  },
+  {
+    title: "Fine tuning LLMs on sensitive data",
+    description: "Use of differential privacy while finetuning LLMs",
+    link: "https://www.comp.nus.edu.sg/~xiaoxk/projects/dpzo/dpzo.html"
+  },    
+  {
     title: "Proof Agent",
     description: "AI for Program Verification, in collaboration with Imperial College",
     link: "https://openreview.net/pdf?id=5t9HFssPla"
@@ -38,7 +53,6 @@ const researchProjects = [
     description: "Coming soon",
     link: "#fuzzing",
   },
-  
 ];
 
 const ResearchSection: React.FC = () => {
