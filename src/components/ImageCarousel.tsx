@@ -11,6 +11,12 @@ interface CarouselImage {
 
 const images: CarouselImage[] = [
   {
+    url: "/public_talk.png",
+    alt: "AutoCodeRover: from research on Automatic Programming to Spinoff Acquisition",
+    title: "AutoCodeRover: from research on Automatic Programming to Spinoff Acquisition",
+    link: "https://www.youtube.com/watch?v=o8B6q8FNC70"
+  },
+  {
     url: "/ACR_logo.png",
     alt: "Agent for Autonomous Program Improvement",
     title: "Featured: AutoCodeRover",
@@ -22,10 +28,16 @@ const images: CarouselImage[] = [
     link: "https://www.youtube.com/watch?v=o8B6q8FNC70&t=2s",
   },
   {
+    url: "/use_agent_workflow.png",
+    alt: "Unified Software Engineering agent as AI Software Engineer",
+    link: "https://arxiv.org/pdf/2506.14683",
+  },
+  {
     url: "/hands.png",
     alt: "Agentic AI Software Engineer: Programming with Trust",
     link: "https://arxiv.org/abs/2502.13767",
   },
+
 ];
 
 const ImageCarousel: React.FC = () => {
