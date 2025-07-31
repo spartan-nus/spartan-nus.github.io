@@ -13,7 +13,6 @@ const images: CarouselImage[] = [
   {
     url: "/public_talk.png",
     alt: "AutoCodeRover: from research on Automatic Programming to Spinoff Acquisition",
-    title: "AutoCodeRover: from research on Automatic Programming to Spinoff Acquisition",
     link: "https://www.youtube.com/watch?v=o8B6q8FNC70"
   },
   {
