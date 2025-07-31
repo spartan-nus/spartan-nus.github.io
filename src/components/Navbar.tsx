@@ -13,11 +13,11 @@ const Navbar: React.FC<NavbarProps> = ({ activeTab, setActiveTab }) => {
   return (
     <nav className="w-full bg-nus-blue text-white py-4 sticky top-0 z-50 shadow-md">
       <div className="container mx-auto flex flex-col sm:flex-row justify-between items-center px-4">
-        <div className="flex items-center mb-4 sm:mb-0">
+        <div className="flex items-center mb-4 sm:mb-0 space-x-4">
+          <img src="./spartan_logo.png" alt="" className="h-10 w-auto mt-2" />
           <h1 className="text-xl font-bold">
             <Link to="/" className="">
-              Strategic Platform for Autonomous Resilient and Trusted Agents at
-              NUS
+              Strategic Platform for Autonomous Resilient and Trusted Agents @ NUS
             </Link>
           </h1>
         </div>
