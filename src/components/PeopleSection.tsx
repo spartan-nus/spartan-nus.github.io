@@ -55,7 +55,7 @@ const teamMembers = [
   {
     name: "Haifeng Ruan",
     position: "PhD Student",
-    description: "AutoCodeRover",
+    description: "AutoCodeRover, Explainable AI agents",
     imageUrl: "/people/haifeng.jpg",
     initials: "HR",
     homepage: "https://haifengruan.com/"
@@ -71,7 +71,7 @@ const teamMembers = [
   {
     name: "Sungmin Kang",
     position: "Postdoctoral Researcher",
-    description: "Agent Testing",
+    description: "Explainable AI agents, Agent Testing",
     imageUrl: "/people/sungmin.jpg",
     initials: "SK",
     homepage: "https://smkang96.github.io/"
