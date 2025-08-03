@@ -46,7 +46,7 @@ const researchProjects = [
   },    
   {
     title: "Proof Agent",
-    description: "AI for Program Verification, in collaboration with Imperial College",
+    description: "AI for Program Verification, in collaboration with Imperial, coming soon",
     link: "https://openreview.net/pdf?id=5t9HFssPla"
   },
   {
