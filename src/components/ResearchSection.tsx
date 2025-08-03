@@ -29,7 +29,7 @@ const researchProjects = [
     link: "https://arxiv.org/pdf/2506.14683",
   },
   {
-    title: "Agents with Explanations",
+    title: "Explainable AI Agents",
     description: "An agent which is more trustworthy since it can explain its actions",
     link: "https://www.arxiv.org/abs/2507.22414"
   },
