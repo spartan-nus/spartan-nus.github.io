@@ -10,29 +10,30 @@ const researchProjects = [
     description: "Being integrated in Production with SonarQube Static Analyzer",
     link: "https://autocoderover.dev",
   },
-  {
-    title: "AI for Open Source Security (OSS)",
-    description: "Collaboration with Google OSS team",
-    link: "/coderover-s.html",
-  }, 
-  { title: "Automatic Programming",
-    description: "Position paper in TOSEM",
-    link: "https://dl.acm.org/doi/pdf/10.1145/3708519",
-  },
   { title: "Agentic Programming with Trust",
     description: "Opinion Piece",
     link: " https://arxiv.org/pdf/2502.13767",
-  },
-  {
-    title: "Unified Software Engineering Agent (USEagent)",
-    description: "An agent which can write, fix, patch code and conduct many SE tasks",
-    link: "https://arxiv.org/pdf/2506.14683",
   },
   {
     title: "Explainable AI Agents",
     description: "An agent which is more trustworthy since it can explain its actions",
     link: "https://www.arxiv.org/abs/2507.22414"
   },
+   {
+    title: "Unified Software Engineering Agent (USEagent)",
+    description: "An agent which can write, fix, patch code and conduct many SE tasks",
+    link: "https://arxiv.org/pdf/2506.14683",
+  },
+  { title: "Automatic Programming",
+    description: "Position paper in TOSEM",
+    link: "https://dl.acm.org/doi/pdf/10.1145/3708519",
+  },
+   {
+    title: "AI for Open Source Security (OSS)",
+    description: "Collaboration with Google OSS team",
+    link: "/coderover-s.html",
+  }, 
+  
   {
     title: "Accurate Table Question Answering",
     description: "Table Question Answering (TQA) is a task that aims to provide accurate answers to natural language questions based on the content of a given (database) table",
