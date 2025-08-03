@@ -20,7 +20,7 @@ const researchProjects = [
     link: "https://www.arxiv.org/abs/2507.22414"
   },
    {
-    title: "Unified Software Engineering Agent (USEagent)",
+    title: "Unified Software Engineering Agent",
     description: "An agent which can write, fix, patch code and conduct many SE tasks",
     link: "https://arxiv.org/pdf/2506.14683",
   },
@@ -29,7 +29,7 @@ const researchProjects = [
     link: "https://dl.acm.org/doi/pdf/10.1145/3708519",
   },
    {
-    title: "AI for Open Source Security (OSS)",
+    title: "AI for Open Source Security",
     description: "Collaboration with Google OSS team",
     link: "/coderover-s.html",
   }, 
