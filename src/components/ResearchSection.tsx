@@ -22,7 +22,7 @@ const researchProjects = [
    {
     title: "Unified Software Engineering Agent",
     description: "An agent which can write, fix, patch code and conduct many SE tasks",
-    link: "#useagent",
+    link: "https://arxiv.org/abs/2506.14683",
   },
   { title: "Automatic Programming",
     description: "Position paper in TOSEM",
