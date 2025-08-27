@@ -32,7 +32,7 @@ const newsItems = [
   {
     date: "Aug 27, 2025",
     title:
-      "Professor Abhik Roychoudhury Comments in IEEE Spectrum on Importance of Intent Inference and Trust in AI Coding",
+      "Professor Abhik Roychoudhury Comments in IEEE Spectrum on Trust in AI Coding",
     content:
       "A recent article in IEEE Spectrum examines the capabilities and limits of AI coding tools. Professor Abhik Roychoudhury, Principal Investigator of SPARTAN, emphasizes the importance of capturing programmer intent, highlights the challenges of ensuring trust in AI coding, and views the rise of agentic software engineering as an inevitable trend.",
     link: "https://spectrum.ieee.org/ai-for-coding",
