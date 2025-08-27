@@ -36,7 +36,11 @@ const images: CarouselImage[] = [
     alt: "Agentic AI Software Engineer: Programming with Trust",
     link: "https://arxiv.org/abs/2502.13767",
   },
-
+  {
+    url: "/ieee-spectrum-interview.png",
+    alt: "Professor Abhik Roychoudhury Comments in IEEE Spectrum on Importance of Intent Inference and Trust in AI Coding",
+    link: "https://spectrum.ieee.org/ai-for-coding"
+  }
 ];
 
 const ImageCarousel: React.FC = () => {

@@ -12,19 +12,30 @@ const newsItems = [
       "Sonar, the leading provider of code quality and code security solutions, today announced the acquisition of AutoCodeRover, an autonomous AI agent platform for software development.",
     link: "https://www.sonarsource.com/company/press-releases/sonar-acquires-autocoderover-to-supercharge-developers-with-ai-agents/",
   },
-  { date: "June 2025",
-    title: "ACM Awards", 
+  {
+    date: "June 2025",
+    title: "ACM Awards",
     content: "PI Abhik Roychoudhury was named ACM Fellow at ACM Awards Banquet in San Francisco.",
-    link:  "https://awards.acm.org/award-recipients/roychoudhury_UJ52779",
+    link: "https://awards.acm.org/award-recipients/roychoudhury_UJ52779",
   },
-  { date: "July 2025",
+  {
+    date: "July 2025",
     title: "Agentic AI in Software",
     content: "Abhik Roychoudhury initiates Special Issue on Agentic AI in Software in ACM Transactions on Software Engineering and Methodology as Editor-in-Chief.",
     link: "https://dl.acm.org/journal/tosem/agentic-ai-software",
   },
-  { date: "August 2025",
+  {
+    date: "August 2025",
     title: "SPARTAN center moves to i3 building",
     content: "SPARTAN center focusing on agentic AI moves to its new home in the i3 building, housed with NUS Enterprise, to give impetus to innovation",
+  },
+  {
+    date: "Aug 27, 2025",
+    title:
+      "Professor Abhik Roychoudhury Comments in IEEE Spectrum on Importance of Intent Inference and Trust in AI Coding",
+    content:
+      "A recent article in IEEE Spectrum examines the capabilities and limits of AI coding tools. Professor Abhik Roychoudhury, Principal Investigator of SPARTAN, emphasizes the importance of capturing programmer intent, highlights the challenges of ensuring trust in AI coding, and views the rise of agentic software engineering as an inevitable trend.",
+    link: "https://spectrum.ieee.org/ai-for-coding",
   },
 ];
 
