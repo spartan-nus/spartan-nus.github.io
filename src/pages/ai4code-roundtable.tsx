@@ -192,6 +192,10 @@ const getAvatarPath = (name: string): string => {
 
 
 const YourNewPage = () => {
+  <head>
+    <meta name="robots" content="noindex, nofollow" />
+  </head>
+
   // --- START: State and Logic for tracking active section ---
   const [activeSection, setActiveSection] = useState('');
   const [showSectionNavbar, setShowSectionNavbar] = useState(false);
