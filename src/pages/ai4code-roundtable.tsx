@@ -1,13 +1,69 @@
-import React from "react";
+"use client"; // Add this line at the top
+
+import React, { useState, useEffect } from "react";
 import Navbar from "@/components/Navbar";
 
 const YourNewPage = () => {
+  // --- Start of Slideshow Logic ---
+
+  // 1. Define slide data in an array for easier management
+  const slides = [
+    {
+      title: "AutoCoderRover: Automated Program Repair",
+      subtitle: "From research on Automatic Programming to Spinoff Acquisition",
+      description: "Program Structure captures intent. Extract coarse specs from structure for autonomous SE",
+      bgClass: "from-blue-900 to-blue-700",
+    },
+    {
+      title: "AI-Powered Code Analysis",
+      subtitle: "Advanced program understanding through semantic analysis",
+      description: "Leveraging AST and program dependencies for intelligent code search",
+      bgClass: "from-green-800 to-green-600",
+    },
+    {
+      title: "Software Engineering with LLMs",
+      subtitle: "Integrating Large Language Models in development workflows",
+      description: "Building intelligent tools for automated testing and code generation",
+      bgClass: "from-purple-800 to-purple-600",
+    },
+  ];
+
+  // 2. State to track the current active slide
+  const [currentSlide, setCurrentSlide] = useState(0);
+
+  // 3. Functions to handle navigation
+  const prevSlide = () => {
+    const isFirstSlide = currentSlide === 0;
+    const newIndex = isFirstSlide ? slides.length - 1 : currentSlide - 1;
+    setCurrentSlide(newIndex);
+  };
+
+  const nextSlide = () => {
+    const isLastSlide = currentSlide === slides.length - 1;
+    const newIndex = isLastSlide ? 0 : currentSlide + 1;
+    setCurrentSlide(newIndex);
+  };
+
+  const goToSlide = (slideIndex) => {
+    setCurrentSlide(slideIndex);
+  };
+
+  // 4. useEffect for autoplay functionality
+  useEffect(() => {
+    const slideInterval = setInterval(nextSlide, 5000); // Change slide every 5 seconds
+    return () => clearInterval(slideInterval); // Cleanup interval on component unmount
+  }, [currentSlide]);
+
+  // --- End of Slideshow Logic ---
+
+
   return (
     <div className="min-h-screen flex flex-col">
       <Navbar activeTab="" setActiveTab={() => {}} />
 
       <main className="flex-1 bg-white">
-        {/* Hero Section - Title, Date & Time */}
+        {/* ... (All other sections remain the same) ... */}
+        {/* Hero Section */}
         <section className="bg-gradient-to-r from-blue-900 to-blue-700 text-white py-16">
           <div className="container mx-auto px-4 text-center">
             <h1 className="text-5xl font-bold mb-4">AI Safety Workshop 2025</h1>
@@ -186,7 +242,7 @@ const YourNewPage = () => {
           </div>
         </section>
 
-        {/* Our Research */}
+        {/* Our Research - UPDATED INTERACTIVE SLIDESHOW */}
         <section className="py-12 bg-gray-50">
           <div className="container mx-auto px-4">
             <h2 className="text-3xl font-bold text-center mb-8 text-gray-800">Our Research</h2>
@@ -194,52 +250,54 @@ const YourNewPage = () => {
               <div className="relative bg-white rounded-lg shadow-lg overflow-hidden">
                 {/* Slideshow Container */}
                 <div className="relative h-96 md:h-[500px]">
-                  {/* Slide 1 - Active by default */}
-                  <div className="absolute inset-0 flex items-center justify-center bg-gradient-to-r from-blue-900 to-blue-700">
-                    <div className="text-center text-white p-8">
-                      <h3 className="text-2xl md:text-3xl font-bold mb-4">AutoCoderRover: Automated Program Repair</h3>
-                      <p className="text-lg mb-4">From research on Automatic Programming to Spinoff Acquisition</p>
-                      <p className="text-sm opacity-90">Program Structure captures intent. Extract coarse specs from structure for autonomous SE</p>
+                  {slides.map((slide, index) => (
+                    <div
+                      key={index}
+                      className={`absolute inset-0 transition-opacity duration-700 ease-in-out ${
+                        index === currentSlide ? 'opacity-100 z-10' : 'opacity-0 z-0'
+                      }`}
+                    >
+                      <div className={`h-full w-full flex items-center justify-center bg-gradient-to-r ${slide.bgClass}`}>
+                        <div className="text-center text-white p-8">
+                          <h3 className="text-2xl md:text-3xl font-bold mb-4">{slide.title}</h3>
+                          <p className="text-lg mb-4">{slide.subtitle}</p>
+                          <p className="text-sm opacity-90">{slide.description}</p>
+                        </div>
+                      </div>
                     </div>
-                  </div>
-
-                  {/* Slide 2 - Hidden by default */}
-                  <div className="absolute inset-0 flex items-center justify-center bg-gradient-to-r from-green-800 to-green-600 opacity-0">
-                    <div className="text-center text-white p-8">
-                      <h3 className="text-2xl md:text-3xl font-bold mb-4">AI-Powered Code Analysis</h3>
-                      <p className="text-lg mb-4">Advanced program understanding through semantic analysis</p>
-                      <p className="text-sm opacity-90">Leveraging AST and program dependencies for intelligent code search</p>
-                    </div>
-                  </div>
-
-                  {/* Slide 3 - Hidden by default */}
-                  <div className="absolute inset-0 flex items-center justify-center bg-gradient-to-r from-purple-800 to-purple-600 opacity-0">
-                    <div className="text-center text-white p-8">
-                      <h3 className="text-2xl md:text-3xl font-bold mb-4">Software Engineering with LLMs</h3>
-                      <p className="text-lg mb-4">Integrating Large Language Models in development workflows</p>
-                      <p className="text-sm opacity-90">Building intelligent tools for automated testing and code generation</p>
-                    </div>
-                  </div>
+                  ))}
                 </div>
 
                 {/* Navigation Dots */}
-                <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex space-x-2">
-                  <button className="w-3 h-3 rounded-full bg-white opacity-100 transition-opacity duration-200"></button>
-                  <button className="w-3 h-3 rounded-full bg-white opacity-50 hover:opacity-75 transition-opacity duration-200"></button>
-                  <button className="w-3 h-3 rounded-full bg-white opacity-50 hover:opacity-75 transition-opacity duration-200"></button>
+                <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex space-x-2 z-20">
+                  {slides.map((_, index) => (
+                    <button
+                      key={index}
+                      onClick={() => goToSlide(index)}
+                      className={`w-3 h-3 rounded-full transition-opacity duration-200 ${
+                        index === currentSlide ? 'bg-white opacity-100' : 'bg-white opacity-50 hover:opacity-75'
+                      }`}
+                    ></button>
+                  ))}
                 </div>
 
                 {/* Navigation Arrows */}
-                <button className="absolute left-4 top-1/2 transform -translate-y-1/2 bg-white bg-opacity-20 hover:bg-opacity-30 text-white p-2 rounded-full transition-all duration-200">
+                <button 
+                  onClick={prevSlide}
+                  className="absolute left-4 top-1/2 transform -translate-y-1/2 bg-white bg-opacity-20 hover:bg-opacity-30 text-white p-2 rounded-full transition-all duration-200 z-20"
+                >
                   <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
                   </svg>
                 </button>
-                <button className="absolute right-4 top-1/2 transform -translate-y-1/2 bg-white bg-opacity-20 hover:bg-opacity-30 text-white p-2 rounded-full transition-all duration-200">
+                <button 
+                  onClick={nextSlide}
+                  className="absolute right-4 top-1/2 transform -translate-y-1/2 bg-white bg-opacity-20 hover:bg-opacity-30 text-white p-2 rounded-full transition-all duration-200 z-20"
+                >
                   <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                   </svg>
-                  </button>
+                </button>
               </div>
 
               {/* Research Highlights */}
