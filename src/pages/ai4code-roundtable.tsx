@@ -313,7 +313,7 @@ const YourNewPage = () => {
         {/* General Introduction */}
         <section id="about" className="py-12 bg-gray-50 scroll-mt-20">
           <div className="container mx-auto px-4">
-            <h2 className="text-3xl font-bold text-center mb-8 text-gray-800">About the Workshop</h2>
+            <h2 className="text-3xl font-bold text-center mb-8 text-gray-800">About the Event</h2>
             <div className="max-w-4xl mx-auto text-gray-600 leading-relaxed">
               <p className="mb-4">
                 Large Language Models (LLMs) have shown surprising proficiency in generating code snippets, promising to automate large parts of software engineering via artificial intelligence (AI). We argue that successfully deploying AI software engineers requires a level of trust equal to or even greater than the trust established by human-driven software engineering practices. The recent trend toward LLM agents offers a path toward integrating the power of LLMs to create new code with the power of analysis tools to increase trust in the code.
@@ -364,109 +364,37 @@ const YourNewPage = () => {
               Confirmed Attendees
             </h2>
 
-            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 max-w-5xl mx-auto">
-              {attendees.map((attendee) => {
-                {/* const filename = attendee.name.toLowerCase().replace(/\s+/g, "-"); */ }
-                const avatarSrc = getAvatarPath(attendee.name)
-
-                const avatarClasses =
-                  "w-24 h-24 mx-auto mb-2 rounded-full object-cover object-center hover:opacity-80 transition-opacity";
-
-                return (
-                  <div key={attendee.name} className="text-center">
-                    <a
-                      href={attendee.link}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="inline-block relative"
-                    >
-                      <img
-                        src={avatarSrc}
-                        alt={attendee.name}
-                        onError={(e) => {
-                          e.currentTarget.style.display = "none";
-                          const fallback = e.currentTarget.nextSibling as HTMLDivElement;
-                          if (fallback) fallback.style.display = "block";
-                        }}
-                        className={avatarClasses}
-                      />
-                      <div
-                        className={`bg-gray-300 ${avatarClasses}`}
-                        style={{ display: "none" }}
-                      ></div>
-                    </a>
-                    <div className="text-sm font-medium">{attendee.name}</div>
-                    <div className="text-xs text-gray-500">{attendee.title}</div>
-                  </div>
-                );
-              })}
-
-            </div>
-
-            {/* <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 max-w-5xl mx-auto"> */}
-            {/*   {attendees.map((attendee) => { */}
-            {/*     const avatarSrc = getAvatarPath(attendee.name); */}
-            {/*     const avatarClasses = */}
-            {/*       "w-24 h-24 mx-auto mb-2 rounded-full object-cover object-center hover:opacity-80 transition-opacity"; */}
-            {/**/}
-            {/*     return ( */}
-            {/*       <div key={attendee.name} className="text-center"> */}
-            {/*         {avatarSrc ? ( */}
-            {/*           <img */}
-            {/*             src={avatarSrc} */}
-            {/*             alt={attendee.name} */}
-            {/*             onError={(e) => (e.currentTarget.src = "/avatars/default.jpg")} */}
-            {/*             className={avatarClasses} */}
-            {/*           /> */}
-            {/*         ) : ( */}
-            {/*           <a */}
-            {/*             href={attendee.link} */}
-            {/*             target="_blank" */}
-            {/*             rel="noopener noreferrer" */}
-            {/*             className="inline-block" */}
-            {/*           > */}
-            {/*             <div className={`bg-gray-300 ${avatarClasses}`}></div> */}
-            {/*           </a> */}
-            {/*         )} */}
-            {/**/}
-            {/*         <div className="text-sm font-medium">{attendee.name}</div> */}
-            {/*         <div className="text-xs text-gray-500">{attendee.title}</div> */}
-            {/*       </div> */}
-            {/*     ); */}
-            {/*   })} */}
-            {/* </div> */}
+            <section id="Confirmed Attendees" className="py-12 scroll-mt-20">
+              <div className="container mx-auto max-w-4xl">
+                <div className="grid gap-6 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 justify-center">
+                  {attendees.map((attendee) => (
+                    <div key={attendee.name} className="text-center">
+                      <a
+                        href={attendee.link}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-block"
+                      >
+                        <img
+                          src={getAvatarPath(attendee.name)}
+                          alt={attendee.name}
+                          onError={(e) => {
+                            e.currentTarget.src = "/avatars/default.jpg";
+                          }}
+                          className="w-24 h-24 rounded-full mx-auto mb-4 object-cover"
+                        />
+                      </a>
+                      <h3 className="font-semibold text-lg">{attendee.name}</h3>
+                      <p className="text-gray-600">{attendee.title}</p>
+                      <p className="text-sm text-gray-500">{attendee.institution}</p>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </section>
 
           </div>
         </section>
-
-
-        {/* <section id="attendees" className="py-12 bg-gray-50 scroll-mt-20"> */}
-        {/*   <div className="container mx-auto px-4"> */}
-        {/*     <h2 className="text-3xl font-bold text-center mb-8 text-gray-800">Confirmed Attendees</h2> */}
-        {/*     <div className="max-w-4xl mx-auto"> */}
-        {/*       <div className="grid md:grid-cols-2 gap-6 items-stretch"> */}
-        {/*         <div className="bg-white p-6 rounded-lg shadow-sm h-full"> */}
-        {/*           <h3 className="font-semibold text-lg mb-2">Industry Leaders</h3> */}
-        {/*           <ul className="space-y-2 text-gray-600"> */}
-        {/*             <li>• <a href="#" className="hover:text-blue-600 transition-colors">Dr. James Wilson</a> - DeepMind</li> */}
-        {/*             <li>• <a href="#" className="hover:text-blue-600 transition-colors">Sarah Kim</a> - OpenAI Safety</li> */}
-        {/*             <li>• <a href="#" className="hover:text-blue-600 transition-colors">Prof. David Martinez</a> - Stanford AI Lab</li> */}
-        {/*             <li>• <a href="#" className="hover:text-blue-600 transition-colors">Dr. Lisa Thompson</a> - Anthropic</li> */}
-        {/*           </ul> */}
-        {/*         </div> */}
-        {/*         <div className="bg-white p-6 rounded-lg shadow-sm h-full"> */}
-        {/*           <h3 className="font-semibold text-lg mb-2">Academic Researchers</h3> */}
-        {/*           <ul className="space-y-2 text-gray-600"> */}
-        {/*             <li>• <a href="#" className="hover:text-blue-600 transition-colors">Prof. Alan Johnson</a> - MIT CSAIL</li> */}
-        {/*             <li>• <a href="#" className="hover:text-blue-600 transition-colors">Dr. Maria Santos</a> - UC Berkeley</li> */}
-        {/*             <li>• <a href="#" className="hover:text-blue-600 transition-colors">Prof. Robert Lee</a> - Oxford AI Institute</li> */}
-        {/*             <li>• <a href="#" className="hover:text-blue-600 transition-colors">Dr. Anna Petrov</a> - Carnegie Mellon</li> */}
-        {/*           </ul> */}
-        {/*         </div> */}
-        {/*       </div> */}
-        {/*     </div> */}
-        {/*   </div> */}
-        {/* </section> */}
 
         {/* Program */}
         <section id="program" className="py-12 scroll-mt-20">
