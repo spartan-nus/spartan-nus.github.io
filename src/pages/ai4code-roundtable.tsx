@@ -1,12 +1,88 @@
-"use client"; // Add this line at the top
+"use client";
 
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import Navbar from "@/components/Navbar";
 
-const YourNewPage = () => {
-  // --- Start of Slideshow Logic ---
+// --- START: New and Improved SectionNavbar Logic ---
+const sections = [
+  { id: 'about', title: 'About' },
+  { id: 'organizers', title: 'Organizers' },
+  { id: 'attendees', title: 'Attendees' },
+  { id: 'program', title: 'Program' },
+  { id: 'venue', title: 'Venue' },
+  { id: 'brochure', title: 'Brochure' },
+  { id: 'events', title: 'Events' },
+  { id: 'research', title: 'Research' },
+];
 
-  // 1. Define slide data in an array for easier management
+const SectionNavbar = ({ activeSection, isVisible }) => (
+  <nav className={`fixed top-0 left-0 right-0 z-50 bg-white border-b border-gray-200 shadow-sm transition-transform duration-300 ${
+    isVisible ? 'translate-y-0' : '-translate-y-full'
+  }`}>
+    <div className="container mx-auto px-4">
+      <div className="flex justify-center items-center h-16">
+        <div className="flex space-x-2 sm:space-x-6 overflow-x-auto py-2">
+          {sections.map((section) => (
+            <a
+              key={section.id}
+              href={`#${section.id}`}
+              className={`px-3 py-2 rounded-md text-sm font-semibold transition-all duration-300 whitespace-nowrap ${
+                activeSection === section.id
+                  ? 'text-blue-700 bg-blue-100' // Active state style
+                  : 'text-gray-600 hover:text-blue-700 hover:bg-gray-200' // Default state style
+              }`}
+            >
+              {section.title}
+            </a>
+          ))}
+        </div>
+      </div>
+    </div>
+  </nav>
+);
+// --- END: New and Improved SectionNavbar Logic ---
+
+const YourNewPage = () => {
+  // --- START: State and Logic for tracking active section ---
+  const [activeSection, setActiveSection] = useState('');
+  const [showSectionNavbar, setShowSectionNavbar] = useState(false);
+  const sectionRefs = useRef({});
+
+  useEffect(() => {
+    // Populate refs for each section
+    sections.forEach(section => {
+      sectionRefs.current[section.id] = document.getElementById(section.id);
+    });
+
+    const handleScroll = () => {
+      const scrollPosition = window.scrollY + window.innerHeight / 3; // Offset to trigger highlight sooner
+      let currentSectionId = '';
+
+      // Check if we've scrolled past the hero section to show section navbar
+      const heroSection = document.querySelector('.hero-section');
+      if (heroSection) {
+        setShowSectionNavbar(window.scrollY > heroSection.offsetHeight - 100);
+      }
+
+      for (const section of sections) {
+        const element = sectionRefs.current[section.id];
+        if (element && element.offsetTop <= scrollPosition) {
+          currentSectionId = section.id;
+        }
+      }
+      setActiveSection(currentSectionId);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    handleScroll(); // Set initial active section on page load
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+  // --- END: Logic for tracking active section ---
+  
+  // --- Start of Slideshow Logic ---
   const slides = [
     {
       title: "AutoCoderRover: Automated Program Repair",
@@ -28,10 +104,8 @@ const YourNewPage = () => {
     },
   ];
 
-  // 2. State to track the current active slide
   const [currentSlide, setCurrentSlide] = useState(0);
 
-  // 3. Functions to handle navigation
   const prevSlide = () => {
     const isFirstSlide = currentSlide === 0;
     const newIndex = isFirstSlide ? slides.length - 1 : currentSlide - 1;
@@ -48,23 +122,26 @@ const YourNewPage = () => {
     setCurrentSlide(slideIndex);
   };
 
-  // 4. useEffect for autoplay functionality
   useEffect(() => {
-    const slideInterval = setInterval(nextSlide, 5000); // Change slide every 5 seconds
-    return () => clearInterval(slideInterval); // Cleanup interval on component unmount
+    const slideInterval = setInterval(nextSlide, 5000);
+    return () => clearInterval(slideInterval);
   }, [currentSlide]);
 
   // --- End of Slideshow Logic ---
 
-
   return (
     <div className="min-h-screen flex flex-col">
-      <Navbar activeTab="" setActiveTab={() => {}} />
+      {/* Main navbar - hide when scrolling */}
+      <div className={`transition-transform duration-300 ${showSectionNavbar ? '-translate-y-full' : 'translate-y-0'}`}>
+        <Navbar activeTab="" setActiveTab={() => {}} />
+      </div>
+
+      {/* The section navigation bar */}
+      <SectionNavbar activeSection={activeSection} isVisible={showSectionNavbar} />
 
       <main className="flex-1 bg-white">
-        {/* ... (All other sections remain the same) ... */}
         {/* Hero Section */}
-        <section className="bg-gradient-to-r from-blue-900 to-blue-700 text-white py-16">
+        <section className="hero-section bg-gradient-to-r from-blue-900 to-blue-700 text-white py-16">
           <div className="container mx-auto px-4 text-center">
             <h1 className="text-5xl font-bold mb-4">AI Safety Workshop 2025</h1>
             <p className="text-xl mb-2">Building Responsible AI Systems</p>
@@ -75,8 +152,13 @@ const YourNewPage = () => {
           </div>
         </section>
 
+        {/* 
+          IMPORTANT: Updated scroll-mt to account for sticky navbar height
+          Changed from scroll-mt-24 to scroll-mt-20 for better positioning
+        */}
+
         {/* General Introduction */}
-        <section className="py-12 bg-gray-50">
+        <section id="about" className="py-12 bg-gray-50 scroll-mt-20">
           <div className="container mx-auto px-4">
             <h2 className="text-3xl font-bold text-center mb-8 text-gray-800">About the Workshop</h2>
             <div className="max-w-4xl mx-auto text-gray-600 leading-relaxed">
@@ -95,9 +177,10 @@ const YourNewPage = () => {
         </section>
 
         {/* Organizers */}
-        <section className="py-12">
+        <section id="organizers" className="py-12 scroll-mt-20">
           <div className="container mx-auto px-4">
             <h2 className="text-3xl font-bold text-center mb-8 text-gray-800">Organizers</h2>
+            {/* ... content ... */}
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-5xl mx-auto">
               {/* Organizer 1 */}
               <div className="text-center">
@@ -137,9 +220,10 @@ const YourNewPage = () => {
         </section>
 
         {/* Confirmed Attendees */}
-        <section className="py-12 bg-gray-50">
+        <section id="attendees" className="py-12 bg-gray-50 scroll-mt-20">
           <div className="container mx-auto px-4">
             <h2 className="text-3xl font-bold text-center mb-8 text-gray-800">Confirmed Attendees</h2>
+            {/* ... content ... */}
             <div className="max-w-4xl mx-auto">
               <div className="grid md:grid-cols-2 gap-6">
                 <div className="bg-white p-6 rounded-lg shadow-sm">
@@ -166,9 +250,10 @@ const YourNewPage = () => {
         </section>
 
         {/* Program */}
-        <section className="py-12">
+        <section id="program" className="py-12 scroll-mt-20">
           <div className="container mx-auto px-4">
             <h2 className="text-3xl font-bold text-center mb-8 text-gray-800">Program Schedule</h2>
+            {/* ... content ... */}
             <div className="max-w-4xl mx-auto">
               <div className="space-y-4">
                 <div className="flex border-l-4 border-blue-500 pl-4 py-2">
@@ -212,10 +297,11 @@ const YourNewPage = () => {
         </section>
 
         {/* Venue */}
-        <section className="py-12 bg-gray-50">
+        <section id="venue" className="py-12 bg-gray-50 scroll-mt-20">
           <div className="container mx-auto px-4">
             <h2 className="text-3xl font-bold text-center mb-8 text-gray-800">Venue</h2>
-            <div className="max-w-4xl mx-auto">
+            {/* ... content ... */}
+             <div className="max-w-4xl mx-auto">
               <div className="grid md:grid-cols-2 gap-8 items-center">
                 <div>
                   <h3 className="text-xl font-semibold mb-4">National University of Singapore</h3>
@@ -239,9 +325,10 @@ const YourNewPage = () => {
         </section>
 
         {/* Brochure */}
-        <section className="py-12">
+        <section id="brochure" className="py-12 scroll-mt-20">
           <div className="container mx-auto px-4 text-center">
             <h2 className="text-3xl font-bold mb-8 text-gray-800">Event Brochure</h2>
+            {/* ... content ... */}
             <div className="max-w-2xl mx-auto">
               <p className="text-gray-600 mb-6">
                 Download our comprehensive workshop brochure for detailed information about sessions, 
@@ -257,13 +344,11 @@ const YourNewPage = () => {
           </div>
         </section>
 
-        {/* Insert this new section after the Brochure section */}
-
         {/* Future Events */}
-        <section className="py-12 bg-gray-50">
+        <section id="events" className="py-12 bg-gray-50 scroll-mt-20">
           <div className="container mx-auto px-4">
             <h2 className="text-3xl font-bold text-center mb-8 text-gray-800">Other Upcoming Events</h2>
-            {/* Updated grid for 4 items: 2 columns on medium screens, 4 on large screens */}
+            {/* ... content ... */}
             <div className="max-w-6xl mx-auto grid md:grid-cols-2 lg:grid-cols-4 gap-8 text-center">
               
               {/* San Francisco Event */}
@@ -306,13 +391,12 @@ const YourNewPage = () => {
           </div>
         </section>
 
-        {/* The "Our Research" section would follow immediately after */}
-
-        {/* Our Research - UPDATED INTERACTIVE SLIDESHOW */}
-        <section className="py-12 bg-gray-50">
+        {/* Our Research */}
+        <section id="research" className="py-12 scroll-mt-20">
           <div className="container mx-auto px-4">
             <h2 className="text-3xl font-bold text-center mb-8 text-gray-800">Our Research</h2>
-            <div className="max-w-6xl mx-auto">
+            {/* ... content ... */}
+             <div className="max-w-6xl mx-auto">
               <div className="relative bg-white rounded-lg shadow-lg overflow-hidden">
                 {/* Slideshow Container */}
                 <div className="relative h-96 md:h-[500px]">
@@ -387,7 +471,7 @@ const YourNewPage = () => {
       </main>
 
       {/* Footer */}
-      <footer className="bg-nus-blue text-white py-6">
+      <footer className="bg-blue-900 text-white py-6">
         <div className="container mx-auto px-4 text-center">
           <p>
             © {new Date().getFullYear()} SPARTAN - National University of
