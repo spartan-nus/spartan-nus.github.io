@@ -257,7 +257,56 @@ const YourNewPage = () => {
           </div>
         </section>
 
-        
+        {/* Insert this new section after the Brochure section */}
+
+        {/* Future Events */}
+        <section className="py-12 bg-gray-50">
+          <div className="container mx-auto px-4">
+            <h2 className="text-3xl font-bold text-center mb-8 text-gray-800">Other Upcoming Events</h2>
+            {/* Updated grid for 4 items: 2 columns on medium screens, 4 on large screens */}
+            <div className="max-w-6xl mx-auto grid md:grid-cols-2 lg:grid-cols-4 gap-8 text-center">
+              
+              {/* San Francisco Event */}
+              <div className="bg-white p-6 rounded-lg shadow-sm">
+                <h3 className="font-semibold text-xl mb-3 text-blue-800">San Francisco, CA</h3>
+                <p className="text-gray-600 mb-4">
+                  A focused meetup on the latest trends in AI-driven software engineering.
+                </p>
+                <p className="text-sm font-semibold text-gray-500">Details Coming Soon</p>
+              </div>
+              
+              {/* Bay Area Event */}
+              <div className="bg-white p-6 rounded-lg shadow-sm">
+                <h3 className="font-semibold text-xl mb-3 text-green-800">Bay Area, CA</h3>
+                <p className="text-gray-600 mb-4">
+                  Workshop on integrating Large Language Models into enterprise workflows.
+                </p>
+                <p className="text-sm font-semibold text-gray-500">Stay Tuned for Dates</p>
+              </div>
+
+              {/* New York Event */}
+              <div className="bg-white p-6 rounded-lg shadow-sm">
+                <h3 className="font-semibold text-xl mb-3 text-purple-800">New York, NY</h3>
+                <p className="text-gray-600 mb-4">
+                  East coast summit on AI ethics and responsible model deployment.
+                </p>
+                <p className="text-sm font-semibold text-gray-500">Announcement Pending</p>
+              </div>
+
+              {/* London Event - NEW */}
+              <div className="bg-white p-6 rounded-lg shadow-sm">
+                <h3 className="font-semibold text-xl mb-3 text-red-800">London, UK</h3>
+                <p className="text-gray-600 mb-4">
+                  European conference on AI in finance and regulatory technology.
+                </p>
+                <p className="text-sm font-semibold text-gray-500">Q4 2025 - More Info Soon</p>
+              </div>
+
+            </div>
+          </div>
+        </section>
+
+        {/* The "Our Research" section would follow immediately after */}
 
         {/* Our Research - UPDATED INTERACTIVE SLIDESHOW */}
         <section className="py-12 bg-gray-50">
