@@ -185,6 +185,81 @@ const YourNewPage = () => {
             </div>
           </div>
         </section>
+
+        {/* Our Research */}
+        <section className="py-12 bg-gray-50">
+          <div className="container mx-auto px-4">
+            <h2 className="text-3xl font-bold text-center mb-8 text-gray-800">Our Research</h2>
+            <div className="max-w-6xl mx-auto">
+              <div className="relative bg-white rounded-lg shadow-lg overflow-hidden">
+                {/* Slideshow Container */}
+                <div className="relative h-96 md:h-[500px]">
+                  {/* Slide 1 - Active by default */}
+                  <div className="absolute inset-0 flex items-center justify-center bg-gradient-to-r from-blue-900 to-blue-700">
+                    <div className="text-center text-white p-8">
+                      <h3 className="text-2xl md:text-3xl font-bold mb-4">AutoCoderRover: Automated Program Repair</h3>
+                      <p className="text-lg mb-4">From research on Automatic Programming to Spinoff Acquisition</p>
+                      <p className="text-sm opacity-90">Program Structure captures intent. Extract coarse specs from structure for autonomous SE</p>
+                    </div>
+                  </div>
+
+                  {/* Slide 2 - Hidden by default */}
+                  <div className="absolute inset-0 flex items-center justify-center bg-gradient-to-r from-green-800 to-green-600 opacity-0">
+                    <div className="text-center text-white p-8">
+                      <h3 className="text-2xl md:text-3xl font-bold mb-4">AI-Powered Code Analysis</h3>
+                      <p className="text-lg mb-4">Advanced program understanding through semantic analysis</p>
+                      <p className="text-sm opacity-90">Leveraging AST and program dependencies for intelligent code search</p>
+                    </div>
+                  </div>
+
+                  {/* Slide 3 - Hidden by default */}
+                  <div className="absolute inset-0 flex items-center justify-center bg-gradient-to-r from-purple-800 to-purple-600 opacity-0">
+                    <div className="text-center text-white p-8">
+                      <h3 className="text-2xl md:text-3xl font-bold mb-4">Software Engineering with LLMs</h3>
+                      <p className="text-lg mb-4">Integrating Large Language Models in development workflows</p>
+                      <p className="text-sm opacity-90">Building intelligent tools for automated testing and code generation</p>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Navigation Dots */}
+                <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex space-x-2">
+                  <button className="w-3 h-3 rounded-full bg-white opacity-100 transition-opacity duration-200"></button>
+                  <button className="w-3 h-3 rounded-full bg-white opacity-50 hover:opacity-75 transition-opacity duration-200"></button>
+                  <button className="w-3 h-3 rounded-full bg-white opacity-50 hover:opacity-75 transition-opacity duration-200"></button>
+                </div>
+
+                {/* Navigation Arrows */}
+                <button className="absolute left-4 top-1/2 transform -translate-y-1/2 bg-white bg-opacity-20 hover:bg-opacity-30 text-white p-2 rounded-full transition-all duration-200">
+                  <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
+                  </svg>
+                </button>
+                <button className="absolute right-4 top-1/2 transform -translate-y-1/2 bg-white bg-opacity-20 hover:bg-opacity-30 text-white p-2 rounded-full transition-all duration-200">
+                  <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                  </svg>
+                  </button>
+              </div>
+
+              {/* Research Highlights */}
+              <div className="mt-8 grid md:grid-cols-3 gap-6">
+                <div className="bg-white p-6 rounded-lg shadow-sm">
+                  <h4 className="font-semibold text-lg mb-2 text-gray-800">Publications</h4>
+                  <p className="text-gray-600 text-sm">20+ peer-reviewed papers in top-tier conferences including ICSE, FSE, and ASE</p>
+                </div>
+                <div className="bg-white p-6 rounded-lg shadow-sm">
+                  <h4 className="font-semibold text-lg mb-2 text-gray-800">Industry Impact</h4>
+                  <p className="text-gray-600 text-sm">Technology successfully transferred to industry partners and startup acquisitions</p>
+                </div>
+                <div className="bg-white p-6 rounded-lg shadow-sm">
+                  <h4 className="font-semibold text-lg mb-2 text-gray-800">Open Source</h4>
+                  <p className="text-gray-600 text-sm">Tools and datasets publicly available for the research community</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
       </main>
 
       {/* Footer */}
