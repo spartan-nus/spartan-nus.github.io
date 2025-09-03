@@ -367,7 +367,7 @@ const YourNewPage = () => {
             <section id="Confirmed Attendees" className="py-12 scroll-mt-20">
               <div className="container mx-auto max-w-4xl">
                 <div className="grid gap-6 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 justify-center">
-                  {attendees.map((attendee) => (
+                  {attendees.slice().sort((a, b) => a.name.localeCompare(b.name)).map((attendee) => (
                     <div key={attendee.name} className="text-center">
                       <a
                         href={attendee.link}
