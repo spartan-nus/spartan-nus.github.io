@@ -99,21 +99,36 @@ const YourNewPage = () => {
           <div className="container mx-auto px-4">
             <h2 className="text-3xl font-bold text-center mb-8 text-gray-800">Organizers</h2>
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-5xl mx-auto">
+              {/* Organizer 1 */}
               <div className="text-center">
-                <div className="w-24 h-24 bg-gray-300 rounded-full mx-auto mb-4"></div>
-                <h3 className="font-semibold text-lg">Dr. Sarah Chen</h3>
+                <a href="#" className="inline-block">
+                  <div className="w-24 h-24 bg-gray-300 rounded-full mx-auto mb-4 hover:opacity-80 transition-opacity"></div>
+                </a>
+                <h3 className="font-semibold text-lg">
+                  <a href="#" className="hover:text-blue-600 transition-colors">Dr. Sarah Chen</a>
+                </h3>
                 <p className="text-gray-600">AI Safety Research Lead</p>
                 <p className="text-sm text-gray-500">National University of Singapore</p>
               </div>
+              {/* Organizer 2 */}
               <div className="text-center">
-                <div className="w-24 h-24 bg-gray-300 rounded-full mx-auto mb-4"></div>
-                <h3 className="font-semibold text-lg">Prof. Michael Zhang</h3>
+                <a href="#" className="inline-block">
+                  <div className="w-24 h-24 bg-gray-300 rounded-full mx-auto mb-4 hover:opacity-80 transition-opacity"></div>
+                </a>
+                <h3 className="font-semibold text-lg">
+                  <a href="#" className="hover:text-blue-600 transition-colors">Prof. Michael Zhang</a>
+                </h3>
                 <p className="text-gray-600">Director, SPARTAN Lab</p>
                 <p className="text-sm text-gray-500">National University of Singapore</p>
               </div>
+              {/* Organizer 3 */}
               <div className="text-center">
-                <div className="w-24 h-24 bg-gray-300 rounded-full mx-auto mb-4"></div>
-                <h3 className="font-semibold text-lg">Dr. Emily Rodriguez</h3>
+                <a href="#" className="inline-block">
+                  <div className="w-24 h-24 bg-gray-300 rounded-full mx-auto mb-4 hover:opacity-80 transition-opacity"></div>
+                </a>
+                <h3 className="font-semibold text-lg">
+                  <a href="#" className="hover:text-blue-600 transition-colors">Dr. Emily Rodriguez</a>
+                </h3>
                 <p className="text-gray-600">AI Ethics Researcher</p>
                 <p className="text-sm text-gray-500">Institute for AI Safety</p>
               </div>
@@ -130,19 +145,19 @@ const YourNewPage = () => {
                 <div className="bg-white p-6 rounded-lg shadow-sm">
                   <h3 className="font-semibold text-lg mb-2">Industry Leaders</h3>
                   <ul className="space-y-2 text-gray-600">
-                    <li>• Dr. James Wilson - DeepMind</li>
-                    <li>• Sarah Kim - OpenAI Safety</li>
-                    <li>• Prof. David Martinez - Stanford AI Lab</li>
-                    <li>• Dr. Lisa Thompson - Anthropic</li>
+                    <li>• <a href="#" className="hover:text-blue-600 transition-colors">Dr. James Wilson</a> - DeepMind</li>
+                    <li>• <a href="#" className="hover:text-blue-600 transition-colors">Sarah Kim</a> - OpenAI Safety</li>
+                    <li>• <a href="#" className="hover:text-blue-600 transition-colors">Prof. David Martinez</a> - Stanford AI Lab</li>
+                    <li>• <a href="#" className="hover:text-blue-600 transition-colors">Dr. Lisa Thompson</a> - Anthropic</li>
                   </ul>
                 </div>
                 <div className="bg-white p-6 rounded-lg shadow-sm">
                   <h3 className="font-semibold text-lg mb-2">Academic Researchers</h3>
                   <ul className="space-y-2 text-gray-600">
-                    <li>• Prof. Alan Johnson - MIT CSAIL</li>
-                    <li>• Dr. Maria Santos - UC Berkeley</li>
-                    <li>• Prof. Robert Lee - Oxford AI Institute</li>
-                    <li>• Dr. Anna Petrov - Carnegie Mellon</li>
+                    <li>• <a href="#" className="hover:text-blue-600 transition-colors">Prof. Alan Johnson</a> - MIT CSAIL</li>
+                    <li>• <a href="#" className="hover:text-blue-600 transition-colors">Dr. Maria Santos</a> - UC Berkeley</li>
+                    <li>• <a href="#" className="hover:text-blue-600 transition-colors">Prof. Robert Lee</a> - Oxford AI Institute</li>
+                    <li>• <a href="#" className="hover:text-blue-600 transition-colors">Dr. Anna Petrov</a> - Carnegie Mellon</li>
                   </ul>
                 </div>
               </div>
@@ -241,6 +256,8 @@ const YourNewPage = () => {
             </div>
           </div>
         </section>
+
+        
 
         {/* Our Research - UPDATED INTERACTIVE SLIDESHOW */}
         <section className="py-12 bg-gray-50">
