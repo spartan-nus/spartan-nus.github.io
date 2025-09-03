@@ -319,7 +319,7 @@ const YourNewPage = () => {
                 Large Language Models (LLMs) have shown surprising proficiency in generating code snippets, promising to automate large parts of software engineering via artificial intelligence (AI). We argue that successfully deploying AI software engineers requires a level of trust equal to or even greater than the trust established by human-driven software engineering practices. The recent trend toward LLM agents offers a path toward integrating the power of LLMs to create new code with the power of analysis tools to increase trust in the code.
               </p>
               <p>
-                This event will be a 1-day industry roundtable on AI driven innovation for code. Participants are invite-only, from both industry and academia all over the world. Through the discussion, we seek to distill thoughts and guidelines stating how to achieve AI for code, with trust.
+                This event is a one-day, invite-only industry roundtable on AI-driven innovation for code, taking place in Singapore on the day before AAAI 2026. Bringing together leading participants from industry and academia worldwide, the discussion aims to distill key insights and guidelines on how to achieve trustworthy AI for code.
               </p>
             </div>
           </div>
