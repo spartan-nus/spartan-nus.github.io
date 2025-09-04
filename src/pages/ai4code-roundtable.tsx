@@ -112,7 +112,7 @@ const attendees = [
   {
     name: "Harry Wang",
     title: "Chief Growth Officer",
-    institution: "SonarSource",
+    institution: "Sonar",
     link: "https://www.linkedin.com/in/harry-wang-123456"
   },
   {

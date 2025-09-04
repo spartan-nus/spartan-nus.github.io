@@ -86,7 +86,7 @@ const teamMembers = [
   },
   {
     name: "Martin Mirchev",
-    position: "PhD student, On leave to SonarSource",
+    position: "PhD student, On leave to Sonar",
     description: "AutoCodeRover",
     imageUrl: "/people/martin.jpg",
     initials: "MM",
@@ -126,7 +126,7 @@ const teamMembers = [
   },
   {
     name: "Ridwan Shariffdeen",
-    position: "Alumni -> Principal Research Scientist@SonarSource",
+    position: "Alumni -> Principal Research Scientist@Sonar",
     description: "AutoCodeRover",
     imageUrl: "/people/ridwan.jpg",
     initials: "RS",
