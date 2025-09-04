@@ -516,8 +516,9 @@ const YourNewPage = () => {
                   {/*   featuring modern conference facilities and advanced technical infrastructure. */}
                   {/* </p> */}
                   <div className="space-y-2 text-gray-600">
-                    <p><strong>Address:</strong> 21 Heng Mui Keng Ter, Singapore 119613</p>
-                    <p><strong>Building:</strong> i3 Building, Level 5</p>
+                    <p><strong>Address:</strong> 3A Research Link, Singapore 119392</p>
+                    <p><strong>Building:</strong> COM4, Level 2</p>
+                    <p><strong>Room:</strong> COM4-02-01 </p>
                   </div>
                 </div>
 
