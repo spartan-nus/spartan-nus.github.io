@@ -480,7 +480,7 @@ const YourNewPage = () => {
                 <div className="flex border-l-4 border-blue-500 pl-4 py-2">
                   <div className="w-20 text-sm font-semibold text-gray-500">4:30 PM</div>
                   <div className="flex-1">
-                    <h3 className="font-semibold">Summary: Plan for followup meetings in NY, Bay Area, London - Abhik Roychoudhury</h3>
+                    <h3 className="font-semibold">Summary: Plan for followup meetings in New York, Bay Area, London - Abhik Roychoudhury</h3>
                     {/* <p className="text-gray-600">Next Steps and Collaboration Opportunities</p> */}
                   </div>
                 </div>
