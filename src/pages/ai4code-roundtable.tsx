@@ -178,6 +178,12 @@ const attendees = [
     title: "Professor",
     institution: "Imperial College London",
     link: "https://www.doc.ic.ac.uk/~cristic/"
+  },
+  {
+    name: "Behrooz Omidvar-Tehrani",
+    title: "Principal Scientist",
+    institution: "Microsoft",
+    link: "https://www.linkedin.com/in/behroozomidvar/"
   }
 ];
 
