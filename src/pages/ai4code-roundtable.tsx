@@ -139,13 +139,13 @@ const attendees = [
   },
   {
     name: "Yuntong Zhang",
-    title: "PhD Student, Co-founder AutoCoderRover",
+    title: "PhD Student, Co-founder AutoCodeRover",
     institution: "National University of Singapore",
     link: "https://yuntongzhang.github.io/"
   },
   {
     name: "Haifeng Ruan",
-    title: "PhD Student, Co-founder AutoCoderRover",
+    title: "PhD Student, Co-founder AutoCodeRover",
     institution: "National University of Singapore",
     link: "https://haifengruan.com/"
   },
