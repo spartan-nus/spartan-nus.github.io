@@ -590,7 +590,7 @@ const YourNewPage = () => {
               </div>
 
               <div className="bg-white p-6 rounded-lg shadow-sm">
-                <h3 className="font-semibold text-xl mb-3 text-purple-800">Bay Area, NY</h3>
+                <h3 className="font-semibold text-xl mb-3 text-purple-800">Bay Area, SF</h3>
                 {/* <p className="text-gray-600 mb-4"> */}
                 {/*   East coast summit on AI ethics and responsible model deployment. */}
                 {/* </p> */}
