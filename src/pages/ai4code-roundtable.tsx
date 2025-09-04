@@ -192,6 +192,12 @@ const attendees = [
     title: "Principal Scientist",
     institution: "Microsoft",
     link: "https://www.linkedin.com/in/behroozomidvar/"
+  },
+  {
+  name: "Shaowei Ying",
+  title: "Chief Scientist",
+  institution: "NCS",
+  link: "https://www.linkedin.com/in/shaoweiying/"
   }
 ];
 
