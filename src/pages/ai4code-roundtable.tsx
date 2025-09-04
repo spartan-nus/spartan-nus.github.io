@@ -80,12 +80,12 @@ const attendees = [
   },
   {
     name: "Satish Chandra",
-    title: "Software Engineer",
-    institution: "Google",
+    title: "Principal Engineer",
+    institution: "ML for Developer Productivity, Google",
     link: "https://sites.google.com/site/schandraacmorg/"
   },
   {
-    name: "Raveendra Kumar",
+    name: "Raveendra Kumar Medicherla",
     title: "Principal Scientist",
     institution: "Tata Consultancy Services",
     link: "https://in.linkedin.com/in/raveendrakumar"
@@ -122,15 +122,15 @@ const attendees = [
   },
   {
     name: "Atif Memon",
-    title: "Professor",
-    institution: "University of Maryland",
-    link: "https://www.cs.umd.edu/~atif/"
+    title: "Distinguished Engineer",
+    institution: "Apple",
+    link: "https://www.linkedin.com/in/memonatif/"
   },
   {
-    name: "Murali Ramanathan",
-    title: "Chief Compliance Officer",
-    institution: "University at Buffalo",
-    link: "https://www.buffalo.edu/research/about-us/leadership/murali-ramanathan.html"
+    name: "Murali Krishna Ramanathan",
+    title: "Principal Applied Scientist",
+    institution: "AWS",
+    link: "https://www.linkedin.com/in/mkramanathan/"
   },
   {
     name: "Xin Xia",
@@ -139,20 +139,14 @@ const attendees = [
     link: "https://xin-xia.github.io/"
   },
   {
-    name: "Siddhartha Jain",
-    title: "PhD Student",
-    institution: "University of Texas at Austin",
-    link: "https://sidjain.me/"
-  },
-  {
     name: "Yuntong Zhang",
-    title: "PhD Student",
+    title: "PhD Student, Co-founder AutoCoderRover",
     institution: "National University of Singapore",
     link: "https://yuntongzhang.github.io/"
   },
   {
     name: "Haifeng Ruan",
-    title: "PhD Student",
+    title: "PhD Student, Co-founder AutoCoderRover",
     institution: "National University of Singapore",
     link: "https://haifengruan.com/"
   },
@@ -167,6 +161,24 @@ const attendees = [
     title: "Senior Applied Scientist",
     institution: "AWS AI Labs",
     link: "https://www.linkedin.com/in/shwetagargiitb"
+  },
+  {
+    name: "Varun Srivastava",
+    title: "Engineering Leader - Search and AI",
+    institution: "Atlassian",
+    link: "https://www.linkedin.com/in/varun-srivastava-7948054/"
+  },
+  {
+    name: "Imam Nur Bani Yusuf",
+    title: "Postdoctoral Researcher",
+    institution: "National University of Singapore",
+    link: "https://www.linkedin.com/in/inby/"
+  },
+  {
+    name: "Cristian Cadar",
+    title: "Professor",
+    institution: "Imperial College London",
+    link: "https://www.doc.ic.ac.uk/~cristic/"
   }
 ];
 
