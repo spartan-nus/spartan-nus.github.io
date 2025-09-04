@@ -32,11 +32,19 @@ const newsItems = [
   {
     date: "Aug 27, 2025",
     title:
-      "Professor Abhik Roychoudhury Comments in IEEE Spectrum on Trust in AI Coding",
+      "Prof. Abhik Roychoudhury Comments in IEEE Spectrum on Trust in AI Coding",
     content:
       "A recent article in IEEE Spectrum examines the capabilities and limits of AI coding tools. Professor Abhik Roychoudhury, Principal Investigator of SPARTAN, emphasizes the importance of capturing programmer intent, highlights the challenges of ensuring trust in AI coding, and views the rise of agentic software engineering as an inevitable trend.",
     link: "https://spectrum.ieee.org/ai-for-coding",
   },
+  { 
+     date: "Sep 4, 2025",
+     title: "AI for Code Roundtable at NUS campus on 19 Jan 2026 before AAAI26",
+     content:
+       "A one day roundtable event on how to use AI for code with trust. It will be followed by another event in New York. 
+       Both events are jointly organized by Abhik Roychoudhury and Baishakhi Ray."
+      link: "https://spartan-nus.github.io/ai4code-roundtable"
+ },
 ];
 
 const NewsSection: React.FC = () => {
