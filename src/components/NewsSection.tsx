@@ -41,8 +41,8 @@ const newsItems = [
      date: "Sep 4, 2025",
      title: "AI for Code Roundtable at NUS campus on 19 Jan 2026 before AAAI26",
      content:
-       "A one day roundtable event on how to use AI for code with trust. It will be followed by another event in New York. 
-       Both events are jointly organized by Abhik Roychoudhury and Baishakhi Ray."
+       `A one day roundtable event on how to use AI for code with trust. It will be followed by another event in New York. 
+        Both events are jointly organized by Abhik Roychoudhury and Baishakhi Ray.`,
       link: "https://spartan-nus.github.io/ai4code-roundtable"
  },
 ];
