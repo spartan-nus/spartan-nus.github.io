@@ -532,7 +532,7 @@ const YourNewPage = () => {
                       position={[1.2926829208111419, 103.77563993987859]}
                       eventHandlers={{
                         click: () => {
-                          window.open("https://maps.app.goo.gl/CxwBm6QdYgbXZ6kRA", "_blank");
+                          window.open("https://maps.app.goo.gl/rQHKURhwnh9NNiix5", "_blank");
                         },
                       }}
                     >
