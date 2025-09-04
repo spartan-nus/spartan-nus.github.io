@@ -523,13 +523,13 @@ const YourNewPage = () => {
                 </div>
 
                 <div className="bg-gray-200 h-64 rounded-lg flex items-center justify-center">
-                  <MapContainer center={[1.2926829208111419, 103.77563993987859]} zoom={18} style={{ height: '16rem', width: '100%' }}>
+                  <MapContainer center={[1.2951802, 103.7753569]} zoom={18} style={{ height: '16rem', width: '100%' }}>
                     <TileLayer
                       url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
                       attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
                     />
                     <Marker
-                      position={[1.2926829208111419, 103.77563993987859]}
+                      position={[1.2951802, 103.7753569]}
                       eventHandlers={{
                         click: () => {
                           window.open("https://maps.app.goo.gl/rQHKURhwnh9NNiix5", "_blank");
