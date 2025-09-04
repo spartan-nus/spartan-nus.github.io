@@ -15,7 +15,6 @@ const sections = [
   { id: 'venue', title: 'Venue' },
   { id: 'brochure', title: 'Brochure' },
   { id: 'events', title: 'Events' },
-  { id: 'research', title: 'Research' },
 ];
 
 const SectionNavbar = ({ activeSection, isVisible }) => (
