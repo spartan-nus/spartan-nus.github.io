@@ -507,7 +507,7 @@ const YourNewPage = () => {
                 <div className="flex border-l-4 border-blue-500 pl-4 py-2">
                   <div className="w-20 text-sm font-semibold text-gray-500">4:30 PM</div>
                   <div className="flex-1">
-                    <h3 className="font-semibold">Summary: Plan for followup meetings in New York, Bay Area, London - Abhik Roychoudhury</h3>
+                    <h3 className="font-semibold">Summary: Plan for followup meetings in New York and Bay Area - Abhik Roychoudhury</h3>
                     {/* <p className="text-gray-600">Next Steps and Collaboration Opportunities</p> */}
                   </div>
                 </div>
@@ -598,7 +598,7 @@ const YourNewPage = () => {
           <div className="container mx-auto px-4">
             <h2 className="text-3xl font-bold text-center mb-8 text-gray-800">Upcoming Series Events</h2>
             {/* ... content ... */}
-            <div className="max-w-6xl mx-auto grid md:grid-cols-2 lg:grid-cols-3 gap-8 text-center">
+            <div className="max-w-6xl mx-auto grid md:grid-cols-2 lg:grid-cols-2 gap-8 text-center">
 
               {/* San Francisco Event */}
               {/* <div className="bg-white p-6 rounded-lg shadow-sm"> */}
@@ -621,14 +621,6 @@ const YourNewPage = () => {
                 <h3 className="font-semibold text-xl mb-3 text-purple-800">Bay Area, SF</h3>
                 {/* <p className="text-gray-600 mb-4"> */}
                 {/*   East coast summit on AI ethics and responsible model deployment. */}
-                {/* </p> */}
-                <p className="text-sm font-semibold text-gray-500">More Info Soon</p>
-              </div>
-
-              <div className="bg-white p-6 rounded-lg shadow-sm">
-                <h3 className="font-semibold text-xl mb-3 text-red-800">London, UK</h3>
-                {/* <p className="text-gray-600 mb-4"> */}
-                {/*   European conference on AI in finance and regulatory technology. */}
                 {/* </p> */}
                 <p className="text-sm font-semibold text-gray-500">More Info Soon</p>
               </div>
