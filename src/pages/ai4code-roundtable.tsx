@@ -194,10 +194,10 @@ const attendees = [
     link: "https://www.linkedin.com/in/behroozomidvar/"
   },
   {
-  name: "Shaowei Ying",
-  title: "Chief Scientist",
-  institution: "NCS",
-  link: "https://www.linkedin.com/in/shaoweiying/"
+    name: "Shaowei Ying",
+    title: "Chief Scientist",
+    institution: "NCS",
+    link: "https://www.linkedin.com/in/shaoweiying/"
   }
 ];
 
@@ -421,6 +421,13 @@ const YourNewPage = () => {
                     </div>
                   ))}
                 </div>
+
+                <div className="mt-12 text-center">
+                  <div className="inline-block bg-gradient-to-r from-blue-900 to-blue-700 text-white text-2xl font-semibold px-6 py-3 rounded-full shadow-md">
+                    More attendees are joining soon!
+                  </div>
+                </div>
+
               </div>
             </section>
 
