@@ -147,13 +147,13 @@ const attendees = [
   },
   {
     name: "Yuntong Zhang",
-    title: "PhD Student, Co-founder AutoCodeRover",
+    title: "PhD Student, Co-Founder AutoCodeRover",
     institution: "National University of Singapore",
     link: "https://yuntongzhang.github.io/"
   },
   {
     name: "Haifeng Ruan",
-    title: "PhD Student, Co-founder AutoCodeRover",
+    title: "PhD Student, Co-Founder AutoCodeRover",
     institution: "National University of Singapore",
     link: "https://haifengruan.com/"
   },
@@ -213,7 +213,7 @@ const attendees = [
   },
   {
   name: "Gang Lee",
-  title: "CEO, Co-founder",
+  title: "CEO, Co-Founder",
   institution: "ELGO AI",
   link: "https://www.linkedin.com/in/gang-lee-58848b29/",
   },
