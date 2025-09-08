@@ -198,7 +198,25 @@ const attendees = [
     title: "Chief Scientist",
     institution: "NCS",
     link: "https://www.linkedin.com/in/shaoweiying/"
-  }
+  }, 
+  {
+  name: "Volkan Sevindik",
+  title: "Chief Technology Officer (CTO)",
+  institution: "Starhub",
+  link: "https://www.linkedin.com/in/volkansevindik/",
+  },
+  {
+  name: "Daniel Dahlmeier",
+  title: "Chief Data Scientist",
+  institution: "SAP Artificial Intelligence",
+  link: "https://www.linkedin.com/in/daniel-dahlmeier-249a3764/",
+  },
+  {
+  name: "Gang Lee",
+  title: "CEO, Co-founder",
+  institution: "ELGO AI",
+  link: "https://www.linkedin.com/in/gang-lee-58848b29/",
+  },
 ];
 
 const avatars = import.meta.glob("/ai4code-avatars/*", { eager: true, as: "url" });
