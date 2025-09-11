@@ -217,6 +217,12 @@ const attendees = [
   institution: "ELGO AI",
   link: "https://www.linkedin.com/in/gang-lee-58848b29/",
   },
+  {
+  name: "Neha Rungta",
+  title: "Applied Science Director",
+  institution: "AWS",
+  link: "https://www.linkedin.com/in/neharungta/",
+  },
 ];
 
 const avatars = import.meta.glob("/ai4code-avatars/*", { eager: true, as: "url" });
