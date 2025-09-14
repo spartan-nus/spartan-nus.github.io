@@ -489,7 +489,7 @@ const YourNewPage = () => {
                 <div className="flex border-l-4 border-blue-500 pl-4 py-2">
                   <div className="w-20 text-sm font-semibold text-gray-500">10:30  AM</div>
                   <div className="flex-1">
-                    <h3 className="font-semibold">Industry sharing: Talks from industry / govt agency from Singapore / USA (3-4 talks) </h3>
+                    <h3 className="font-semibold">Talks from industry / govt agency from Singapore / USA on AI for Code (3-4 talks) </h3>
                     {/* <p className="text-gray-600">Hands-on Interpretability Tools</p> */}
                   </div>
                 </div>
