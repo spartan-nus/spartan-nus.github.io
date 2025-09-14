@@ -482,14 +482,14 @@ const YourNewPage = () => {
                 <div className="flex border-l-4 border-blue-500 pl-4 py-2">
                   <div className="w-20 text-sm font-semibold text-gray-500">10:00 AM</div>
                   <div className="flex-1">
-                    <h3 className="font-semibold">Industry Sharing: Overarching Talk on Trust</h3>
+                    <h3 className="font-semibold">Overarching talk on Trusted technologies</h3>
                     {/* <p className="text-gray-600">Networking and Discussion</p> */}
                   </div>
                 </div>
                 <div className="flex border-l-4 border-blue-500 pl-4 py-2">
-                  <div className="w-20 text-sm font-semibold text-gray-500">10:30  AM</div>
+                  <div className="w-20 text-sm font-semibold text-gray-500">10:30 AM</div>
                   <div className="flex-1">
-                    <h3 className="font-semibold">Talks from industry / govt agency from Singapore / USA on AI for Code (3-4 talks) </h3>
+                    <h3 className="font-semibold">Industry sharing from Singapore / USA on AI for Code: 3-4 talks planned</h3>
                     {/* <p className="text-gray-600">Hands-on Interpretability Tools</p> */}
                   </div>
                 </div>
@@ -508,28 +508,28 @@ const YourNewPage = () => {
                   </div>
                 </div>
                 <div className="flex border-l-4 border-blue-500 pl-4 py-2">
-                  <div className="w-20 text-sm font-semibold text-gray-500">2:00 PM</div>
+                  <div className="w-20 text-sm font-semibold text-gray-500">2:30 PM</div>
                   <div className="flex-1">
                     <h3 className="font-semibold">Summary of results of roundtable</h3>
                     {/* <p className="text-gray-600">Next Steps and Collaboration Opportunities</p> */}
                   </div>
                 </div>
                 <div className="flex border-l-4 border-blue-500 pl-4 py-2">
-                  <div className="w-20 text-sm font-semibold text-gray-500">3:00 PM</div>
+                  <div className="w-20 text-sm font-semibold text-gray-500">3:30 PM</div>
                   <div className="flex-1">
                     <h3 className="font-semibold">Tea break</h3>
                     {/* <p className="text-gray-600">Next Steps and Collaboration Opportunities</p> */}
                   </div>
                 </div>
                 <div className="flex border-l-4 border-blue-500 pl-4 py-2">
-                  <div className="w-20 text-sm font-semibold text-gray-500">3:30 PM</div>
+                  <div className="w-20 text-sm font-semibold text-gray-500">4:00 PM</div>
                   <div className="flex-1">
                     <h3 className="font-semibold">Manifesto discussions - Abhik Roychoudhury &amp; Baishakhi Ray with all</h3>
                     {/* <p className="text-gray-600">Next Steps and Collaboration Opportunities</p> */}
                   </div>
                 </div>
                 <div className="flex border-l-4 border-blue-500 pl-4 py-2">
-                  <div className="w-20 text-sm font-semibold text-gray-500">4:30 PM</div>
+                  <div className="w-20 text-sm font-semibold text-gray-500">5:00 PM</div>
                   <div className="flex-1">
                     <h3 className="font-semibold">Summary: Plan for followup meetings in New York and Bay Area - Abhik Roychoudhury</h3>
                     {/* <p className="text-gray-600">Next Steps and Collaboration Opportunities</p> */}
