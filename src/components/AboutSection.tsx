@@ -30,6 +30,10 @@ const AboutSection: React.FC = () => {
             with trust being engendered by analysis techniques, contributes to the themes of autocoding as well as AI Safety
             (<a href="https://www.youtube.com/watch?v=o8B6q8FNC70" className="text-nus-blue hover:text-nus-orange underline">WATCH VIDEO</a>)
 
+            <br><br>
+            <b><a href= "https://spartan-nus.github.io/ai4code-roundtable">AI for Code Industry Roundtable</a>, 19 Jan 2026.
+            </b>  
+
 
           </p>
           <img
