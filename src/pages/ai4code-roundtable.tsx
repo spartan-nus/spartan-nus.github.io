@@ -223,6 +223,18 @@ const attendees = [
   institution: "AWS",
   link: "https://www.linkedin.com/in/neharungta/",
   },
+  {
+  name: "Robert Morris",
+  title: "Chief Technology Strategist",
+  institution: "MoHT",
+  link: "https://www.moht.com.sg/our-management/professor-robert-morris",
+  },
+  {
+  name: "Yanyan Hu",
+  title: "Deputy Director - Architecture and Development",
+  institution: "MoHT",
+  link: "https://www.linkedin.com/in/yanyan-hu-88444024/",
+  },
 ];
 
 const avatars = import.meta.glob("/ai4code-avatars/*", { eager: true, as: "url" });
