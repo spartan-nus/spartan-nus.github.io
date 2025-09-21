@@ -226,14 +226,20 @@ const attendees = [
   {
   name: "Robert Morris",
   title: "Chief Technology Strategist",
-  institution: "MoHT",
+  institution: "MoHT Singapore",
   link: "https://www.moht.com.sg/our-management/professor-robert-morris",
   },
   {
   name: "Yanyan Hu",
   title: "Deputy Director - Architecture and Development",
-  institution: "MoHT",
+  institution: "MoHT Singapore",
   link: "https://www.linkedin.com/in/yanyan-hu-88444024/",
+  },
+  {
+  name: "Karlina Tjoa",
+  title: "Lead Software Engineer",
+  institution: "MoHT Singapore",
+  link: "https://www.linkedin.com/in/karlina-tjoa/",
   },
 ];
 
