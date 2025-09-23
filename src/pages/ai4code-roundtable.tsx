@@ -241,6 +241,12 @@ const attendees = [
   institution: "MoHT Singapore",
   link: "https://www.linkedin.com/in/karlina-tjoa/",
   },
+  {
+  name: "Anup Kumar",
+  title: "Distinguished Engineer & Head Client Engineering",
+  institution: "IBM Asia Pacific",
+  link: "https://www.linkedin.com/in/kuanup/",
+  },
 ];
 
 const avatars = import.meta.glob("/ai4code-avatars/*", { eager: true, as: "url" });
