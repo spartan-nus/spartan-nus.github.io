@@ -11,29 +11,28 @@ const researchProjects = [
     link: "https://autocoderover.dev",
   },
   { title: "Agentic Programming with Trust",
-    description: "Opinion Piece",
-    link: " https://arxiv.org/pdf/2502.13767",
+    description: "Opinion Piece, due to appear in Communications of the ACM",
+    link: "https://arxiv.org/html/2502.13767v4",
   },
-  {
-    title: "Explainable AI Agents",
-    description: "An agent which is more trustworthy since it can explain its actions",
-    link: "https://www.arxiv.org/abs/2507.22414"
+   {
+    title: "Agents for Program Reasoning ",
+    description: "Collaboration with Imperial College, coming soon",
+    link: "https://openreview.net/pdf?id=5t9HFssPla"
+  },
+    {
+    title: "AI for Open Source Security",
+    description: "Collaboration with Google OSS team",
+    link: "/coderover-s.html",
+  }, 
+   { title: "Automatic Programming",
+    description: "Position paper in TOSEM",
+    link: "https://dl.acm.org/doi/pdf/10.1145/3708519",
   },
    {
     title: "Unified Software Engineering Agent",
     description: "An agent which can write, fix, patch code and conduct many SE tasks",
     link: "https://arxiv.org/abs/2506.14683",
   },
-  { title: "Automatic Programming",
-    description: "Position paper in TOSEM",
-    link: "https://dl.acm.org/doi/pdf/10.1145/3708519",
-  },
-   {
-    title: "AI for Open Source Security",
-    description: "Collaboration with Google OSS team",
-    link: "/coderover-s.html",
-  }, 
-  
   {
     title: "Accurate Table Question Answering",
     description: "Table Question Answering (TQA) is a task that aims to provide accurate answers to natural language questions based on the content of a given (database) table",
@@ -44,15 +43,10 @@ const researchProjects = [
     description: "Use of differential privacy while finetuning LLMs",
     link: "https://www.comp.nus.edu.sg/~xiaoxk/projects/dpzo/dpzo.html"
   },    
-  {
-    title: "Proof Agent",
-    description: "AI for Program Verification, in collaboration with Imperial, coming soon",
-    link: "https://openreview.net/pdf?id=5t9HFssPla"
-  },
-  {
-    title: "Agent Testing",
-    description: "Coming soon",
-    link: "#fuzzing",
+   {
+    title: "Explainable AI Agents",
+    description: "An agent which is more trustworthy since it can explain its actions",
+    link: "https://www.arxiv.org/abs/2507.22414"
   },
 ];
 
