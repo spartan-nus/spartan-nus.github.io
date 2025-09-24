@@ -12,7 +12,7 @@ const researchProjects = [
   },
   { title: "Agentic Programming with Trust",
     description: "Opinion Piece, due to appear in Communications of the ACM",
-    link: "https://arxiv.org/html/2502.13767v4",
+    link: "https://arxiv.org/pdf/2502.13767",
   },
    {
     title: "Agents for Program Reasoning ",
