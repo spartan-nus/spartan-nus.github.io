@@ -247,6 +247,12 @@ const attendees = [
   institution: "IBM Asia Pacific",
   link: "https://www.linkedin.com/in/kuanup/",
   },
+  {
+  name: "Martin Rinard",
+  title: "Professor",
+  institution: "Massachusetts Institute of Technology",
+  link: "https://people.csail.mit.edu/rinard/",
+  },
 ];
 
 const avatars = import.meta.glob("/ai4code-avatars/*", { eager: true, as: "url" });
