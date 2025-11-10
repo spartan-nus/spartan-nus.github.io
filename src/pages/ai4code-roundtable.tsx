@@ -253,6 +253,12 @@ const attendees = [
   institution: "Massachusetts Institute of Technology",
   link: "https://people.csail.mit.edu/rinard/",
   },
+  {
+  name: "Ahmed Hassan",
+  title: "Professor",
+  institution: "Queen's University Canada",
+  link: "https://research.cs.queensu.ca/home/ahmed/home/",
+  },
 ];
 
 const avatars = import.meta.glob("/ai4code-avatars/*", { eager: true, as: "url" });
