@@ -181,12 +181,12 @@ const attendees = [
     institution: "National University of Singapore",
     link: "https://www.linkedin.com/in/inby/"
   },
-  // {
-  //   name: "Cristian Cadar",
-  //   title: "Professor",
-  //   institution: "Imperial College London",
-  //   link: "https://www.doc.ic.ac.uk/~cristic/"
-  // },
+  {
+    name: "Cristian Cadar",
+    title: "Professor",
+    institution: "Imperial College London",
+    link: "https://www.doc.ic.ac.uk/~cristic/"
+  },
   {
     name: "Behrooz Omidvar-Tehrani",
     title: "Principal Scientist",
