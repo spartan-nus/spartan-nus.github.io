@@ -518,14 +518,22 @@ const YourNewPage = () => {
                 <div className="flex border-l-4 border-blue-500 pl-4 py-2">
                   <div className="w-20 text-sm font-semibold text-gray-500">10:00 AM</div>
                   <div className="flex-1">
-                    <h3 className="font-semibold">Industry sharing: talk on Trusted technologies</h3>
+                    <h3 className="font-semibold">Industry sharing: Talk on Trusted Technologies by Neha Rungta (AWS)</h3>
                     {/* <p className="text-gray-600">Networking and Discussion</p> */}
                   </div>
                 </div>
                 <div className="flex border-l-4 border-blue-500 pl-4 py-2">
                   <div className="w-20 text-sm font-semibold text-gray-500">10:30 AM</div>
                   <div className="flex-1">
-                    <h3 className="font-semibold">Industry sharing from Singapore / USA on AI for Code: 3-4 talks planned</h3>
+                    <h3 className="font-semibold">
+                      Industry sharing on AI for Code
+                    </h3>
+                    <ul className="list-disc list-inside mt-1 text-gray-700">
+                      <li>Harry Wang (Sonar)</li>
+                      <li>Hsiao Ming Chia (GovTech SG)</li>
+                      <li>Satish Chandra (Google)</li>
+                      <li>Yanyan Hu (MoHT SG)</li>
+                    </ul>
                     {/* <p className="text-gray-600">Hands-on Interpretability Tools</p> */}
                   </div>
                 </div>
