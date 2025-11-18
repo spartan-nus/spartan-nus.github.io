@@ -497,94 +497,123 @@ const YourNewPage = () => {
         {/* Program */}
         <section id="program" className="py-12 scroll-mt-20">
           <div className="container mx-auto px-4">
-            <h2 className="text-3xl font-bold text-center mb-8 text-gray-800">Program Schedule</h2>
-            {/* ... content ... */}
+            <h2 className="text-3xl font-bold text-center mb-8 text-gray-800">
+              Program Schedule
+            </h2>
+
             <div className="max-w-4xl mx-auto">
               <div className="space-y-4">
                 <div className="flex border-l-4 border-blue-500 pl-4 py-2">
-                  <div className="w-20 text-sm font-semibold text-gray-500">9:00 AM</div>
+                  <div className="w-40 text-sm font-semibold text-gray-500">
+                    9:00 AM – 9:30 AM
+                  </div>
                   <div className="flex-1">
                     <h3 className="font-semibold">Registration</h3>
-                    {/* <p className="text-gray-600">The Future of AI Safety Research</p> */}
                   </div>
                 </div>
+
                 <div className="flex border-l-4 border-blue-500 pl-4 py-2">
-                  <div className="w-20 text-sm font-semibold text-gray-500">9:30 AM</div>
-                  <div className="flex-1">
-                    <h3 className="font-semibold">Welcome and presentation by organizers</h3>
-                    {/* <p className="text-gray-600">Alignment Challenges in Large Language Models</p> */}
+                  <div className="w-40 text-sm font-semibold text-gray-500">
+                    9:30 AM – 10:00 AM
                   </div>
-                </div>
-                <div className="flex border-l-4 border-blue-500 pl-4 py-2">
-                  <div className="w-20 text-sm font-semibold text-gray-500">10:00 AM</div>
-                  <div className="flex-1">
-                    <h3 className="font-semibold">Industry sharing: Talk on Trusted Technologies by Neha Rungta (AWS)</h3>
-                    {/* <p className="text-gray-600">Networking and Discussion</p> */}
-                  </div>
-                </div>
-                <div className="flex border-l-4 border-blue-500 pl-4 py-2">
-                  <div className="w-20 text-sm font-semibold text-gray-500">10:30 AM</div>
                   <div className="flex-1">
                     <h3 className="font-semibold">
-                      Industry sharing on AI for Code
+                      Introduction of roundtable topics by organizers
+                    </h3>
+                  </div>
+                </div>
+
+                <div className="flex border-l-4 border-blue-500 pl-4 py-2">
+                  <div className="w-40 text-sm font-semibold text-gray-500">
+                    10:00 AM – 10:30 AM
+                  </div>
+                  <div className="flex-1">
+                    <h3 className="font-semibold">Talk on Trust by Neha Rungta</h3>
+                  </div>
+                </div>
+
+                <div className="flex border-l-4 border-blue-500 pl-4 py-2">
+                  <div className="w-40 text-sm font-semibold text-gray-500">
+                    10:30 AM – 11:00 AM
+                  </div>
+                  <div className="flex-1">
+                    <h3 className="font-semibold">Talk on AI for SE by Satish Chandra</h3>
+                  </div>
+                </div>
+                
+                <div className="flex border-l-4 border-blue-500 pl-4 py-2">
+                  <div className="w-40 text-sm font-semibold text-gray-500">
+                    11:00 AM – 12:00 PM
+                  </div>
+                  <div className="flex-1">
+                    <h3 className="font-semibold">
+                      Talks on AI for Code (20 minutes each)
                     </h3>
                     <ul className="list-disc list-inside mt-1 text-gray-700">
-                      <li>Harry Wang (Sonar)</li>
-                      <li>Hsiao Ming Chia (GovTech SG)</li>
-                      <li>Satish Chandra (Google)</li>
-                      <li>Yanyan Hu (MoHT SG)</li>
+                      <li>Harry Wang</li>
+                      <li>Hsiao Ming Chia</li>
+                      <li>Yanyan Hu</li>
                     </ul>
-                    {/* <p className="text-gray-600">Hands-on Interpretability Tools</p> */}
                   </div>
                 </div>
+
                 <div className="flex border-l-4 border-blue-500 pl-4 py-2">
-                  <div className="w-20 text-sm font-semibold text-gray-500">12:00 PM</div>
+                  <div className="w-40 text-sm font-semibold text-gray-500">
+                    12:00 PM – 1:30 PM
+                  </div>
                   <div className="flex-1">
                     <h3 className="font-semibold">Lunch</h3>
-                    {/* <p className="text-gray-600">Next Steps and Collaboration Opportunities</p> */}
                   </div>
                 </div>
+
                 <div className="flex border-l-4 border-blue-500 pl-4 py-2">
-                  <div className="w-20 text-sm font-semibold text-gray-500">1:00 PM</div>
+                  <div className="w-40 text-sm font-semibold text-gray-500">
+                    1:30 PM – 3:00 PM
+                  </div>
                   <div className="flex-1">
-                    <h3 className="font-semibold">Industry roundtable in groups</h3>
-                    {/* <p className="text-gray-600">Next Steps and Collaboration Opportunities</p> */}
+                    <h3 className="font-semibold">Roundtable discussions</h3>
+                    <ul className="list-disc list-outside mt-1 text-gray-700 space-y-1 pl-5">
+                      <li>What will be the role of academia in AI for code?</li>
+                      <li>How to engender trust in coding agents?</li>
+                      <li>
+                        What is the future of software engineering with agents regarding design, coding, and validation?
+                      </li>
+                      <li>
+                        What are the challenges in industry in deployment of AI for code?
+                      </li>
+                    </ul>
                   </div>
                 </div>
+
                 <div className="flex border-l-4 border-blue-500 pl-4 py-2">
-                  <div className="w-20 text-sm font-semibold text-gray-500">2:30 PM</div>
-                  <div className="flex-1">
-                    <h3 className="font-semibold">Summary of results of roundtable</h3>
-                    {/* <p className="text-gray-600">Next Steps and Collaboration Opportunities</p> */}
+                  <div className="w-40 text-sm font-semibold text-gray-500">
+                    3:00 PM – 3:30 PM
                   </div>
-                </div>
-                <div className="flex border-l-4 border-blue-500 pl-4 py-2">
-                  <div className="w-20 text-sm font-semibold text-gray-500">3:30 PM</div>
                   <div className="flex-1">
                     <h3 className="font-semibold">Tea break</h3>
-                    {/* <p className="text-gray-600">Next Steps and Collaboration Opportunities</p> */}
                   </div>
                 </div>
+
                 <div className="flex border-l-4 border-blue-500 pl-4 py-2">
-                  <div className="w-20 text-sm font-semibold text-gray-500">4:00 PM</div>
+                  <div className="w-40 text-sm font-semibold text-gray-500">
+                    3:30 PM – 4:30 PM
+                  </div>
                   <div className="flex-1">
-                    <h3 className="font-semibold">Manifesto discussions - Abhik Roychoudhury &amp; Baishakhi Ray with all</h3>
-                    {/* <p className="text-gray-600">Next Steps and Collaboration Opportunities</p> */}
+                    <h3 className="font-semibold">
+                      Summary of roundtable discussions by participants
+                    </h3>
                   </div>
                 </div>
+
                 <div className="flex border-l-4 border-blue-500 pl-4 py-2">
-                  <div className="w-20 text-sm font-semibold text-gray-500">5:00 PM</div>
-                  <div className="flex-1">
-                    <h3 className="font-semibold">Summary: Plan for followup meetings in New York and Bay Area - Abhik Roychoudhury</h3>
-                    {/* <p className="text-gray-600">Next Steps and Collaboration Opportunities</p> */}
+                  <div className="w-40 text-sm font-semibold text-gray-500">
+                    4:30 PM – 5:00 PM
                   </div>
-                </div>
-                <div className="flex border-l-4 border-blue-500 pl-4 py-2">
-                  <div className="w-20 text-sm font-semibold text-gray-500">5:30 PM</div>
                   <div className="flex-1">
-                    <h3 className="font-semibold">Closing</h3>
-                    {/* <p className="text-gray-600">Next Steps and Collaboration Opportunities</p> */}
-                  </div>
+                    <h3 className="font-semibold">
+                      Wrap-up and discussion on follow-up by organisers for the next meeting in New York (May 2026)
+                    </h3>
+                    </div>
                 </div>
               </div>
             </div>
