@@ -477,6 +477,7 @@ const YourNewPage = () => {
                       </a>
                       <h3 className="font-semibold text-lg">{attendee.name}</h3>
                       <p className="text-gray-600">{attendee.title}</p>
+                      <p className="text-sm text-gray-500">{attendee.institution}</p>
                     </div>
                   ))}
                 </div>
