@@ -190,7 +190,7 @@ const attendees = [
   {
     name: "Behrooz Omidvar-Tehrani",
     title: "Principal Scientist",
-    institution: "AWS Agentic AI",
+    institution: "AWS",
     link: "https://www.linkedin.com/in/behroozomidvar/"
   },
   {
