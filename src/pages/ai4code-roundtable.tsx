@@ -287,6 +287,19 @@ const getAvatarPath = (name: string): string => {
   return "/avatars/default.jpg";
 };
 
+const partners = [
+  {
+    name: "National University of Singapore",
+    role: "Host",
+    logo: "/nus-logo.jpg",
+  },
+  {
+    name: "Infocomm Media Development Authority",
+    role: "Supporting Partner",
+    logo: "/imda-logo.jpg",
+  },
+];
+
 
 const YourNewPage = () => {
   <head>
@@ -728,6 +741,29 @@ const YourNewPage = () => {
                 <p className="text-sm font-semibold text-gray-500">More Info Soon</p>
               </div>
 
+            </div>
+          </div>
+        </section>
+
+        {/* Partners */}
+        <section className="py-12 scroll-mt-20">
+          <div className="container mx-auto px-4">
+            <div className="max-w-4xl mx-auto">
+              <div className="flex flex-col sm:flex-row items-center justify-center gap-8">
+                {partners.map((partner) => (
+                  <div key={partner.name} className="flex flex-col items-center text-center">
+                    <p className="text-sm tracking-widest text-gray-600 mb-3">{partner.role}</p>
+                    <div className="bg-white rounded-xl p-4 shadow-md h-24 w-48 flex items-center justify-center overflow-hidden">
+                      <img
+                        src={partner.logo}
+                        alt={`${partner.name} logo`}
+                        className={`max-h-16 w-auto object-contain ${partner.role === "Host" ? "scale-150" : ""}`}
+                      />
+                    </div>
+                    <p className="text-sm mt-3 text-gray-800">{partner.name}</p>
+                  </div>
+                ))}
+              </div>
             </div>
           </div>
         </section>
