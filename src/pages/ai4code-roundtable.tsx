@@ -133,12 +133,12 @@ const attendees = [
     institution: "Apple",
     link: "https://www.linkedin.com/in/memonatif/"
   },
-  {
-    name: "Murali Krishna Ramanathan",
-    title: "Principal Applied Scientist",
-    institution: "AWS",
-    link: "https://www.linkedin.com/in/mkramanathan/"
-  },
+  // {
+  //   name: "Murali Krishna Ramanathan",
+  //   title: "Principal Applied Scientist",
+  //   institution: "AWS",
+  //   link: "https://www.linkedin.com/in/mkramanathan/"
+  // },
   {
     name: "Xin Xia",
     title: "Qiushi Distinguished Professor",
@@ -190,8 +190,14 @@ const attendees = [
   {
     name: "Behrooz Omidvar-Tehrani",
     title: "Principal Scientist",
-    institution: "Microsoft",
+    institution: "AWS Agentic AI",
     link: "https://www.linkedin.com/in/behroozomidvar/"
+  },
+  {
+    name: "Ridwan Shariffdeen",
+    title: "Principal Research Scientist",
+    institution: "Sonar",
+    link: "https://www.linkedin.com/in/rshariffdeen/"
   },
   {
     name: "Shaowei Ying",
