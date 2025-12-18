@@ -97,12 +97,12 @@ const attendees = [
     institution: "Tata Consultancy Services",
     link: "https://in.linkedin.com/in/raveendrakumar"
   },
-  {
-    name: "Aditya Kanade",
-    title: "Senior Principal Researcher",
-    institution: "Microsoft Research India",
-    link: "https://www.microsoft.com/en-us/research/people/kanadeaditya/"
-  },
+  // {
+  //   name: "Aditya Kanade",
+  //   title: "Senior Principal Researcher",
+  //   institution: "Microsoft Research India",
+  //   link: "https://www.microsoft.com/en-us/research/people/kanadeaditya/"
+  // },
   {
     name: "Jeffrey Salleh",
     title: "Director, Cloud Engineering",
