@@ -206,6 +206,12 @@ const attendees = [
     link: "https://www.linkedin.com/in/shaoweiying/"
   }, 
   {
+  name: "Parijat Deshpande",
+  title: "Head",
+  institution: "TCS Pace Port Singapore",
+  link: "https://www.linkedin.com/in/dr-parijat-deshpande-0481571/",
+  },
+  {
   name: "Volkan Sevindik",
   title: "Chief Technology Officer (CTO)",
   institution: "Starhub",
