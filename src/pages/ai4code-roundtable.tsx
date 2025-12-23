@@ -640,6 +640,15 @@ const YourNewPage = () => {
                     </h3>
                     </div>
                 </div>
+
+                <div className="flex border-l-4 border-blue-500 pl-4 py-2">
+                  <div className="w-40 text-sm font-semibold text-gray-500">
+                    6:00 PM
+                  </div>
+                  <div className="flex-1">
+                    <h3 className="font-semibold">Dinner</h3>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
