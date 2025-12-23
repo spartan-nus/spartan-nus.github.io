@@ -649,7 +649,7 @@ const YourNewPage = () => {
                     <h3 className="font-semibold">
                       Dinner at{" "}
                       <a
-                        href="https://www.hyatt.com/grand-hyatt/en-US/sinrs-grand-hyatt-singapore/dining"
+                        href="https://share.google/cgy1odDE29ygz5fAw"
                         className="hover:text-blue-600 transition-colors"
                       >
                          Straits Kitchen, Grand Hyatt Hotel
