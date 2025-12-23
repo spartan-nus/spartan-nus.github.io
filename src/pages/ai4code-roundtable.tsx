@@ -646,7 +646,16 @@ const YourNewPage = () => {
                     6:00 PM
                   </div>
                   <div className="flex-1">
-                    <h3 className="font-semibold">Dinner</h3>
+                    <h3 className="font-semibold">
+                      Dinner at{" "}
+                      <a
+                        href="https://www.hyatt.com/grand-hyatt/en-US/sinrs-grand-hyatt-singapore/dining"
+                        className="hover:text-blue-600 transition-colors"
+                      >
+                         Straits Kitchen, Grand Hyatt Hotel
+                      </a>{" "}
+                      (transport is provided)
+                    </h3>
                   </div>
                 </div>
               </div>
