@@ -530,7 +530,7 @@ const YourNewPage = () => {
               <div className="space-y-4">
                 <div className="flex border-l-4 border-blue-500 pl-4 py-2">
                   <div className="w-40 text-sm font-semibold text-gray-500">
-                    9:00 AM – 9:30 AM
+                    9:00 AM – 9:15 AM
                   </div>
                   <div className="flex-1">
                     <h3 className="font-semibold">Registration</h3>
@@ -539,10 +539,11 @@ const YourNewPage = () => {
 
                 <div className="flex border-l-4 border-blue-500 pl-4 py-2">
                   <div className="w-40 text-sm font-semibold text-gray-500">
-                    9:30 AM – 10:00 AM
+                    9:15 AM – 10:00 AM
                   </div>
                   <div className="flex-1">
                     <h3 className="font-semibold">
+                      Self- Introduction by Participants, Intro to NUS innovation efforts by Sian Tan, 
                       Introduction of roundtable topics by organizers
                     </h3>
                   </div>
