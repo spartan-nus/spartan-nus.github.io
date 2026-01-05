@@ -543,7 +543,8 @@ const YourNewPage = () => {
                   </div>
                   <div className="flex-1">
                     <h3 className="font-semibold">
-                      Self- Introduction by Participants, Intro to NUS innovation efforts by Sian Tan, 
+                      Self-Introduction by participants <br/> 
+                      Introduction to NUS innovation efforts by Sian Tan <br/> 
                       Introduction of roundtable topics by organizers
                     </h3>
                   </div>
