@@ -412,7 +412,7 @@ const YourNewPage = () => {
         {/* Hero Section */}
         <section className="hero-section bg-gradient-to-r from-blue-900 to-blue-700 text-white py-16">
           <div className="container mx-auto px-4 text-center">
-            <h1 className="text-5xl font-bold mb-4">Singapore Manifesto on AI-Driven Innovations for Code</h1>
+            <h1 className="text-5xl font-bold mb-4">AI for Code Industry Roundtable</h1>
             <p className="text-xl mb-2">Programming with Trust</p>
             <div className="text-lg">
               <p className="mb-1"><strong>Date:</strong> Jan 19, 2026</p>
