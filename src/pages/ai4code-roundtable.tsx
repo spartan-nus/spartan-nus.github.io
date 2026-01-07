@@ -271,6 +271,11 @@ const attendees = [
   institution: "Queen's University Canada",
   link: "https://research.cs.queensu.ca/home/ahmed/home/",
   },
+  {name: "Marcus Low",
+  title: "Vice President and Managing Director",
+  institution: "Sonar",
+  link: "https://www.linkedin.com/in/marcus-low-6a0b605/",
+  },
 ];
 
 const avatars = import.meta.glob("/ai4code-avatars/*", { eager: true, as: "url" });
