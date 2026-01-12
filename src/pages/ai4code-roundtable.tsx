@@ -688,10 +688,17 @@ const YourNewPage = () => {
                     <p><strong>Building:</strong> COM4, Level 2</p>
                     <p><strong>Room:</strong> COM4-02-01 </p>
                   </div>
+                  <br/>
+                  <h4 className="text-xl font-semibold mb-4">Getting to the Event</h4>
+                  <div className="space-y-2 text-gray-600">
+                    <p><strong>By Car:</strong> The nearest visitor car parks to COM4 are Carpark 11 and Carpark 11B.</p>
+                    <p><strong>By Taxi:</strong> Please alight at COM2 (15 Computing Dr, Singapore 117418) and follow the signage to COM4.</p>
+                    <p><strong>By Public Transport:</strong> The nearest MRT station is CC24 Kent Ridge. From Bus Stop 18339 (opposite Kent Ridge Station Exit A), take the NUS Internal Shuttle Bus D2, alight at the COM3 bus stop and follow the signage to COM4.</p>
+                  </div>
                 </div>
 
                 <div className="bg-gray-200 h-64 rounded-lg flex items-center justify-center">
-                  <MapContainer center={[1.2951802, 103.7753569]} zoom={18} style={{ height: '16rem', width: '100%' }}>
+                  <MapContainer center={[1.2951802, 103.7753569]} zoom={18} style={{ height: '20rem', width: '100%' }}>
                     <TileLayer
                       url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
                       attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
