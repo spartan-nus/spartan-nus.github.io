@@ -235,12 +235,12 @@ const attendees = [
   institution: "AWS",
   link: "https://www.linkedin.com/in/neharungta/",
   },
-  {
-  name: "Robert Morris",
-  title: "Chief Technology Strategist",
-  institution: "MoHT Singapore",
-  link: "https://www.moht.com.sg/our-management/professor-robert-morris",
-  },
+  // {
+  // name: "Robert Morris",
+  // title: "Chief Technology Strategist",
+  // institution: "MoHT Singapore",
+  // link: "https://www.moht.com.sg/our-management/professor-robert-morris",
+  // },
   {
   name: "Yanyan Hu",
   title: "Deputy Director - Architecture and Development",
