@@ -643,7 +643,7 @@ const YourNewPage = () => {
                   </div>
                   <div className="flex-1">
                     <h3 className="font-semibold">
-                      Wrap-up and discussion on follow-up by organisers for the next meeting in New York (May 2026)
+                      Wrap-up and discussion on follow-up by organisers for the next meeting in New York <br/> (June 3, 2026)
                     </h3>
                     </div>
                 </div>
@@ -768,7 +768,7 @@ const YourNewPage = () => {
                 {/* <p className="text-gray-600 mb-4"> */}
                 {/*   Workshop on integrating Large Language Models into enterprise workflows. */}
                 {/* </p> */}
-                <p className="text-sm font-semibold text-gray-500">More Info Soon</p>
+                <p className="text-sm font-semibold text-gray-500">June 3, 2026 <br/> More Info Soon</p>
               </div>
 
               <div className="bg-white p-6 rounded-lg shadow-sm">
