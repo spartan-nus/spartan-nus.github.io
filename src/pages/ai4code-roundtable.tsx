@@ -526,11 +526,11 @@ const YourNewPage = () => {
                   ))}
                 </div>
 
-                <div className="mt-12 text-center">
+                {/* <div className="mt-12 text-center">
                   <div className="inline-block bg-gradient-to-r from-blue-900 to-blue-700 text-white text-2xl font-semibold px-6 py-3 rounded-full shadow-md">
                     More attendees are joining soon!
                   </div>
-                </div>
+                </div> */}
 
               </div>
             </section>
