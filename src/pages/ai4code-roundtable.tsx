@@ -17,6 +17,7 @@ L.Icon.Default.mergeOptions({
 // --- START: New and Improved SectionNavbar Logic ---
 const sections = [
   { id: 'about', title: 'About' },
+  { if: 'summary', title: 'Summary' },
   { id: 'organizers', title: 'Organizers' },
   { id: 'attendees', title: 'Attendees' },
   { id: 'program', title: 'Program' },
@@ -444,6 +445,19 @@ const YourNewPage = () => {
               </p>
             </div>
           </div>
+        </section>
+
+        <section id="summary">
+          <div className="container mx-auto px-4">
+            <h2 className="text-3xl font-bold text-center mb-8 text-gray-800">Event Summary</h2>
+            {/* prettified box with appropriate padding, connect to post when clicked anywhere */}
+            <div className="max-w-4xl mx-auto text-gray-600 leading-relaxed" style={{ padding: '1rem', border: '1px solid #888', borderRadius: '0.5rem', backgroundColor: '#f9fafb' }} onClick={() => window.open("https://medium.com/@smkang96/ai-for-code-industry-roundtable-discussing-the-future-of-software-engineering-9a795601ab1e", "_blank")}>
+              <p className="mb-4">
+                The event has concluded successfully! We have published a detailed summary of the discussions and insights from the roundtable <a href="https://medium.com/@smkang96/ai-for-code-industry-roundtable-discussing-the-future-of-software-engineering-9a795601ab1e" className="text-blue-600 hover:underline">on Medium</a>.
+              </p>
+            </div>
+          </div>
+
         </section>
 
         {/* Organizers */}
