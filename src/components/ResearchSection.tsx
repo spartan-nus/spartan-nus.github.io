@@ -10,29 +10,20 @@ const researchProjects = [
     description: "Being integrated in Production with SonarQube Static Analyzer",
     link: "https://autocoderover.dev",
   },
-  { title: "Agentic Programming with Trust",
-    description: "Opinion Piece, due to appear in Communications of the ACM",
-    link: "https://arxiv.org/pdf/2502.13767",
-  },
    {
-    title: "Agents for Program Reasoning ",
-    description: "Collaboration with Imperial College, coming soon",
-    link: "https://openreview.net/pdf?id=5t9HFssPla"
+    title: "AI for Program Reasoning ",
+    description: "Funded under NRF AI for Science call, starting July 2026",
+    link: "https://ai4pr.github.io/"
+  },
+  { title: "Agentic Programming with Trust",
+    description: "Opinion Piece, in Communications of the ACM, May 2026",
+    link: "https://arxiv.org/pdf/2502.13767",
   },
     {
     title: "AI for Open Source Security",
     description: "Collaboration with Google OSS team",
     link: "/coderover-s.html",
   }, 
-   { title: "Automatic Programming",
-    description: "Position paper in TOSEM",
-    link: "https://dl.acm.org/doi/pdf/10.1145/3708519",
-  },
-   {
-    title: "Unified Software Engineering Agent",
-    description: "An agent which can write, fix, patch code and conduct many SE tasks",
-    link: "https://arxiv.org/abs/2506.14683",
-  },
   {
     title: "Accurate Table Question Answering",
     description: "Table Question Answering (TQA) is a task that aims to provide accurate answers to natural language questions based on the content of a given (database) table",
