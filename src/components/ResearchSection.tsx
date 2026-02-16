@@ -13,7 +13,7 @@ const researchProjects = [
    {
     title: "AI for Program Reasoning ",
     description: "Funded under NRF AI for Science call, starting July 2026",
-    link: "https://ai4pr.github.io/"
+    link: "https://ai-4-pr.github.io/"
   },
   { title: "Agentic Programming with Trust",
     description: "Opinion Piece, in Communications of the ACM, May 2026",
