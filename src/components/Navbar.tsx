@@ -64,13 +64,13 @@ const Navbar: React.FC = () => {
             </li>
           ))}
 
-          {/* Funded Projects Dropdown */}
+          {/* Projects Dropdown */}
           <li className="relative" ref={dropdownRef}>
             <button
               onClick={() => setIsDropdownOpen(!isDropdownOpen)}
               className="px-4 py-2.5 rounded-md text-sm font-semibold transition-all duration-200 text-white hover:bg-blue-800 hover:text-nus-orange flex items-center gap-1.5"
             >
-              Funded Projects
+              Projects
               <ChevronDown className={cn("h-4 w-4 transition-transform duration-200", isDropdownOpen && "rotate-180")} />
             </button>
 
