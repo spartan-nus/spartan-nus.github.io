@@ -44,16 +44,6 @@ const AboutSection: React.FC = () => {
             </a>
             )
           </p>
-          <div className="relative bg-gradient-to-r from-nus-orange/20 via-nus-orange/10 to-transparent border-l-4 border-nus-orange p-6 rounded-r-xl shadow-md hover:shadow-lg transition-all hover:-translate-y-1">
-            <div className="absolute top-0 right-0 w-32 h-32 bg-nus-orange/5 rounded-full -mr-16 -mt-16"></div>
-            <p className="font-bold text-nus-blue text-lg relative z-10">
-              <a href="https://spartan-nus.github.io/ai4code-roundtable" className="hover:text-nus-orange transition-colors flex items-center gap-2">
-                <span className="inline-block w-2 h-2 bg-nus-orange rounded-full animate-pulse"></span>
-                AI for Code Industry Roundtable
-              </a>
-              <span className="text-sm font-normal text-gray-600 block mt-1">19 Jan 2026</span>
-            </p>
-          </div>
           <div className="pt-6 flex justify-center md:justify-start">
             <img
               src="/spartan_logo_colored.jpg"
