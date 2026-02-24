@@ -6,78 +6,18 @@ permalink: /research/
 
 <h2 style="text-align: center; margin-bottom: 2rem;">Research Projects</h2>
 
-<div class="research-grid" markdown="1">
+<div class="research-grid">
+{% for project in site.data.research %}
+  <div class="research-card" markdown="1">
 
-<div class="research-card" markdown="1">
+### {{ project.title }}
 
-### AutoCodeRover, AI Agent for Software
+{{ project.description }}
 
-Being integrated in Production with SonarQube Static Analyzer
+[Learn more →]({{ project.link }}){:.learn-more}
 
-[Learn more →](https://autocoderover.dev){:.learn-more}
-
-</div>
-
-<div class="research-card" markdown="1">
-
-### AI for Program Reasoning
-
-Funded under NRF AI for Science call, starting July 2026
-
-[Learn more →](https://ai-4-pr.github.io/){:.learn-more}
-
-</div>
-
-<div class="research-card" markdown="1">
-
-### Agentic Programming with Trust
-
-Opinion Piece, in Communications of the ACM, May 2026
-
-[Learn more →](https://arxiv.org/pdf/2502.13767){:.learn-more}
-
-</div>
-
-<div class="research-card" markdown="1">
-
-### AI for Open Source Security
-
-Collaboration with Google OSS team
-
-[Learn more →](/coderover-s.html){:.learn-more}
-
-</div>
-
-<div class="research-card" markdown="1">
-
-### Accurate Table Question Answering
-
-Table Question Answering (TQA) is a task that aims to provide accurate answers to natural language questions based on the content of a given (database) table
-
-[Learn more →](https://www.comp.nus.edu.sg/~xiaoxk/projects/tqa/tqa_project.html){:.learn-more}
-
-</div>
-
-<div class="research-card" markdown="1">
-
-### Fine tuning LLMs on sensitive data
-
-Use of differential privacy while finetuning LLMs
-
-[Learn more →](https://www.comp.nus.edu.sg/~xiaoxk/projects/dpzo/dpzo.html){:.learn-more}
-
-</div>
-
-<div class="research-card" markdown="1">
-
-### Explainable AI Agents
-
-An agent which is more trustworthy since it can explain its actions
-
-[Learn more →](https://www.arxiv.org/abs/2507.22414){:.learn-more}
-
-</div>
-
+  </div>
+{% endfor %}
 </div>
 
 <style>

@@ -1,0 +1,27 @@
+- title: "AutoCodeRover, AI Agent for Software"
+  description: "Being integrated in Production with SonarQube Static Analyzer"
+  link: "https://autocoderover.dev"
+
+- title: "AI for Program Reasoning"
+  description: "Funded under NRF AI for Science call, starting July 2026"
+  link: "https://ai-4-pr.github.io/"
+
+- title: "Agentic Programming with Trust"
+  description: "Opinion Piece, in Communications of the ACM, May 2026"
+  link: "https://arxiv.org/pdf/2502.13767"
+
+- title: "AI for Open Source Security"
+  description: "Collaboration with Google OSS team"
+  link: "/coderover-s.html"
+
+- title: "Accurate Table Question Answering"
+  description: "Table Question Answering (TQA) is a task that aims to provide accurate answers to natural language questions based on the content of a given (database) table"
+  link: "https://www.comp.nus.edu.sg/~xiaoxk/projects/tqa/tqa_project.html"
+
+- title: "Fine tuning LLMs on sensitive data"
+  description: "Use of differential privacy while finetuning LLMs"
+  link: "https://www.comp.nus.edu.sg/~xiaoxk/projects/dpzo/dpzo.html"
+
+- title: "Explainable AI Agents"
+  description: "An agent which is more trustworthy since it can explain its actions"
+  link: "https://www.arxiv.org/abs/2507.22414"
