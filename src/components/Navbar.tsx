@@ -48,10 +48,12 @@ const Navbar: React.FC = () => {
           ))}
 
           {/* Funded Projects Dropdown */}
-          <li className="relative">
+          <li
+            className="relative"
+            onMouseEnter={() => setIsDropdownOpen(true)}
+            onMouseLeave={() => setIsDropdownOpen(false)}
+          >
             <button
-              onMouseEnter={() => setIsDropdownOpen(true)}
-              onMouseLeave={() => setIsDropdownOpen(false)}
               className="px-4 py-2.5 rounded-md text-sm font-semibold transition-all duration-200 text-white hover:bg-blue-800 hover:text-nus-orange flex items-center gap-1.5"
             >
               Funded Projects
@@ -60,9 +62,7 @@ const Navbar: React.FC = () => {
 
             {isDropdownOpen && (
               <div
-                onMouseEnter={() => setIsDropdownOpen(true)}
-                onMouseLeave={() => setIsDropdownOpen(false)}
-                className="absolute top-full left-0 mt-2 bg-white text-nus-blue rounded-lg shadow-xl py-2 min-w-[300px] z-50 border border-gray-200"
+                className="absolute top-full left-0 mt-1 bg-white text-nus-blue rounded-lg shadow-xl py-2 min-w-[300px] z-50 border border-gray-200"
               >
                 {fundedProjects.map((project) => (
                   <a
