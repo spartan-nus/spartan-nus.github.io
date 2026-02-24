@@ -4,12 +4,14 @@ import { Card } from "@/components/ui/card";
 
 const AboutSection: React.FC = () => {
   return (
-    <div className="container mx-auto py-12 px-4 md:px-6">
-      <h2 className="text-4xl font-bold mb-10 text-center text-nus-blue tracking-tight">SPARTAN effort in Agentic AI</h2>
+    <div className="container mx-auto py-16 px-4 md:px-8 max-w-7xl">
+      <h2 className="text-5xl md:text-6xl font-extrabold mb-12 text-center bg-gradient-to-r from-nus-blue via-blue-600 to-nus-orange bg-clip-text text-transparent tracking-tight leading-tight">
+        SPARTAN effort in Agentic AI
+      </h2>
 
-      <div className="grid md:grid-cols-2 gap-10">
-        <div className="space-y-5">
-          <p className="text-base leading-relaxed text-gray-700">
+      <div className="grid md:grid-cols-2 gap-12 items-start">
+        <div className="space-y-6">
+          <p className="text-lg leading-relaxed text-gray-800">
             We are the{" "}
             <span className="font-semibold text-nus-orange">
               Strategic Platform for Autonomous Resilient and Trusted Agents
@@ -42,24 +44,26 @@ const AboutSection: React.FC = () => {
             </a>
             )
           </p>
-          <div className="bg-nus-orange/10 border-l-4 border-nus-orange p-4 rounded-r">
-            <p className="font-semibold text-nus-blue">
-              <a href="https://spartan-nus.github.io/ai4code-roundtable" className="hover:text-nus-orange transition-colors">
+          <div className="relative bg-gradient-to-r from-nus-orange/20 via-nus-orange/10 to-transparent border-l-4 border-nus-orange p-6 rounded-r-xl shadow-md hover:shadow-lg transition-all hover:-translate-y-1">
+            <div className="absolute top-0 right-0 w-32 h-32 bg-nus-orange/5 rounded-full -mr-16 -mt-16"></div>
+            <p className="font-bold text-nus-blue text-lg relative z-10">
+              <a href="https://spartan-nus.github.io/ai4code-roundtable" className="hover:text-nus-orange transition-colors flex items-center gap-2">
+                <span className="inline-block w-2 h-2 bg-nus-orange rounded-full animate-pulse"></span>
                 AI for Code Industry Roundtable
               </a>
-              , 19 Jan 2026.
+              <span className="text-sm font-normal text-gray-600 block mt-1">19 Jan 2026</span>
             </p>
           </div>
-          <div className="pt-4">
+          <div className="pt-6 flex justify-center md:justify-start">
             <img
               src="/spartan_logo_colored.jpg"
               alt="SPARTAN Logo"
-              className="h-32 w-auto rounded-lg shadow-sm"
+              className="h-40 w-auto rounded-xl shadow-lg hover:shadow-2xl transition-all hover:scale-105"
             />
           </div>
         </div>
 
-        <Card className="overflow-hidden border-2 border-nus-orange shadow-lg hover:shadow-xl transition-shadow">
+        <Card className="overflow-hidden border-2 border-nus-orange shadow-2xl hover:shadow-nus-orange/30 hover:-translate-y-2 transition-all duration-300 rounded-xl">
           <img
             src="/center_photo_2025_may.jpeg"
             alt="Lab research"

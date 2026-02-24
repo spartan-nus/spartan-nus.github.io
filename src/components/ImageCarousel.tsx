@@ -67,23 +67,23 @@ const ImageCarousel: React.FC = () => {
   }, []);
 
   return (
-    <div className="relative w-full overflow-hidden max-w-6xl mx-auto mt-8 h-[350px]">
+    <div className="relative w-full overflow-hidden max-w-7xl mx-auto mt-6 h-[400px] rounded-2xl shadow-2xl">
       {images.map((image, index) => (
         <div
           key={index}
           className={cn(
-            "absolute w-full h-full transition-opacity duration-500",
+            "absolute w-full h-full transition-all duration-700 ease-in-out",
             currentIndex === index
-              ? "opacity-100 pointer-events-auto"
-              : "opacity-0 pointer-events-none",
+              ? "opacity-100 pointer-events-auto scale-100"
+              : "opacity-0 pointer-events-none scale-105",
           )}
         >
           {image.link && currentIndex == index ? (
-            <a href={image.link} target="_blank" rel="noopener noreferrer">
+            <a href={image.link} target="_blank" rel="noopener noreferrer" className="block w-full h-full">
               <img
                 src={image.url}
                 alt={image.alt}
-                className="w-full h-full object-cover"
+                className="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
               />
             </a>
           ) : (
@@ -93,37 +93,37 @@ const ImageCarousel: React.FC = () => {
               className="w-full h-full object-cover"
             />
           )}
-          <div className="absolute bottom-0 left-0 right-0 bg-black bg-opacity-50 text-white p-4">
+          <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent text-white p-6">
             {image.title && (
-              <h2 className="text-xl font-bold">{image.title}</h2>
+              <h2 className="text-2xl font-bold mb-2">{image.title}</h2>
             )}
-            <p>{image.alt}</p>
+            <p className="text-sm md:text-base font-medium">{image.alt}</p>
           </div>
         </div>
       ))}
 
       <button
         onClick={goToPrevious}
-        className="absolute left-4 top-1/2 transform -translate-y-1/2 bg-black bg-opacity-50 text-white p-2 rounded-full hover:bg-opacity-70 transition-all"
+        className="absolute left-6 top-1/2 transform -translate-y-1/2 bg-nus-orange/90 text-white p-3 rounded-full hover:bg-nus-orange hover:scale-110 transition-all shadow-lg backdrop-blur-sm"
       >
-        <ArrowLeft size={24} />
+        <ArrowLeft size={28} />
       </button>
 
       <button
         onClick={goToNext}
-        className="absolute right-4 top-1/2 transform -translate-y-1/2 bg-black bg-opacity-50 text-white p-2 rounded-full hover:bg-opacity-70 transition-all"
+        className="absolute right-6 top-1/2 transform -translate-y-1/2 bg-nus-orange/90 text-white p-3 rounded-full hover:bg-nus-orange hover:scale-110 transition-all shadow-lg backdrop-blur-sm"
       >
-        <ArrowRight size={24} />
+        <ArrowRight size={28} />
       </button>
 
-      <div className="absolute bottom-16 left-0 right-0 flex justify-center gap-2">
+      <div className="absolute bottom-20 left-0 right-0 flex justify-center gap-3">
         {images.map((_, index) => (
           <button
             key={index}
             onClick={() => setCurrentIndex(index)}
             className={cn(
-              "w-3 h-3 rounded-full",
-              currentIndex === index ? "bg-white" : "bg-white/50",
+              "h-2 rounded-full transition-all duration-300",
+              currentIndex === index ? "bg-nus-orange w-8" : "bg-white/60 w-2 hover:bg-white/90",
             )}
           />
         ))}
