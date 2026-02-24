@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { cn } from "@/lib/utils";
 import { ChevronDown } from "lucide-react";
@@ -6,6 +6,23 @@ import { ChevronDown } from "lucide-react";
 const Navbar: React.FC = () => {
   const location = useLocation();
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+  const dropdownRef = useRef<HTMLLIElement>(null);
+
+  useEffect(() => {
+    const handleClickOutside = (event: MouseEvent) => {
+      if (dropdownRef.current && !dropdownRef.current.contains(event.target as Node)) {
+        setIsDropdownOpen(false);
+      }
+    };
+
+    if (isDropdownOpen) {
+      document.addEventListener("mousedown", handleClickOutside);
+    }
+
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, [isDropdownOpen]);
 
   const navItems = [
     { name: "About", path: "/" },
@@ -48,12 +65,9 @@ const Navbar: React.FC = () => {
           ))}
 
           {/* Funded Projects Dropdown */}
-          <li
-            className="relative"
-            onMouseEnter={() => setIsDropdownOpen(true)}
-            onMouseLeave={() => setIsDropdownOpen(false)}
-          >
+          <li className="relative" ref={dropdownRef}>
             <button
+              onClick={() => setIsDropdownOpen(!isDropdownOpen)}
               className="px-4 py-2.5 rounded-md text-sm font-semibold transition-all duration-200 text-white hover:bg-blue-800 hover:text-nus-orange flex items-center gap-1.5"
             >
               Funded Projects
