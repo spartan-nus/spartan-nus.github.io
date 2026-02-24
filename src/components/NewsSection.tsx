@@ -3,6 +3,15 @@ import React from "react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { ArrowRight } from "lucide-react";
 
+const eventItems = [
+  {
+    date: "19 Jan 2026",
+    title: "AI for Code Industry Roundtable",
+    content: "A one day roundtable event on how to use AI for code with trust. It will be followed by another event in New York. Both events are jointly organized by Abhik Roychoudhury and Baishakhi Ray.",
+    link: "https://spartan-nus.github.io/ai4code-roundtable"
+  },
+];
+
 const newsItems = [
   {
     date: "Feb 19, 2025",
@@ -37,19 +46,37 @@ const newsItems = [
       "A recent article in IEEE Spectrum examines the capabilities and limits of AI coding tools. Professor Abhik Roychoudhury, Principal Investigator of SPARTAN, emphasizes the importance of capturing programmer intent, highlights the challenges of ensuring trust in AI coding, and views the rise of agentic software engineering as an inevitable trend.",
     link: "https://spectrum.ieee.org/ai-for-coding",
   },
-  { 
-     date: "Sep 4, 2025",
-     title: "AI for Code Roundtable at NUS campus on 19 Jan 2026 before AAAI26",
-     content:
-       `A one day roundtable event on how to use AI for code with trust. It will be followed by another event in New York. 
-        Both events are jointly organized by Abhik Roychoudhury and Baishakhi Ray.`,
-      link: "https://spartan-nus.github.io/ai4code-roundtable"
- },
 ];
 
 const NewsSection: React.FC = () => {
   return (
     <div className="container mx-auto py-8 px-4">
+      <h2 className="text-3xl font-bold mb-8 text-center">Events</h2>
+
+      <div className="grid md:grid-cols-2 gap-6 mb-16">
+        {eventItems.map((item, index) => (
+          <Card key={index} className="hover:shadow-lg transition-shadow border-l-4 border-l-nus-orange">
+            <CardHeader>
+              <div className="text-sm text-nus-orange mb-1">
+                {item.date}
+              </div>
+              <CardTitle>{item.title}</CardTitle>
+            </CardHeader>
+            <CardContent>
+              <p>{item.content}</p>
+              {item.link && (
+                <a
+                  href={item.link}
+                  className="inline-flex items-center text-nus-orange hover:text-nus-blue mt-4"
+                >
+                  Learn more <ArrowRight className="ml-1 h-4 w-4" />
+                </a>
+              )}
+            </CardContent>
+          </Card>
+        ))}
+      </div>
+
       <h2 className="text-3xl font-bold mb-8 text-center">Latest News</h2>
 
       <div className="grid md:grid-cols-2 gap-6">
