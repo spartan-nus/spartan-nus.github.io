@@ -1,0 +1,43 @@
+# Site settings
+title: SPARTAN
+description: Strategic Platform for Autonomous Resilient and Trusted Agents @ NUS
+baseurl: ""
+url: "https://spartan-nus.github.io"
+
+# Build settings
+markdown: kramdown
+theme: minima
+
+# Collections
+collections:
+  news:
+    output: true
+    permalink: /news/:title/
+  events:
+    output: true
+    permalink: /events/:title/
+
+# Exclude from processing
+exclude:
+  - node_modules
+  - package.json
+  - package-lock.json
+  - bun.lockb
+  - vite.config.ts
+  - tsconfig.json
+  - tsconfig.app.json
+  - tsconfig.node.json
+  - tailwind.config.ts
+  - postcss.config.js
+  - eslint.config.js
+  - components.json
+  - src
+  - dist
+  - .github
+  - README.md
+  - DEPLOYMENT.md
+
+# NUS colors
+colors:
+  blue: "#003D7C"
+  orange: "#EF7C00"
