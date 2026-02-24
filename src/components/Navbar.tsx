@@ -7,10 +7,6 @@ const Navbar: React.FC = () => {
   const location = useLocation();
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
 
-  const navItems = [
-    { name: "About", path: "/" },
-  ];
-
   const fundedProjects = [
     { name: "AI for Program Reasoning", url: "https://ai4pr.github.io/" },
     { name: "Automated Program Repair", url: "https://nus-apr.github.io/" },
@@ -19,122 +15,117 @@ const Navbar: React.FC = () => {
   ];
 
   return (
-    <nav className="w-full bg-nus-blue text-white py-5 sticky top-0 z-50 shadow-lg">
-      <div className="container mx-auto flex flex-col sm:flex-row justify-between items-center px-4 md:px-6">
-        <div className="flex items-center mb-4 sm:mb-0 space-x-4">
-          <img src="/spartan_logo.png" alt="" className="h-11 w-auto mt-2" />
-          <h1 className="text-xl font-bold tracking-tight">
-            <Link to="/" className="hover:text-nus-orange transition-colors">
-              Strategic Platform for Autonomous Resilient and Trusted Agents @ NUS
-            </Link>
-          </h1>
-        </div>
+    <nav className="w-full bg-nus-blue sticky top-0 z-50">
+      <div className="max-w-7xl mx-auto px-6">
+        <div className="flex items-center justify-between h-16">
+          <Link to="/" className="flex items-center gap-3 group">
+            <img src="/spartan_logo.png" alt="SPARTAN" className="h-10 w-auto brightness-0 invert" />
+            <div className="text-white font-bold text-xl uppercase tracking-wider">SPARTAN</div>
+          </Link>
 
-        <ul className="flex flex-wrap justify-center gap-1 sm:gap-2 items-center">
-          {navItems.map((item) => (
-            <li key={item.name}>
+          <ul className="flex items-center gap-1">
+            <li>
               <Link
-                to={item.path}
+                to="/"
                 className={cn(
-                  "px-4 py-2.5 rounded-md text-sm font-semibold transition-all duration-200",
-                  location.pathname === item.path
-                    ? "bg-nus-orange text-white shadow-md"
-                    : "text-white hover:bg-blue-800 hover:text-nus-orange",
+                  "px-4 py-2 text-sm font-medium transition-colors",
+                  location.pathname === "/"
+                    ? "text-nus-orange"
+                    : "text-white/90 hover:text-white",
                 )}
               >
-                {item.name}
+                About
               </Link>
             </li>
-          ))}
 
-          {/* Funded Projects Dropdown */}
-          <li className="relative">
-            <button
-              onMouseEnter={() => setIsDropdownOpen(true)}
-              onMouseLeave={() => setIsDropdownOpen(false)}
-              className="px-4 py-2.5 rounded-md text-sm font-semibold transition-all duration-200 text-white hover:bg-blue-800 hover:text-nus-orange flex items-center gap-1.5"
-            >
-              Funded Projects
-              <ChevronDown className={cn("h-4 w-4 transition-transform duration-200", isDropdownOpen && "rotate-180")} />
-            </button>
-
-            {isDropdownOpen && (
-              <div
+            <li className="relative group">
+              <button
                 onMouseEnter={() => setIsDropdownOpen(true)}
                 onMouseLeave={() => setIsDropdownOpen(false)}
-                className="absolute top-full left-0 mt-2 bg-white text-nus-blue rounded-lg shadow-xl py-2 min-w-[300px] z-50 border border-gray-200"
+                className="px-4 py-2 text-sm font-medium text-white/90 hover:text-white transition-colors flex items-center gap-1"
               >
-                {fundedProjects.map((project) => (
-                  <a
-                    key={project.name}
-                    href={project.url}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="block px-5 py-3 text-sm font-medium hover:bg-nus-orange hover:text-white transition-all duration-150 border-l-4 border-transparent hover:border-nus-orange"
-                  >
-                    {project.name}
-                  </a>
-                ))}
-              </div>
-            )}
-          </li>
+                Funded Projects
+                <ChevronDown className="h-4 w-4" />
+              </button>
 
-          <li>
-            <Link
-              to="/research"
-              className={cn(
-                "px-4 py-2.5 rounded-md text-sm font-semibold transition-all duration-200",
-                location.pathname === "/research"
-                  ? "bg-nus-orange text-white shadow-md"
-                  : "text-white hover:bg-blue-800 hover:text-nus-orange",
+              {isDropdownOpen && (
+                <div
+                  onMouseEnter={() => setIsDropdownOpen(true)}
+                  onMouseLeave={() => setIsDropdownOpen(false)}
+                  className="absolute top-full right-0 mt-2 bg-white rounded shadow-xl py-2 min-w-[300px]"
+                >
+                  {fundedProjects.map((project) => (
+                    <a
+                      key={project.name}
+                      href={project.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="block px-6 py-3 text-sm text-gray-700 hover:bg-gray-50 hover:text-nus-orange transition-colors"
+                    >
+                      {project.name}
+                    </a>
+                  ))}
+                </div>
               )}
-            >
-              Upcoming Efforts
-            </Link>
-          </li>
+            </li>
 
-          <li>
-            <Link
-              to="/news"
-              className={cn(
-                "px-4 py-2.5 rounded-md text-sm font-semibold transition-all duration-200",
-                location.pathname === "/news"
-                  ? "bg-nus-orange text-white shadow-md"
-                  : "text-white hover:bg-blue-800 hover:text-nus-orange",
-              )}
-            >
-              News & Events
-            </Link>
-          </li>
+            <li>
+              <Link
+                to="/research"
+                className={cn(
+                  "px-4 py-2 text-sm font-medium transition-colors",
+                  location.pathname === "/research"
+                    ? "text-nus-orange"
+                    : "text-white/90 hover:text-white",
+                )}
+              >
+                Upcoming Efforts
+              </Link>
+            </li>
 
-          <li>
-            <Link
-              to="/people"
-              className={cn(
-                "px-4 py-2.5 rounded-md text-sm font-semibold transition-all duration-200",
-                location.pathname === "/people"
-                  ? "bg-nus-orange text-white shadow-md"
-                  : "text-white hover:bg-blue-800 hover:text-nus-orange",
-              )}
-            >
-              People
-            </Link>
-          </li>
+            <li>
+              <Link
+                to="/news"
+                className={cn(
+                  "px-4 py-2 text-sm font-medium transition-colors",
+                  location.pathname === "/news"
+                    ? "text-nus-orange"
+                    : "text-white/90 hover:text-white",
+                )}
+              >
+                News & Events
+              </Link>
+            </li>
 
-          <li>
-            <Link
-              to="/contact"
-              className={cn(
-                "px-4 py-2.5 rounded-md text-sm font-semibold transition-all duration-200",
-                location.pathname === "/contact"
-                  ? "bg-nus-orange text-white shadow-md"
-                  : "text-white hover:bg-blue-800 hover:text-nus-orange",
-              )}
-            >
-              Contact
-            </Link>
-          </li>
-        </ul>
+            <li>
+              <Link
+                to="/people"
+                className={cn(
+                  "px-4 py-2 text-sm font-medium transition-colors",
+                  location.pathname === "/people"
+                    ? "text-nus-orange"
+                    : "text-white/90 hover:text-white",
+                )}
+              >
+                People
+              </Link>
+            </li>
+
+            <li>
+              <Link
+                to="/contact"
+                className={cn(
+                  "px-4 py-2 text-sm font-medium transition-colors",
+                  location.pathname === "/contact"
+                    ? "text-nus-orange"
+                    : "text-white/90 hover:text-white",
+                )}
+              >
+                Contact
+              </Link>
+            </li>
+          </ul>
+        </div>
       </div>
     </nav>
   );

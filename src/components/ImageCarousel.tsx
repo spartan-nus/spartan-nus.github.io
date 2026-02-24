@@ -67,15 +67,15 @@ const ImageCarousel: React.FC = () => {
   }, []);
 
   return (
-    <div className="relative w-full overflow-hidden max-w-7xl mx-auto mt-6 h-[400px] rounded-2xl shadow-2xl">
+    <div className="relative w-full h-[500px] bg-black overflow-hidden">
       {images.map((image, index) => (
         <div
           key={index}
           className={cn(
-            "absolute w-full h-full transition-all duration-700 ease-in-out",
+            "absolute inset-0 transition-opacity duration-700",
             currentIndex === index
-              ? "opacity-100 pointer-events-auto scale-100"
-              : "opacity-0 pointer-events-none scale-105",
+              ? "opacity-100"
+              : "opacity-0",
           )}
         >
           {image.link && currentIndex == index ? (
@@ -83,47 +83,41 @@ const ImageCarousel: React.FC = () => {
               <img
                 src={image.url}
                 alt={image.alt}
-                className="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
+                className="w-full h-full object-contain"
               />
             </a>
           ) : (
             <img
               src={image.url}
               alt={image.alt}
-              className="w-full h-full object-cover"
+              className="w-full h-full object-contain"
             />
           )}
-          <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent text-white p-6">
-            {image.title && (
-              <h2 className="text-2xl font-bold mb-2">{image.title}</h2>
-            )}
-            <p className="text-sm md:text-base font-medium">{image.alt}</p>
-          </div>
         </div>
       ))}
 
       <button
         onClick={goToPrevious}
-        className="absolute left-6 top-1/2 transform -translate-y-1/2 bg-nus-orange/90 text-white p-3 rounded-full hover:bg-nus-orange hover:scale-110 transition-all shadow-lg backdrop-blur-sm"
+        className="absolute left-8 top-1/2 -translate-y-1/2 bg-white/20 hover:bg-white/30 text-white p-4 rounded-full backdrop-blur-sm transition-all z-10"
       >
-        <ArrowLeft size={28} />
+        <ArrowLeft size={24} />
       </button>
 
       <button
         onClick={goToNext}
-        className="absolute right-6 top-1/2 transform -translate-y-1/2 bg-nus-orange/90 text-white p-3 rounded-full hover:bg-nus-orange hover:scale-110 transition-all shadow-lg backdrop-blur-sm"
+        className="absolute right-8 top-1/2 -translate-y-1/2 bg-white/20 hover:bg-white/30 text-white p-4 rounded-full backdrop-blur-sm transition-all z-10"
       >
-        <ArrowRight size={28} />
+        <ArrowRight size={24} />
       </button>
 
-      <div className="absolute bottom-20 left-0 right-0 flex justify-center gap-3">
+      <div className="absolute bottom-8 left-0 right-0 flex justify-center gap-2 z-10">
         {images.map((_, index) => (
           <button
             key={index}
             onClick={() => setCurrentIndex(index)}
             className={cn(
-              "h-2 rounded-full transition-all duration-300",
-              currentIndex === index ? "bg-nus-orange w-8" : "bg-white/60 w-2 hover:bg-white/90",
+              "h-2 rounded-full transition-all",
+              currentIndex === index ? "bg-nus-orange w-12" : "bg-white/50 w-2",
             )}
           />
         ))}

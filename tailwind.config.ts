@@ -66,6 +66,8 @@ export default {
         nus: {
           orange: "#EF7C00",
           blue: "#003D7C",
+          "blue-light": "#0066CC",
+          "gray-warm": "#F5F5F5",
         },
       },
       borderRadius: {
