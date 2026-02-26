@@ -1,0 +1,210 @@
+<div class="carousel-container">
+    <div class="carousel">
+        <div class="carousel-slide active">
+            <a href="https://www.youtube.com/watch?v=o8B6q8FNC70" target="_blank">
+                <img src="/public_talk.png" alt="AutoCodeRover: from research on Automatic Programming to Spinoff Acquisition">
+                <div class="carousel-caption">AutoCodeRover: from research on Automatic Programming to Spinoff Acquisition</div>
+            </a>
+        </div>
+        <div class="carousel-slide">
+            <a href="https://autocoderover.dev" target="_blank">
+                <img src="/ACR_logo.png" alt="Agent for Autonomous Program Improvement">
+                <div class="carousel-caption"><strong>Featured: AutoCodeRover</strong><br>Agent for Autonomous Program Improvement</div>
+            </a>
+        </div>
+        <div class="carousel-slide">
+            <a href="https://www.youtube.com/watch?v=o8B6q8FNC70&t=2s" target="_blank">
+                <img src="/sonar_plus_autocoderover.png" alt="AutoCodeRover: from Research on Automatic Programming to Spinoff Acquisition">
+                <div class="carousel-caption">AutoCodeRover: from Research on Automatic Programming to Spinoff Acquisition</div>
+            </a>
+        </div>
+        <div class="carousel-slide">
+            <a href="https://arxiv.org/abs/2502.13767" target="_blank">
+                <img src="/hands.png" alt="Agentic AI Software Engineer: Programming with Trust">
+                <div class="carousel-caption">Agentic AI Software Engineer: Programming with Trust</div>
+            </a>
+        </div>
+        <div class="carousel-slide">
+            <a href="https://spectrum.ieee.org/ai-for-coding" target="_blank">
+                <img src="/ieee-spectrum-interview.png" alt="Professor Abhik Roychoudhury Comments in IEEE Spectrum">
+                <div class="carousel-caption">Professor Abhik Roychoudhury Comments in IEEE Spectrum on Importance of Intent Inference and Trust in AI Coding</div>
+            </a>
+        </div>
+    </div>
+    <button class="carousel-btn prev" onclick="moveCarousel(-1)">‹</button>
+    <button class="carousel-btn next" onclick="moveCarousel(1)">›</button>
+    <div class="carousel-dots"></div>
+</div>
+
+<script>
+let currentSlide = 0;
+const slides = document.querySelectorAll('.carousel-slide');
+const dotsContainer = document.querySelector('.carousel-dots');
+
+// Create dots
+slides.forEach((_, index) => {
+    const dot = document.createElement('span');
+    dot.className = 'dot' + (index === 0 ? ' active' : '');
+    dot.onclick = () => goToSlide(index);
+    dotsContainer.appendChild(dot);
+});
+
+function moveCarousel(direction) {
+    currentSlide = (currentSlide + direction + slides.length) % slides.length;
+    updateCarousel();
+}
+
+function goToSlide(index) {
+    currentSlide = index;
+    updateCarousel();
+}
+
+function updateCarousel() {
+    slides.forEach((slide, index) => {
+        slide.classList.toggle('active', index === currentSlide);
+    });
+    document.querySelectorAll('.dot').forEach((dot, index) => {
+        dot.classList.toggle('active', index === currentSlide);
+    });
+}
+
+// Auto-advance carousel every 5 seconds
+setInterval(() => moveCarousel(1), 5000);
+</script>
+
+<style>
+.carousel-container {
+    position: relative;
+    max-width: 1200px;
+    margin: 2rem auto;
+    height: 400px;
+    overflow: hidden;
+    border-radius: 1rem;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+}
+
+.carousel {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.carousel-slide {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 0.7s ease-in-out;
+}
+
+.carousel-slide.active {
+    opacity: 1;
+}
+
+.carousel-slide a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+}
+
+.carousel-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.carousel-caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent);
+    color: white;
+    padding: 1.5rem;
+    font-size: 0.95rem;
+    font-weight: 500;
+}
+
+.carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(239, 124, 0, 0.9);
+    color: white;
+    border: none;
+    font-size: 2rem;
+    padding: 0.75rem 1.25rem;
+    cursor: pointer;
+    border-radius: 50%;
+    transition: all 0.3s;
+    z-index: 10;
+}
+
+.carousel-btn:hover {
+    background: #EF7C00;
+    transform: translateY(-50%) scale(1.1);
+}
+
+.carousel-btn.prev {
+    left: 1.5rem;
+}
+
+.carousel-btn.next {
+    right: 1.5rem;
+}
+
+.carousel-dots {
+    position: absolute;
+    bottom: 5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 0.75rem;
+    z-index: 10;
+}
+
+.dot {
+    width: 0.5rem;
+    height: 0.5rem;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.6);
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.dot.active {
+    width: 2rem;
+    border-radius: 1rem;
+    background: #EF7C00;
+}
+
+.dot:hover {
+    background: rgba(255, 255, 255, 0.9);
+}
+
+@media (max-width: 768px) {
+    .carousel-container {
+        height: 250px;
+        margin: 1rem;
+    }
+
+    .carousel-btn {
+        font-size: 1.5rem;
+        padding: 0.5rem 1rem;
+    }
+
+    .carousel-btn.prev {
+        left: 0.5rem;
+    }
+
+    .carousel-btn.next {
+        right: 0.5rem;
+    }
+
+    .carousel-caption {
+        font-size: 0.8rem;
+        padding: 1rem;
+    }
+}
+</style>

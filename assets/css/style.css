@@ -1,0 +1,239 @@
+/* Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica', 'Arial', sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f5f5f5;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+/* Navigation */
+.navbar {
+    background-color: #003D7C;
+    color: white;
+    padding: 1.25rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.navbar-brand {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.navbar-brand .logo {
+    height: 44px;
+    width: auto;
+}
+
+.navbar-brand h1 {
+    font-size: 1.25rem;
+    font-weight: 700;
+}
+
+.navbar-brand a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.navbar-brand a:hover {
+    color: #EF7C00;
+}
+
+.navbar-menu {
+    display: flex;
+    list-style: none;
+    gap: 0.5rem;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.navbar-menu a,
+.navbar-menu button {
+    display: block;
+    padding: 0.625rem 1rem;
+    color: white;
+    text-decoration: none;
+    border-radius: 0.375rem;
+    font-size: 0.875rem;
+    font-weight: 600;
+    transition: all 0.2s;
+    border: none;
+    background: none;
+    cursor: pointer;
+    font-family: inherit;
+}
+
+.navbar-menu a:hover,
+.navbar-menu button:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+    color: #EF7C00;
+}
+
+.navbar-menu a.active {
+    background-color: #EF7C00;
+    color: white;
+}
+
+/* Dropdown */
+.dropdown {
+    position: relative;
+}
+
+.dropdown-toggle {
+    display: flex;
+    align-items: center;
+    gap: 0.375rem;
+}
+
+.dropdown-toggle .chevron {
+    transition: transform 0.2s;
+}
+
+.dropdown.open .chevron {
+    transform: rotate(180deg);
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    margin-top: 0.25rem;
+    background-color: white;
+    color: #003D7C;
+    border-radius: 0.5rem;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    padding: 0.5rem 0;
+    min-width: 300px;
+    z-index: 50;
+    border: 1px solid #e5e7eb;
+}
+
+.dropdown.open .dropdown-menu {
+    display: block;
+}
+
+.dropdown-menu a {
+    display: block;
+    padding: 0.75rem 1.25rem;
+    color: #003D7C;
+    font-size: 0.875rem;
+    font-weight: 500;
+    border-left: 4px solid transparent;
+    transition: all 0.15s;
+}
+
+.dropdown-menu a:hover {
+    background-color: #EF7C00;
+    color: white;
+    border-left-color: #EF7C00;
+}
+
+/* Main content */
+main {
+    padding: 2rem 0;
+    min-height: calc(100vh - 300px);
+}
+
+main .container {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin-bottom: 1rem;
+    color: #003D7C;
+    font-weight: 700;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+h2 {
+    font-size: 1.5rem;
+}
+
+p {
+    margin-bottom: 1rem;
+}
+
+a {
+    color: #EF7C00;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #003D7C;
+}
+
+/* Footer */
+.footer {
+    background-color: #003D7C;
+    color: white;
+    padding: 1.5rem 0;
+    margin-top: 3rem;
+}
+
+.footer .container {
+    text-align: center;
+}
+
+.footer p {
+    margin-bottom: 0.5rem;
+}
+
+.footer-address {
+    font-size: 0.875rem;
+}
+
+.footer a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    color: #EF7C00;
+}
+
+/* Responsive */
+@media (min-width: 768px) {
+    .navbar .container {
+        flex-wrap: nowrap;
+    }
+
+    .navbar-brand {
+        margin-bottom: 0;
+    }
+
+    .navbar-menu {
+        flex-wrap: nowrap;
+    }
+}
