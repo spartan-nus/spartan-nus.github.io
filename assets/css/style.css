@@ -101,6 +101,10 @@ body {
     font-weight: 500;
 }
 
+.navbar-menu a.active:hover {
+    color: white;
+}
+
 /* Dropdown */
 .dropdown {
     position: relative;
