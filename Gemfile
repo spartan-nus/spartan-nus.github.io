@@ -1,6 +1,6 @@
 source "https://rubygems.org"
 
-gem "jekyll", "~> 4.3"
+# Use github-pages gem which includes Jekyll and all GitHub Pages dependencies
 gem "github-pages", group: :jekyll_plugins
 
 group :jekyll_plugins do
