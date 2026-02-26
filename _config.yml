@@ -26,6 +26,9 @@ exclude:
   - .github
   - README.md
   - DEPLOYMENT.md
+  - vendor
+  - Gemfile
+  - Gemfile.lock
 
 # NUS colors
 colors:
