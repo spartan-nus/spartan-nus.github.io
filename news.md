@@ -6,19 +6,21 @@ permalink: /news/
 
 ## Events
 
+<div class="news-grid">
 {% for event in site.data.events %}
-<div class="card">
-  <div class="card-header">
-    <span class="date">{{ event.date }}</span>
-    <h3>{{ event.title }}</h3>
-  </div>
-  <div class="card-content" markdown="1">
+  <div class="card">
+    <div class="card-header">
+      <span class="date">{{ event.date }}</span>
+      <h3>{{ event.title }}</h3>
+    </div>
+    <div class="card-content" markdown="1">
 {{ event.description }}
 
 {% if event.link %}[Learn more →]({{ event.link }}){:.learn-more}{% endif %}
+    </div>
   </div>
-</div>
 {% endfor %}
+</div>
 
 ## Latest News
 
