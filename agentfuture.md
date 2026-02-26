@@ -24,8 +24,8 @@ In pursuit of the vision of shifting research from scale to trust, we will resea
 
 ## Initial Work
 
-<a href="https://abhikrc.com/pdf/ICSE26-USEagent.pdf">Unified Software Engineering agent as AI Software Engineer</a>
-Leonhard Applis, Yuntong Zhang, Shanchao Liang, Nan Jiang, Lin Tan, Abhik Roychoudhury
+<a href="https://abhikrc.com/pdf/ICSE26-USEagent.pdf">Unified Software Engineering agent as AI Software Engineer</a>,
+Leonhard Applis, Yuntong Zhang, Shanchao Liang, Nan Jiang, Lin Tan, Abhik Roychoudhury,
 ACM/IEEE International Conference on Software Engineering, 2026.
 
 ## Open Positions
