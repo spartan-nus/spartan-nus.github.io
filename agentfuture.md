@@ -5,7 +5,7 @@ permalink: /agentfuture/
 ---
 
 <h1 style="text-align: center; margin-bottom: 0.5rem;">Agentic AI based Software of the future: from Scale to Trust</h1>
-<p style="text-align: center; font-size: 1.125rem; color: #555; margin-bottom: 3rem;">A research project funded by the National Research Foundation, Singapore</p>
+<p style="text-align: center; font-size: 1.125rem; color: #555; margin-bottom: 3rem;">NRF Investigator funded by the National Research Foundation, Singapore (2026-31)</p>
 
 <div style="text-align: center; margin: 2rem 0;">
   <img src="/agent_workflow_diagram.png" alt="Agent Future Workflow" style="max-width: 100%; height: auto; border-radius: 0.5rem; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);">
