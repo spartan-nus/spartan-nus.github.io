@@ -30,8 +30,8 @@ ACM/IEEE International Conference on Software Engineering, 2026.
 
 ## Open Positions
 
-We are hiring 2 post-doctoral researchers based at NUS working on (i) agents in future software workflows, and (ii) building trusted agents. Interested applicants can send their CV to vivien@nus.edu.sg with CC to <a href="https://abhikrc.com">Prof. Abhik Roychoudhury</a>.
-Details can be discussed with interested applicants.
+We are immediately hiring 1 post-doctoral researcher based at NUS working on building trusted agents. Interested applicants can send their CV to vivien@nus.edu.sg with CC to <a href="https://abhikrc.com">Prof. Abhik Roychoudhury</a>.
+Details will be discussed with interested applicants only.
 
 ## News
 
