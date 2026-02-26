@@ -207,7 +207,6 @@ a {
 
 a:hover {
     color: #003D7C;
-    text-decoration: underline;
 }
 
 strong, b {
@@ -248,7 +247,6 @@ li {
 
 .footer a:hover {
     color: white;
-    text-decoration: underline;
 }
 
 /* Responsive */

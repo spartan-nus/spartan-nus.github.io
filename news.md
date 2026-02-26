@@ -83,7 +83,6 @@ permalink: /news/
 
 .learn-more:hover {
   color: #003D7C;
-  text-decoration: underline;
 }
 
 @media (max-width: 768px) {

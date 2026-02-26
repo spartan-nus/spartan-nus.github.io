@@ -171,7 +171,6 @@ permalink: /people/
 
 .people-card h3 a:hover {
   color: #EF7C00;
-  text-decoration: underline;
 }
 
 .people-role {
