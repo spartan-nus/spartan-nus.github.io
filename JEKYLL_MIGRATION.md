@@ -130,11 +130,21 @@ bundle exec jekyll build
 
 ## React Version
 
-The original React version is preserved in `react-version/` directory for reference or rollback if needed.
+The original React version is preserved in the `react-version` branch.
 
-To use React version again:
-1. Copy files from `react-version/` back to root
-2. Update GitHub Actions workflow
+**To view React version:**
+```bash
+git checkout react-version
+```
+
+**To switch back to Jekyll:**
+```bash
+git checkout main
+```
+
+**To deploy React version again:**
+1. Merge `react-version` branch to `main`
+2. Update GitHub Actions workflow to use npm/vite
 3. Push to deploy
 
 ---
