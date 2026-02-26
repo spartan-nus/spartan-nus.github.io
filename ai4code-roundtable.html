@@ -1,0 +1,1018 @@
+---
+layout: roundtable
+title: AI for Code Industry Roundtable
+---
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex, nofollow" />
+    <title>AI for Code Industry Roundtable - Programming with Trust</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #fff;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1rem;
+        }
+
+        /* Hero Section */
+        .hero-section {
+            background: linear-gradient(to right, #1e3a8a, #1d4ed8);
+            color: white;
+            padding: 4rem 1rem;
+            text-align: center;
+        }
+
+        .hero-section h1 {
+            font-size: 3rem;
+            font-weight: bold;
+            margin-bottom: 1rem;
+        }
+
+        .hero-section .subtitle {
+            font-size: 1.25rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .hero-section .details {
+            font-size: 1.125rem;
+        }
+
+        .hero-section .details p {
+            margin-bottom: 0.25rem;
+        }
+
+        /* Section Styling */
+        section {
+            padding: 3rem 1rem;
+        }
+
+        .bg-gray-50 {
+            background-color: #f9fafb;
+        }
+
+        section h2 {
+            font-size: 1.875rem;
+            font-weight: bold;
+            text-align: center;
+            margin-bottom: 2rem;
+            color: #1f2937;
+        }
+
+        /* About Section */
+        .about-content {
+            max-width: 56rem;
+            margin: 0 auto;
+            color: #4b5563;
+            line-height: 1.75;
+        }
+
+        .about-content p {
+            margin-bottom: 1rem;
+        }
+
+        /* Summary Section */
+        .summary-box {
+            max-width: 56rem;
+            margin: 0 auto;
+            padding: 1rem;
+            border: 1px solid #888;
+            border-radius: 0.5rem;
+            background-color: #f9fafb;
+            color: #4b5563;
+            cursor: pointer;
+        }
+
+        .summary-box p {
+            margin-bottom: 1rem;
+        }
+
+        .summary-box a {
+            color: #2563eb;
+            text-decoration: none;
+        }
+
+        .summary-box a:hover {
+            text-decoration: underline;
+        }
+
+        /* Organizers */
+        .organizers-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1rem;
+            max-width: 36rem;
+            margin: 0 auto;
+        }
+
+        .organizer-card {
+            text-align: center;
+        }
+
+        .organizer-card img {
+            width: 6rem;
+            height: 6rem;
+            border-radius: 50%;
+            margin: 0 auto 1rem;
+            object-fit: cover;
+            background-color: #d1d5db;
+            display: block;
+        }
+
+        .organizer-card h3 {
+            font-size: 1.125rem;
+            font-weight: 600;
+            margin-bottom: 0.25rem;
+        }
+
+        .organizer-card h3 a {
+            color: #333;
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+
+        .organizer-card h3 a:hover {
+            color: #2563eb;
+        }
+
+        .organizer-card .title {
+            color: #4b5563;
+            margin-bottom: 0.25rem;
+        }
+
+        .organizer-card .institution {
+            font-size: 0.875rem;
+            color: #6b7280;
+        }
+
+        /* Attendees */
+        .attendees-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 1.5rem;
+            max-width: 56rem;
+            margin: 0 auto;
+        }
+
+        .attendee-card {
+            text-align: center;
+        }
+
+        .attendee-card a {
+            display: inline-block;
+        }
+
+        .attendee-card img {
+            width: 6rem;
+            height: 6rem;
+            border-radius: 50%;
+            margin: 0 auto 1rem;
+            object-fit: cover;
+            display: block;
+        }
+
+        .attendee-card h3 {
+            font-size: 1.125rem;
+            font-weight: 600;
+            margin-bottom: 0.25rem;
+            color: #333;
+        }
+
+        .attendee-card .title {
+            color: #4b5563;
+            margin-bottom: 0.25rem;
+        }
+
+        .attendee-card .institution {
+            font-size: 0.875rem;
+            color: #6b7280;
+        }
+
+        /* Program Schedule */
+        .program-schedule {
+            max-width: 56rem;
+            margin: 0 auto;
+        }
+
+        .schedule-item {
+            display: flex;
+            border-left: 4px solid #3b82f6;
+            padding-left: 1rem;
+            padding-top: 0.5rem;
+            padding-bottom: 0.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .schedule-time {
+            width: 10rem;
+            font-size: 0.875rem;
+            font-weight: 600;
+            color: #6b7280;
+            flex-shrink: 0;
+        }
+
+        .schedule-content {
+            flex: 1;
+        }
+
+        .schedule-content h3 {
+            font-weight: 600;
+            margin-bottom: 0.25rem;
+            color: #333;
+        }
+
+        .schedule-content ul {
+            margin-top: 0.25rem;
+            color: #374151;
+        }
+
+        .schedule-content ul.disc {
+            list-style-type: disc;
+            padding-left: 1.25rem;
+        }
+
+        .schedule-content ul.disc li {
+            margin-bottom: 0.25rem;
+        }
+
+        .schedule-content a {
+            color: #333;
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+
+        .schedule-content a:hover {
+            color: #2563eb;
+        }
+
+        /* Venue */
+        .venue-content {
+            max-width: 56rem;
+            margin: 0 auto;
+        }
+
+        .venue-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+            align-items: center;
+        }
+
+        .venue-info h3,
+        .venue-info h4 {
+            font-size: 1.25rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+        }
+
+        .venue-info p {
+            color: #4b5563;
+            margin-bottom: 0.5rem;
+        }
+
+        .venue-info p strong {
+            font-weight: 600;
+        }
+
+        .venue-info br + h4 {
+            margin-top: 1rem;
+        }
+
+        .venue-map {
+            background-color: #e5e7eb;
+            height: 16rem;
+            border-radius: 0.5rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #6b7280;
+            font-size: 1.125rem;
+        }
+
+        /* Brochure */
+        .brochure-content {
+            max-width: 32rem;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .brochure-content p {
+            color: #4b5563;
+            margin-bottom: 1.5rem;
+        }
+
+        .brochure-btn {
+            display: inline-block;
+            background-color: #2563eb;
+            color: white;
+            padding: 0.75rem 2rem;
+            border-radius: 0.5rem;
+            font-weight: 600;
+            text-decoration: none;
+            transition: background-color 0.2s;
+        }
+
+        .brochure-btn:hover {
+            background-color: #1d4ed8;
+        }
+
+        /* Events */
+        .events-grid {
+            max-width: 72rem;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 2rem;
+            text-align: center;
+        }
+
+        .event-card {
+            background-color: white;
+            padding: 1.5rem;
+            border-radius: 0.5rem;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+        }
+
+        .event-card h3 {
+            font-size: 1.25rem;
+            font-weight: 600;
+            margin-bottom: 0.75rem;
+        }
+
+        .event-card.nyc h3 {
+            color: #166534;
+        }
+
+        .event-card.sf h3 {
+            color: #6b21a8;
+        }
+
+        .event-card p {
+            font-size: 0.875rem;
+            font-weight: 600;
+            color: #6b7280;
+        }
+
+        /* Partners */
+        .partners-content {
+            max-width: 56rem;
+            margin: 0 auto;
+        }
+
+        .partners-grid {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            gap: 2rem;
+            flex-wrap: wrap;
+        }
+
+        .partner-card {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        .partner-role {
+            font-size: 0.875rem;
+            letter-spacing: 0.05em;
+            color: #4b5563;
+            margin-bottom: 0.75rem;
+        }
+
+        .partner-logo-box {
+            background-color: white;
+            border-radius: 0.75rem;
+            padding: 1rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            height: 6rem;
+            width: 12rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+        }
+
+        .partner-logo-box img {
+            max-height: 4rem;
+            width: auto;
+            object-fit: contain;
+        }
+
+        .partner-logo-box.host img {
+            transform: scale(1.5);
+        }
+
+        .partner-name {
+            font-size: 0.875rem;
+            margin-top: 0.75rem;
+            color: #1f2937;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #1e3a8a;
+            color: white;
+            padding: 1.5rem 1rem;
+            text-align: center;
+        }
+
+        footer p {
+            margin-bottom: 0.5rem;
+        }
+
+        footer a {
+            color: white;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            color: #d1d5db;
+        }
+
+        footer .small {
+            font-size: 0.875rem;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .hero-section h1 {
+                font-size: 2rem;
+            }
+
+            .organizers-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .attendees-grid {
+                grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+            }
+
+            .venue-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .events-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .schedule-item {
+                flex-direction: column;
+            }
+
+            .schedule-time {
+                width: 100%;
+                margin-bottom: 0.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="container">
+            <h1>AI for Code Industry Roundtable</h1>
+            <p class="subtitle">Programming with Trust</p>
+            <div class="details">
+                <p><strong>Date:</strong> Jan 19, 2026</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="bg-gray-50">
+        <div class="container">
+            <h2>About the Event</h2>
+            <div class="about-content">
+                <p>
+                    Large Language Models (LLMs) have shown surprising proficiency in generating code snippets, promising to automate large parts of software engineering via artificial intelligence (AI). We argue that successfully deploying AI software engineers requires a level of trust equal to or even greater than the trust established by human-driven software engineering practices. The recent trend toward LLM agents offers a path toward integrating the power of LLMs to create new code with the power of analysis tools to increase trust in the code.
+                </p>
+                <p>
+                    This event is a one-day, invite-only industry roundtable on AI-driven innovation for code, taking place in Singapore on the day before AAAI 2026. Bringing together leading participants from industry and academia worldwide, the discussion aims to distill key insights and guidelines on how to achieve trustworthy AI for code.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Summary Section -->
+    <section id="summary">
+        <div class="container">
+            <h2>Event Summary</h2>
+            <div class="summary-box" onclick="window.open('https://medium.com/@smkang96/ai-for-code-industry-roundtable-discussing-the-future-of-software-engineering-9a795601ab1e', '_blank')">
+                <p>
+                    The event has concluded successfully! We have published a detailed summary of the discussions and insights from the roundtable <a href="https://medium.com/@smkang96/ai-for-code-industry-roundtable-discussing-the-future-of-software-engineering-9a795601ab1e">on Medium</a>.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Organizers Section -->
+    <section id="organizers">
+        <div class="container">
+            <h2>Organizers</h2>
+            <div class="organizers-grid">
+                <div class="organizer-card">
+                    <a href="https://abhikrc.com/">
+                        <img src="/ai4code-avatars/abhik-roychoudhury.jpg" alt="Abhik Roychoudhury" onerror="this.src='/avatars/default.jpg'">
+                    </a>
+                    <h3>
+                        <a href="https://abhikrc.com/">Abhik Roychoudhury</a>
+                    </h3>
+                    <p class="title">Provost's Chair Professor</p>
+                    <p class="institution">National University of Singapore</p>
+                </div>
+                <div class="organizer-card">
+                    <a href="https://www.rayb.info/">
+                        <img src="/ai4code-avatars/baishakhi-ray.jpg" alt="Baishakhi Ray" onerror="this.src='/avatars/default.jpg'">
+                    </a>
+                    <h3>
+                        <a href="https://www.rayb.info/">Baishakhi Ray</a>
+                    </h3>
+                    <p class="title">Associate Professor</p>
+                    <p class="institution">Columbia University</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Attendees Section -->
+    <section id="attendees">
+        <div class="container">
+            <h2>Confirmed Attendees</h2>
+            <div class="attendees-grid">
+                <div class="attendee-card">
+                    <a href="https://research.cs.queensu.ca/home/ahmed/home/" target="_blank" rel="noopener noreferrer">
+                        <img src="/ai4code-avatars/ahmed-hassan.jpg" alt="Ahmed Hassan" onerror="this.src='/avatars/default.jpg'">
+                    </a>
+                    <h3>Ahmed Hassan</h3>
+                    <p class="title">Professor</p>
+                    <p class="institution">Queen's University Canada</p>
+                </div>
+                <div class="attendee-card">
+                    <a href="https://www.linkedin.com/in/kuanup/" target="_blank" rel="noopener noreferrer">
+                        <img src="/ai4code-avatars/anup-kumar.jpg" alt="Anup Kumar" onerror="this.src='/avatars/default.jpg'">
+                    </a>
+                    <h3>Anup Kumar</h3>
+                    <p class="title">Distinguished Engineer & Head Client Engineering</p>
+                    <p class="institution">IBM Asia Pacific</p>
+                </div>
+                <div class="attendee-card">
+                    <a href="https://www.linkedin.com/in/behroozomidvar/" target="_blank" rel="noopener noreferrer">
+                        <img src="/ai4code-avatars/behrooz-omidvar-tehrani.jpg" alt="Behrooz Omidvar-Tehrani" onerror="this.src='/avatars/default.jpg'">
+                    </a>
+                    <h3>Behrooz Omidvar-Tehrani</h3>
+                    <p class="title">Principal Scientist</p>
+                    <p class="institution">AWS</p>
+                </div>
+                <div class="attendee-card">
+                    <a href="https://sg.linkedin.com/in/chiayuan-cho" target="_blank" rel="noopener noreferrer">
+                        <img src="/ai4code-avatars/cho-chia-yuan.jpg" alt="Cho Chia Yuan" onerror="this.src='/avatars/default.jpg'">
+                    </a>
+                    <h3>Cho Chia Yuan</h3>
+                    <p class="title">Dy Director</p>
+                    <p class="institution">Ministry of Defence (Singapore)</p>
+                </div>
+                <div class="attendee-card">
+                    <a href="https://www.andrew.cmu.edu/user/pcorina/" target="_blank" rel="noopener noreferrer">
+                        <img src="/ai4code-avatars/corina-pasareanu.jpg" alt="Corina Pasareanu" onerror="this.src='/avatars/default.jpg'">
+                    </a>
+                    <h3>Corina Pasareanu</h3>
+                    <p class="title">Principal Scientist, Technical Professional Leader</p>
+                    <p class="institution">Carnegie Mellon University & NASA Ames Research Center</p>
+                </div>
+                <div class="attendee-card">
+                    <a href="https://www.doc.ic.ac.uk/~cristic/" target="_blank" rel="noopener noreferrer">
+                        <img src="/ai4code-avatars/cristian-cadar.jpg" alt="Cristian Cadar" onerror="this.src='/avatars/default.jpg'">
+                    </a>
+                    <h3>Cristian Cadar</h3>
+                    <p class="title">Professor</p>
+                    <p class="institution">Imperial College London</p>
+                </div>
+                <div class="attendee-card">
+                    <a href="https://www.linkedin.com/in/daniel-dahlmeier-249a3764/" target="_blank" rel="noopener noreferrer">
+                        <img src="/ai4code-avatars/daniel-dahlmeier.jpg" alt="Daniel Dahlmeier" onerror="this.src='/avatars/default.jpg'">
+                    </a>
+                    <h3>Daniel Dahlmeier</h3>
+                    <p class="title">Chief Data Scientist</p>
+                    <p class="institution">SAP Artificial Intelligence</p>
+                </div>
+                <div class="attendee-card">
+                    <a href="http://www.mysmu.edu/faculty/davidlo/" target="_blank" rel="noopener noreferrer">
+                        <img src="/ai4code-avatars/david-lo.jpg" alt="David Lo" onerror="this.src='/avatars/default.jpg'">
+                    </a>
+                    <h3>David Lo</h3>
+                    <p class="title">OUB Chair Professor</p>
+                    <p class="institution">Singapore Management University</p>
+                </div>
+                <div class="attendee-card">
+                    <a href="https://www.linkedin.com/in/gang-lee-58848b29/" target="_blank" rel="noopener noreferrer">
+                        <img src="/ai4code-avatars/gang-lee.jpg" alt="Gang Lee" onerror="this.src='/avatars/default.jpg'">
+                    </a>
+                    <h3>Gang Lee</h3>
+                    <p class="title">CEO, Co-Founder</p>
+                    <p class="institution">ELGO AI</p>
+                </div>
+                <div class="attendee-card">
+                    <a href="https://haifengruan.com/" target="_blank" rel="noopener noreferrer">
+                        <img src="/ai4code-avatars/haifeng-ruan.jpg" alt="Haifeng Ruan" onerror="this.src='/avatars/default.jpg'">
+                    </a>
+                    <h3>Haifeng Ruan</h3>
+                    <p class="title">PhD Student, Co-Founder AutoCodeRover</p>
+                    <p class="institution">National University of Singapore</p>
+                </div>
+                <div class="attendee-card">
+                    <a href="https://www.linkedin.com/in/harry-wang-123456" target="_blank" rel="noopener noreferrer">
+                        <img src="/ai4code-avatars/harry-wang.jpg" alt="Harry Wang" onerror="this.src='/avatars/default.jpg'">
+                    </a>
+                    <h3>Harry Wang</h3>
+                    <p class="title">Chief Growth Officer</p>
+                    <p class="institution">Sonar</p>
+                </div>
+                <div class="attendee-card">
+                    <a href="https://sg.linkedin.com/in/chiahsiaoming" target="_blank" rel="noopener noreferrer">
+                        <img src="/ai4code-avatars/hsiao-ming-chia.jpg" alt="Hsiao Ming Chia" onerror="this.src='/avatars/default.jpg'">
+                    </a>
+                    <h3>Hsiao Ming Chia</h3>
+                    <p class="title">Director (Core Engineering Products)</p>
+                    <p class="institution">GovTech Singapore</p>
+                </div>
+                <div class="attendee-card">
+                    <a href="https://www.linkedin.com/in/inby/" target="_blank" rel="noopener noreferrer">
+                        <img src="/ai4code-avatars/imam-nur-bani-yusuf.jpg" alt="Imam Nur Bani Yusuf" onerror="this.src='/avatars/default.jpg'">
+                    </a>
+                    <h3>Imam Nur Bani Yusuf</h3>
+                    <p class="title">Postdoctoral Researcher</p>
+                    <p class="institution">National University of Singapore</p>
+                </div>
+                <div class="attendee-card">
+                    <a href="https://www.jeffsalleh.sg/" target="_blank" rel="noopener noreferrer">
+                        <img src="/ai4code-avatars/jeffrey-salleh.jpg" alt="Jeffrey Salleh" onerror="this.src='/avatars/default.jpg'">
+                    </a>
+                    <h3>Jeffrey Salleh</h3>
+                    <p class="title">Director, Cloud Engineering</p>
+                    <p class="institution">Oracle</p>
+                </div>
+                <div class="attendee-card">
+                    <a href="https://www.linkedin.com/in/karlina-tjoa/" target="_blank" rel="noopener noreferrer">
+                        <img src="/ai4code-avatars/karlina-tjoa.jpg" alt="Karlina Tjoa" onerror="this.src='/avatars/default.jpg'">
+                    </a>
+                    <h3>Karlina Tjoa</h3>
+                    <p class="title">Lead Software Engineer</p>
+                    <p class="institution">MoHT Singapore</p>
+                </div>
+                <div class="attendee-card">
+                    <a href="https://www.linkedin.com/in/marcus-low-6a0b605/" target="_blank" rel="noopener noreferrer">
+                        <img src="/ai4code-avatars/marcus-low.jpg" alt="Marcus Low" onerror="this.src='/avatars/default.jpg'">
+                    </a>
+                    <h3>Marcus Low</h3>
+                    <p class="title">Vice President and Managing Director</p>
+                    <p class="institution">Sonar</p>
+                </div>
+                <div class="attendee-card">
+                    <a href="https://people.csail.mit.edu/rinard/" target="_blank" rel="noopener noreferrer">
+                        <img src="/ai4code-avatars/martin-rinard.jpg" alt="Martin Rinard" onerror="this.src='/avatars/default.jpg'">
+                    </a>
+                    <h3>Martin Rinard</h3>
+                    <p class="title">Professor</p>
+                    <p class="institution">Massachusetts Institute of Technology</p>
+                </div>
+                <div class="attendee-card">
+                    <a href="https://www.linkedin.com/in/neharungta/" target="_blank" rel="noopener noreferrer">
+                        <img src="/ai4code-avatars/neha-rungta.jpg" alt="Neha Rungta" onerror="this.src='/avatars/default.jpg'">
+                    </a>
+                    <h3>Neha Rungta</h3>
+                    <p class="title">Applied Science Director</p>
+                    <p class="institution">AWS</p>
+                </div>
+                <div class="attendee-card">
+                    <a href="https://www.linkedin.com/in/dr-parijat-deshpande-0481571/" target="_blank" rel="noopener noreferrer">
+                        <img src="/ai4code-avatars/parijat-deshpande.jpg" alt="Parijat Deshpande" onerror="this.src='/avatars/default.jpg'">
+                    </a>
+                    <h3>Parijat Deshpande</h3>
+                    <p class="title">Head</p>
+                    <p class="institution">TCS Pace Port Singapore</p>
+                </div>
+                <div class="attendee-card">
+                    <a href="https://in.linkedin.com/in/raveendrakumar" target="_blank" rel="noopener noreferrer">
+                        <img src="/ai4code-avatars/raveendra-kumar-medicherla.jpg" alt="Raveendra Kumar Medicherla" onerror="this.src='/avatars/default.jpg'">
+                    </a>
+                    <h3>Raveendra Kumar Medicherla</h3>
+                    <p class="title">Principal Scientist</p>
+                    <p class="institution">Tata Consultancy Services</p>
+                </div>
+                <div class="attendee-card">
+                    <a href="https://www.linkedin.com/in/rshariffdeen/" target="_blank" rel="noopener noreferrer">
+                        <img src="/ai4code-avatars/ridwan-shariffdeen.jpg" alt="Ridwan Shariffdeen" onerror="this.src='/avatars/default.jpg'">
+                    </a>
+                    <h3>Ridwan Shariffdeen</h3>
+                    <p class="title">Principal Research Scientist</p>
+                    <p class="institution">Sonar</p>
+                </div>
+                <div class="attendee-card">
+                    <a href="https://sites.google.com/site/schandraacmorg/" target="_blank" rel="noopener noreferrer">
+                        <img src="/ai4code-avatars/satish-chandra.jpg" alt="Satish Chandra" onerror="this.src='/avatars/default.jpg'">
+                    </a>
+                    <h3>Satish Chandra</h3>
+                    <p class="title">Principal Engineer</p>
+                    <p class="institution">ML for Developer Productivity, Google</p>
+                </div>
+                <div class="attendee-card">
+                    <a href="https://www.linkedin.com/in/shaoweiying/" target="_blank" rel="noopener noreferrer">
+                        <img src="/ai4code-avatars/shaowei-ying.jpg" alt="Shaowei Ying" onerror="this.src='/avatars/default.jpg'">
+                    </a>
+                    <h3>Shaowei Ying</h3>
+                    <p class="title">Chief Scientist</p>
+                    <p class="institution">NCS</p>
+                </div>
+                <div class="attendee-card">
+                    <a href="https://www.linkedin.com/in/shwetagargiitb" target="_blank" rel="noopener noreferrer">
+                        <img src="/ai4code-avatars/shweta-garg.jpg" alt="Shweta Garg" onerror="this.src='/avatars/default.jpg'">
+                    </a>
+                    <h3>Shweta Garg</h3>
+                    <p class="title">Senior Applied Scientist</p>
+                    <p class="institution">AWS AI Labs</p>
+                </div>
+                <div class="attendee-card">
+                    <a href="https://www.nus.edu.sg/about/management/tan-sian-wee" target="_blank" rel="noopener noreferrer">
+                        <img src="/ai4code-avatars/sian-wee-tan.jpg" alt="Sian Wee Tan" onerror="this.src='/avatars/default.jpg'">
+                    </a>
+                    <h3>Sian Wee Tan</h3>
+                    <p class="title">Senior Vice President (Innovation and Enterprise)</p>
+                    <p class="institution">National University of Singapore</p>
+                </div>
+                <div class="attendee-card">
+                    <a href="https://smkang96.github.io/" target="_blank" rel="noopener noreferrer">
+                        <img src="/ai4code-avatars/sungmin-kang.jpg" alt="Sungmin Kang" onerror="this.src='/avatars/default.jpg'">
+                    </a>
+                    <h3>Sungmin Kang</h3>
+                    <p class="title">Postdoctoral Researcher</p>
+                    <p class="institution">National University of Singapore</p>
+                </div>
+                <div class="attendee-card">
+                    <a href="https://www.linkedin.com/in/varun-srivastava-7948054/" target="_blank" rel="noopener noreferrer">
+                        <img src="/ai4code-avatars/varun-srivastava.jpg" alt="Varun Srivastava" onerror="this.src='/avatars/default.jpg'">
+                    </a>
+                    <h3>Varun Srivastava</h3>
+                    <p class="title">Engineering Leader - Search and AI</p>
+                    <p class="institution">Atlassian</p>
+                </div>
+                <div class="attendee-card">
+                    <a href="https://www.linkedin.com/in/volkansevindik/" target="_blank" rel="noopener noreferrer">
+                        <img src="/ai4code-avatars/volkan-sevindik.jpg" alt="Volkan Sevindik" onerror="this.src='/avatars/default.jpg'">
+                    </a>
+                    <h3>Volkan Sevindik</h3>
+                    <p class="title">Chief Technology Officer (CTO)</p>
+                    <p class="institution">Starhub</p>
+                </div>
+                <div class="attendee-card">
+                    <a href="https://xin-xia.github.io/" target="_blank" rel="noopener noreferrer">
+                        <img src="/ai4code-avatars/xin-xia.jpg" alt="Xin Xia" onerror="this.src='/avatars/default.jpg'">
+                    </a>
+                    <h3>Xin Xia</h3>
+                    <p class="title">Qiushi Distinguished Professor</p>
+                    <p class="institution">Zhejiang University</p>
+                </div>
+                <div class="attendee-card">
+                    <a href="https://www.linkedin.com/in/yanyan-hu-88444024/" target="_blank" rel="noopener noreferrer">
+                        <img src="/ai4code-avatars/yanyan-hu.jpg" alt="Yanyan Hu" onerror="this.src='/avatars/default.jpg'">
+                    </a>
+                    <h3>Yanyan Hu</h3>
+                    <p class="title">Deputy Director - Architecture and Development</p>
+                    <p class="institution">MoHT Singapore</p>
+                </div>
+                <div class="attendee-card">
+                    <a href="https://yuntongzhang.github.io/" target="_blank" rel="noopener noreferrer">
+                        <img src="/ai4code-avatars/yuntong-zhang.jpg" alt="Yuntong Zhang" onerror="this.src='/avatars/default.jpg'">
+                    </a>
+                    <h3>Yuntong Zhang</h3>
+                    <p class="title">PhD Student, Co-Founder AutoCodeRover</p>
+                    <p class="institution">National University of Singapore</p>
+                </div>
+                <div class="attendee-card">
+                    <a href="https://www.linkedin.com/in/memonatif/" target="_blank" rel="noopener noreferrer">
+                        <img src="/ai4code-avatars/atif-memon.jpg" alt="Atif Memon" onerror="this.src='/avatars/default.jpg'">
+                    </a>
+                    <h3>Atif Memon</h3>
+                    <p class="title">Distinguished Engineer</p>
+                    <p class="institution">Apple</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Program Schedule -->
+    <section id="program">
+        <div class="container">
+            <h2>Program Schedule</h2>
+            <div class="program-schedule">
+                <div class="schedule-item">
+                    <div class="schedule-time">8:30 AM – 9:15 AM</div>
+                    <div class="schedule-content">
+                        <h3>Breakfast and Registration</h3>
+                    </div>
+                </div>
+
+                <div class="schedule-item">
+                    <div class="schedule-time">9:15 AM – 10:00 AM</div>
+                    <div class="schedule-content">
+                        <h3>Self-Introduction by participants<br>
+                        Introduction to NUS innovation efforts by Sian Tan<br>
+                        Introduction of roundtable topics by organizers</h3>
+                    </div>
+                </div>
+
+                <div class="schedule-item">
+                    <div class="schedule-time">10:00 AM – 10:30 AM</div>
+                    <div class="schedule-content">
+                        <h3>Talk on Trust by Neha Rungta</h3>
+                    </div>
+                </div>
+
+                <div class="schedule-item">
+                    <div class="schedule-time">10:30 AM – 11:00 AM</div>
+                    <div class="schedule-content">
+                        <h3>Talk on AI for SE by Satish Chandra</h3>
+                    </div>
+                </div>
+
+                <div class="schedule-item">
+                    <div class="schedule-time">11:00 AM – 12:00 PM</div>
+                    <div class="schedule-content">
+                        <h3>Talks on AI for Code (20 minutes each)</h3>
+                        <ul class="disc">
+                            <li>Harry Wang</li>
+                            <li>Hsiao Ming Chia</li>
+                            <li>Yanyan Hu</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="schedule-item">
+                    <div class="schedule-time">12:00 PM – 1:30 PM</div>
+                    <div class="schedule-content">
+                        <h3>Lunch</h3>
+                    </div>
+                </div>
+
+                <div class="schedule-item">
+                    <div class="schedule-time">1:30 PM – 3:00 PM</div>
+                    <div class="schedule-content">
+                        <h3>Roundtable discussions</h3>
+                        <ul class="disc">
+                            <li>What will be the role of academia in AI for code?</li>
+                            <li>How to engender trust in coding agents?</li>
+                            <li>What is the future of software engineering with agents regarding design, coding, and validation?</li>
+                            <li>What are the challenges in industry in deployment of AI for code?</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="schedule-item">
+                    <div class="schedule-time">3:00 PM – 3:30 PM</div>
+                    <div class="schedule-content">
+                        <h3>Tea break</h3>
+                    </div>
+                </div>
+
+                <div class="schedule-item">
+                    <div class="schedule-time">3:30 PM – 4:30 PM</div>
+                    <div class="schedule-content">
+                        <h3>Summary of roundtable discussions by participants</h3>
+                    </div>
+                </div>
+
+                <div class="schedule-item">
+                    <div class="schedule-time">4:30 PM – 5:00 PM</div>
+                    <div class="schedule-content">
+                        <h3>Wrap-up and discussion on follow-up by organisers for the next meeting in New York<br>(June 3, 2026)</h3>
+                    </div>
+                </div>
+
+                <div class="schedule-item">
+                    <div class="schedule-time">6:00 PM</div>
+                    <div class="schedule-content">
+                        <h3>Dinner at <a href="https://share.google/cgy1odDE29ygz5fAw">Straits Kitchen, Grand Hyatt Hotel</a> (transport is provided)</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Venue Section -->
+    <section id="venue" class="bg-gray-50">
+        <div class="container">
+            <h2>Venue</h2>
+            <div class="venue-content">
+                <div class="venue-grid">
+                    <div class="venue-info">
+                        <h3>National University of Singapore</h3>
+                        <p><strong>Address:</strong> 3A Research Link, Singapore 119392</p>
+                        <p><strong>Building:</strong> COM4, Level 2</p>
+                        <p><strong>Room:</strong> COM4-02-01</p>
+                        <br>
+                        <h4>Getting to the Event</h4>
+                        <p><strong>By Car:</strong> The nearest visitor car parks to COM4 are Carpark 11 and Carpark 11B.</p>
+                        <p><strong>By Taxi:</strong> Please alight at COM2 (15 Computing Dr, Singapore 117418) and follow the signage to COM4.</p>
+                        <p><strong>By Public Transport:</strong> The nearest MRT station is CC24 Kent Ridge. From Bus Stop 18339 (opposite Kent Ridge Station Exit A), take the NUS Internal Shuttle Bus D2, alight at the COM3 bus stop and follow the signage to COM4.</p>
+                    </div>
+                    <div class="venue-map">
+                        <a href="https://maps.app.goo.gl/rQHKURhwnh9NNiix5" target="_blank" style="color: #6b7280; text-decoration: none;">
+                            <div style="text-align: center;">
+                                <div style="font-size: 3rem; margin-bottom: 0.5rem;">📍</div>
+                                <div>View on Google Maps</div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Brochure Section -->
+    <section id="brochure">
+        <div class="container">
+            <h2>Event Brochure</h2>
+            <div class="brochure-content">
+                <p>
+                    Download our comprehensive event brochure for detailed information about sessions,
+                    speakers, and registration details.
+                </p>
+                <a href="/brochure.pdf" download class="brochure-btn">
+                    Download Brochure (PDF)
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Upcoming Events Section -->
+    <section id="events" class="bg-gray-50">
+        <div class="container">
+            <h2>Upcoming Series Events</h2>
+            <div class="events-grid">
+                <div class="event-card nyc">
+                    <h3>New York, NY</h3>
+                    <p>June 3, 2026<br>More Info Soon</p>
+                </div>
+                <div class="event-card sf">
+                    <h3>Bay Area, SF</h3>
+                    <p>More Info Soon</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Partners Section -->
+    <section>
+        <div class="container">
+            <div class="partners-content">
+                <div class="partners-grid">
+                    <div class="partner-card">
+                        <p class="partner-role">Host</p>
+                        <div class="partner-logo-box host">
+                            <img src="/nus-logo.jpg" alt="National University of Singapore logo">
+                        </div>
+                        <p class="partner-name">National University of Singapore</p>
+                    </div>
+                    <div class="partner-card">
+                        <p class="partner-role">Supporting Partner</p>
+                        <div class="partner-logo-box">
+                            <img src="/imda-logo.jpg" alt="Infocomm Media Development Authority logo">
+                        </div>
+                        <p class="partner-name">Infocomm Media Development Authority</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 SPARTAN - National University of Singapore</p>
+            <p class="small">
+                <a href="https://enterprise.nus.edu.sg" target="_blank" rel="noopener noreferrer">
+                    National University of Singapore (NUS) Enterprise
+                </a>
+                i3 Building Level 2, 21 Heng Mui Keng Terrace, Singapore 119613, Republic of Singapore.
+            </p>
+        </div>
+    </footer>
+</body>
+</html>
