@@ -24,7 +24,7 @@ In pursuit of the vision of shifting research from scale to trust, we will resea
 
 ## Open Positions
 
-We are immediately hiring for 2 post-doctoral positions based at NUS working on agents in future software workflows, and agent quality. Interested applicants can send their CV to vivien@nus.edu.sg with CC to <a href="https://abhikrc.com">Prof. Abhik Roychoudhury</a>.
+We are immediately hiring for 2 post-doctoral positions based at NUS working on agents in future software workflows, and building trusted agents. Interested applicants can send their CV to vivien@nus.edu.sg with CC to <a href="https://abhikrc.com">Prof. Abhik Roychoudhury</a>.
 
 ## News
 
