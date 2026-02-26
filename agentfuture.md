@@ -22,6 +22,10 @@ This research program aims to examine how future software engineering is likely 
 
 In pursuit of the vision of shifting research from scale to trust, we will research trust-building technology that would automatically (1) improve the quality of agent-generated software, and (2) generate additional artifacts to enhance the trust developers can place in agent-generated software. We propose to research a unification of specialized agents to a single unified software agent that can handle all tasks, and a mechanism for validating AI-generated software comprehensively so that AI artifacts come with degrees of assurance. Overall, an AI workflow for software systems of the future would be delivered; this workflow would be deployed at enterprises to not only speed development, but make it trustworthy.
 
+## Open Positions
+
+We are immediately hiring for 2 post-doctoral positions based at NUS working on agents in future software workflows, and agent quality. Interested applicants can send their CV to vivien@nus.edu.sg with CC to <a href="https://abhikrc.com">Prof. Abhik Roychoudhury</a>.
+
 ## News
 
 <ul style="position: relative; margin-left: 0.5rem; border-left: 1px solid rgba(226, 232, 240, 0.8); padding-left: 1.5rem; list-style: none;">
