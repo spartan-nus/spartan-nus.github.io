@@ -10,6 +10,7 @@ import People from "./pages/People";
 import Contact from "./pages/Contact";
 import NotFound from "./pages/NotFound";
 import YourNewPage from "./pages/ai4code-roundtable"; // Keep your existing custom page
+import AgentFuture from "./pages/AgentFuture"; // Import the new page
 
 const queryClient = new QueryClient();
 
@@ -22,6 +23,7 @@ const App = () => (
         <Routes>
           <Route path="/" element={<About />} />
           <Route path="/news" element={<News />} />
+          <Route path="/agentfuture" element={<AgentFuture />} />
           <Route path="/research" element={<Research />} />
           <Route path="/people" element={<People />} />
           <Route path="/contact" element={<Contact />} />
