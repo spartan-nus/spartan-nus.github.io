@@ -29,7 +29,7 @@ const Navbar: React.FC = () => {
   ];
 
   const fundedProjects = [
-    { name: "AI for Science", url: "https://ai-4-pr.github.io/" },
+    { name: "AI for Science", url: "https://ai4pr.github.io/" },
     { name: "Automated Program Repair", url: "https://nus-apr.github.io/" },
     { name: "Trustworthy and Secure Software(TSS)", url: "https://nus-tss.github.io/" },
     { name: "Fuzz Testing", url: "https://nus-tss.github.io/fuzzing/" },
