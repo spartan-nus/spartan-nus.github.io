@@ -5,6 +5,12 @@ import { ArrowRight } from "lucide-react";
 
 const eventItems = [
   {
+    date: "3 Jun 2026",
+    title: "AI4Code Roundtable – NYC",
+    content: "A one day roundtable event in New York City on trustworthy AI for code. Jointly organized by Abhik Roychoudhury and Baishakhi Ray.",
+    link: "https://spartan-nus.github.io/ai4code-roundtable-nyc.html"
+  },
+  {
     date: "19 Jan 2026",
     title: "AI for Code Industry Roundtable",
     content: "A one day roundtable event on how to use AI for code with trust. It will be followed by another event in New York. Both events are jointly organized by Abhik Roychoudhury and Baishakhi Ray.",
