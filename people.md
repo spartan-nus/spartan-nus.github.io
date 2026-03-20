@@ -18,6 +18,12 @@ permalink: /people/
     <h3><a href="https://www.comp.nus.edu.sg/~xiaoxk/">Xiaokui Xiao</a></h3>
     <p class="people-role">Professor@NUS</p>
   </div>
+
+  <div class="people-card">
+    <img src="/people/liang.jpg" alt="Zhenkai Liang" class="people-photo">
+    <h3><a href="https://www.comp.nus.edu.sg/~liangzk/">Zhenkai Liang</a></h3>
+    <p class="people-role">Associate Professor@NUS</p>
+  </div>
 </div>
 
 <h2 style="text-align: center; margin-bottom: 2rem; margin-top: 3rem;">Collaborators</h2>
