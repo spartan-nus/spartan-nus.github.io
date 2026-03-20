@@ -19,6 +19,10 @@ const researchProjects = [
     description: "Collaboration with Google OSS team",
     link: "/coderover-s.html",
   }, 
+   title: "Explainable AI Agents",
+    description: "An agent which is more trustworthy since it can explain its actions",
+    link: "https://www.arxiv.org/abs/2507.22414"
+  },
   {
     title: "Accurate Table Question Answering",
     description: "Table Question Answering (TQA) is a task that aims to provide accurate answers to natural language questions based on the content of a given (database) table",
