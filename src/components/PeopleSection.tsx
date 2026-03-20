@@ -21,6 +21,15 @@ const teamMembers = [
     homepage: "https://www.comp.nus.edu.sg/~xiaoxk/"
   },
   {
+    name: "Zhenkai Liang",
+    position: "Associate Professor@NUS",
+    description: "",
+    imageUrl: "/people/liang.jpg",
+    initials: "XX",
+    homepage: "https://www.comp.nus.edu.sg/~liangzk/"
+  },
+  
+  {
     name: "Baishakhi Ray",
     position: "Collaborator, Associate Professor@Columbia",
     description: "",
