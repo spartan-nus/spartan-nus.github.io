@@ -1,0 +1,88 @@
+pi:
+  - name: "Abhik Roychoudhury"
+    role: "Principal Investigator, Provost's Chair Professor@NUS"
+    image: "/people/abhik.jpg"
+    homepage: "https://abhikrc.com/"
+
+  - name: "Xiaokui Xiao"
+    role: "Professor@NUS"
+    image: "/people/xiaokui.jpg"
+    homepage: "https://www.comp.nus.edu.sg/~xiaoxk/"
+
+  - name: "Zhenkai Liang"
+    role: "Associate Professor@NUS"
+    image: "/people/liang.jpg"
+    homepage: "https://www.comp.nus.edu.sg/~liangzk/"
+
+collaborators:
+  - name: "Baishakhi Ray"
+    role: "Associate Professor@Columbia"
+    image: "/people/baishakhi.jpg"
+    homepage: "https://www.rayb.info/"
+
+  - name: "Cristian Cadar"
+    role: "Professor@Imperial"
+    image: "/people/cristian.png"
+    homepage: "https://www.doc.ic.ac.uk/~cristic/"
+
+  - name: "Lin Tan"
+    role: "Professor@Purdue"
+    image: "/people/lintan.jpeg"
+    homepage: "https://www.cs.purdue.edu/homes/lintan/"
+
+  - name: "Blaise Genest"
+    role: "CNRS France"
+    image: "/people/blaise3.jpg"
+    homepage: "https://perso.crans.org/genest/"
+
+team:
+  - name: "Haifeng Ruan"
+    role: "PhD Student - AutoCodeRover, Explainable AI agents"
+    image: "/people/haifeng.jpg"
+    homepage: "https://haifengruan.com/"
+
+  - name: "Yuntong Zhang"
+    role: "PhD Student - AutoCodeRover, Agent Testing, Unified Agent, AI for Security"
+    image: "/people/yuntong.jpg"
+    homepage: "https://yuntongzhang.github.io/"
+
+  - name: "Sungmin Kang"
+    role: "Postdoctoral Researcher - Explainable AI agents, Agent Testing"
+    image: "/people/sungmin.jpg"
+    homepage: "https://smkang96.github.io/"
+
+  - name: "Haoxin Tu"
+    role: "Postdoctoral Researcher - Proof Agents"
+    image: "/people/haoxin.png"
+    homepage: "https://haoxintu.github.io/"
+
+  - name: "Martin Mirchev"
+    role: "PhD student, On leave to Sonar - AutoCodeRover"
+    image: "/people/martin.jpg"
+    homepage: "https://marti2203.github.io"
+
+  - name: "Leonhard Applis"
+    role: "Postdoctoral Researcher - Unified Agent"
+    image: "/people/applis.jpeg"
+    homepage: "https://github.com/lapplislazuli"
+
+  - name: "I.N.B. Yusuf"
+    role: "Postdoctoral Researcher - AI for Security"
+    image: "/people/yusuf.jpg"
+    homepage: "https://imamnurby.github.io/"
+
+  - name: "Z. Liu (Tony)"
+    role: "(Incoming) PhD student - AI for Security"
+    initials: "ZL"
+    homepage: "https://conf.researchr.org/profile/icsme-2025/zhengyaoliu"
+
+alumni:
+  - name: "Ruijie Meng"
+    role: "Graduating PhD student → Asst Prof CISPA - Agent Testing"
+    image: "/people/ruijie.png"
+    homepage: "https://mengrj.github.io"
+
+  - name: "Ridwan Shariffdeen"
+    role: "Alumni → Principal Research Scientist@Sonar - AutoCodeRover"
+    image: "/people/ridwan.jpg"
+    homepage: "https://rshariffdeen.com/"

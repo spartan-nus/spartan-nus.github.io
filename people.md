@@ -4,123 +4,26 @@ title: People
 permalink: /people/
 ---
 
-<h2 style="text-align: center; margin-bottom: 2rem;">Principal Investigators & Professors</h2>
+{% assign sections = "pi,collaborators,team,alumni" | split: "," %}
+{% assign titles = "Principal Investigators & Professors,Collaborators,PhD Students & Postdoctoral Researchers,Graduating & Alumni" | split: "," %}
+
+{% for section in sections %}
+<h2 style="text-align: center; margin-bottom: 2rem;{% unless forloop.first %} margin-top: 3rem;{% endunless %}">{{ titles[forloop.index0] }}</h2>
 
 <div class="people-grid">
+{% for person in site.data.people[section] %}
   <div class="people-card">
-    <img src="/people/abhik.jpg" alt="Abhik Roychoudhury" class="people-photo">
-    <h3><a href="https://abhikrc.com/">Abhik Roychoudhury</a></h3>
-    <p class="people-role">Principal Investigator, Provost's Chair Professor@NUS</p>
+    {% if person.image %}
+    <img src="{{ person.image }}" alt="{{ person.name }}" class="people-photo">
+    {% elsif person.initials %}
+    <div class="people-photo people-initials">{{ person.initials }}</div>
+    {% endif %}
+    <h3><a href="{{ person.homepage }}">{{ person.name }}</a></h3>
+    <p class="people-role">{{ person.role }}</p>
   </div>
-
-  <div class="people-card">
-    <img src="/people/xiaokui.jpg" alt="Xiaokui Xiao" class="people-photo">
-    <h3><a href="https://www.comp.nus.edu.sg/~xiaoxk/">Xiaokui Xiao</a></h3>
-    <p class="people-role">Professor@NUS</p>
-  </div>
-
-  <div class="people-card">
-    <img src="/people/liang.jpg" alt="Zhenkai Liang" class="people-photo">
-    <h3><a href="https://www.comp.nus.edu.sg/~liangzk/">Zhenkai Liang</a></h3>
-    <p class="people-role">Associate Professor@NUS</p>
-  </div>
+{% endfor %}
 </div>
-
-<h2 style="text-align: center; margin-bottom: 2rem; margin-top: 3rem;">Collaborators</h2>
-
-<div class="people-grid">
-  <div class="people-card">
-    <img src="/people/baishakhi.jpg" alt="Baishakhi Ray" class="people-photo">
-    <h3><a href="https://www.rayb.info/">Baishakhi Ray</a></h3>
-    <p class="people-role">Associate Professor@Columbia</p>
-  </div>
-
-  <div class="people-card">
-    <img src="/people/cristian.png" alt="Cristian Cadar" class="people-photo">
-    <h3><a href="https://www.doc.ic.ac.uk/~cristic/">Cristian Cadar</a></h3>
-    <p class="people-role">Professor@Imperial</p>
-  </div>
-
-  <div class="people-card">
-    <img src="/people/lintan.jpeg" alt="Lin Tan" class="people-photo">
-    <h3><a href="https://www.cs.purdue.edu/homes/lintan/">Lin Tan</a></h3>
-    <p class="people-role">Professor@Purdue</p>
-  </div>
-
-  <div class="people-card">
-    <img src="/people/blaise3.jpg" alt="Blaise Genest" class="people-photo">
-    <h3><a href="https://perso.crans.org/genest/">Blaise Genest</a></h3>
-    <p class="people-role">CNRS France</p>
-  </div>
-</div>
-
-<h2 style="text-align: center; margin-bottom: 2rem; margin-top: 3rem;">PhD Students & Postdoctoral Researchers</h2>
-
-<div class="people-grid">
-  <div class="people-card">
-    <img src="/people/haifeng.jpg" alt="Haifeng Ruan" class="people-photo">
-    <h3><a href="https://haifengruan.com/">Haifeng Ruan</a></h3>
-    <p class="people-role">PhD Student - AutoCodeRover, Explainable AI agents</p>
-  </div>
-
-  <div class="people-card">
-    <img src="/people/yuntong.jpg" alt="Yuntong Zhang" class="people-photo">
-    <h3><a href="https://yuntongzhang.github.io/">Yuntong Zhang</a></h3>
-    <p class="people-role">PhD Student - AutoCodeRover, Agent Testing, Unified Agent, AI for Security</p>
-  </div>
-
-  <div class="people-card">
-    <img src="/people/sungmin.jpg" alt="Sungmin Kang" class="people-photo">
-    <h3><a href="https://smkang96.github.io/">Sungmin Kang</a></h3>
-    <p class="people-role">Postdoctoral Researcher - Explainable AI agents, Agent Testing</p>
-  </div>
-
-  <div class="people-card">
-    <img src="/people/haoxin.png" alt="Haoxin Tu" class="people-photo">
-    <h3><a href="https://haoxintu.github.io/">Haoxin Tu</a></h3>
-    <p class="people-role">Postdoctoral Researcher - Proof Agents</p>
-  </div>
-
-  <div class="people-card">
-    <img src="/people/martin.jpg" alt="Martin Mirchev" class="people-photo">
-    <h3><a href="https://marti2203.github.io">Martin Mirchev</a></h3>
-    <p class="people-role">PhD student, On leave to Sonar - AutoCodeRover</p>
-  </div>
-
-  <div class="people-card">
-    <img src="/people/applis.jpeg" alt="Leonhard Applis" class="people-photo">
-    <h3><a href="https://github.com/lapplislazuli">Leonhard Applis</a></h3>
-    <p class="people-role">Postdoctoral Researcher - Unified Agent</p>
-  </div>
-
-  <div class="people-card">
-    <img src="/people/yusuf.jpg" alt="I.N.B. Yusuf" class="people-photo">
-    <h3><a href="https://imamnurby.github.io/">I.N.B. Yusuf</a></h3>
-    <p class="people-role">Postdoctoral Researcher - AI for Security</p>
-  </div>
-
-  <div class="people-card">
-    <div class="people-photo people-initials">ZL</div>
-    <h3><a href="https://conf.researchr.org/profile/icsme-2025/zhengyaoliu">Z. Liu (Tony)</a></h3>
-    <p class="people-role">(Incoming) PhD student - AI for Security</p>
-  </div>
-</div>
-
-<h2 style="text-align: center; margin-bottom: 2rem; margin-top: 3rem;">Graduating & Alumni</h2>
-
-<div class="people-grid">
-  <div class="people-card">
-    <img src="/people/ruijie.png" alt="Ruijie Meng" class="people-photo">
-    <h3><a href="https://mengrj.github.io">Ruijie Meng</a></h3>
-    <p class="people-role">Graduating PhD student → Asst Prof CISPA - Agent Testing</p>
-  </div>
-
-  <div class="people-card">
-    <img src="/people/ridwan.jpg" alt="Ridwan Shariffdeen" class="people-photo">
-    <h3><a href="https://rshariffdeen.com/">Ridwan Shariffdeen</a></h3>
-    <p class="people-role">Alumni → Principal Research Scientist@Sonar - AutoCodeRover</p>
-  </div>
-</div>
+{% endfor %}
 
 <style>
 .people-grid {
