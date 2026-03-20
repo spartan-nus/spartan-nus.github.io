@@ -10,14 +10,9 @@ const researchProjects = [
     description: "Being integrated in Production with SonarQube Static Analyzer",
     link: "https://autocoderover.dev",
   },
-   {
-    title: "AI for Program Reasoning ",
-    description: "Funded under NRF AI for Science call, starting July 2026",
-    link: "https://ai-4-pr.github.io/"
-  },
-  { title: "Agentic Programming with Trust",
-    description: "Opinion Piece, in Communications of the ACM, May 2026",
-    link: "https://arxiv.org/pdf/2502.13767",
+  { title: "VeriGrey: Agent Security Assurance",
+    description: "Security testing of Agents like OpenClaw",
+    link: "https://medium.com/@abhik.roychoudhury/verigrey-grey-behaviors-in-agents-2611ec72722f",
   },
     {
     title: "AI for Open Source Security",
