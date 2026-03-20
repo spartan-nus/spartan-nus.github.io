@@ -33,11 +33,6 @@ const researchProjects = [
     description: "Use of differential privacy while finetuning LLMs",
     link: "https://www.comp.nus.edu.sg/~xiaoxk/projects/dpzo/dpzo.html"
   },    
-   {
-    title: "Explainable AI Agents",
-    description: "An agent which is more trustworthy since it can explain its actions",
-    link: "https://www.arxiv.org/abs/2507.22414"
-  },
 ];
 
 const ResearchSection: React.FC = () => {
