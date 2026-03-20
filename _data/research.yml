@@ -6,6 +6,10 @@
   description: "Security testing of Agents like OpenClaw"
   link: "https://medium.com/@abhik.roychoudhury/verigrey-grey-behaviors-in-agents-2611ec72722f"
 
+- title: "Explainable AI Agents"
+  description: "An agent which is more trustworthy since it can explain its actions"
+  link: "https://www.arxiv.org/abs/2507.22414"
+
 - title: "AI for Open Source Security"
   description: "Collaboration with Google OSS team"
   link: "/coderover-s.html"
