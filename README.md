@@ -1,73 +1,143 @@
-# Welcome to your Lovable project
+# SPARTAN Website
 
-## Project info
+Website for the Strategic Platform for Autonomous Resilient and Trusted Agents @ NUS.
 
-**URL**: https://lovable.dev/projects/37bfa506-95b8-42b2-8332-d864bc2568f8
+Live at: https://spartan-nus.github.io
 
-## How can I edit this code?
+## How to update the site
 
-There are several ways of editing your application.
+All content lives in simple text files. You can edit them directly on GitHub — no coding required.
 
-**Use Lovable**
+1. Go to the file you want to edit (see sections below)
+2. Click the pencil icon (Edit) in the top-right corner
+3. Make your changes
+4. Click "Commit changes" at the bottom
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/37bfa506-95b8-42b2-8332-d864bc2568f8) and start prompting.
+The site will automatically rebuild and go live within a minute or two.
 
-Changes made via Lovable will be committed automatically to this repo.
+---
 
-**Use your preferred IDE**
+### Add or edit an Event
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+Edit `_data/events.yml`. Each event looks like this:
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-
-Follow these steps:
-
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
+```yaml
+- date: "3 Jun 2026"
+  title: "AI4Code Roundtable – NYC"
+  description: "A one day roundtable event in New York City on trustworthy AI for code."
+  link: "https://spartan-nus.github.io/ai4code-roundtable-nyc.html"
 ```
 
-**Edit a file directly in GitHub**
+To add a new event, copy the block above and paste it at the **top** of the file (newest first). Fill in your own date, title, description, and link. The link is optional — remove that line if you don't need it.
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+---
 
-**Use GitHub Codespaces**
+### Add or edit a News item
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+Edit `_data/news.yml`. Same format as events:
 
-## What technologies are used for this project?
+```yaml
+- date: "Feb 19, 2025"
+  title: "Sonar Acquires AutoCodeRover"
+  description: "Short summary of the news item."
+  link: "https://example.com/article"
+```
 
-This project is built with:
+Add new items at the **top** of the file (newest first).
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+---
 
-## How can I deploy this project?
+### Add or edit a Research topic
 
-Simply open [Lovable](https://lovable.dev/projects/37bfa506-95b8-42b2-8332-d864bc2568f8) and click on Share -> Publish.
+Edit `_data/research.yml`:
 
-## Can I connect a custom domain to my Lovable project?
+```yaml
+- title: "VeriGrey: Agent Security Assurance"
+  description: "Security testing of Agents like OpenClaw"
+  link: "https://example.com/project-page"
+```
 
-Yes, you can!
+---
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+### Add or edit a Person
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+Edit `_data/people.yml`. People are grouped into four sections:
+
+- `pi` — Principal Investigators & Professors
+- `collaborators` — External collaborators
+- `team` — PhD Students & Postdoctoral Researchers
+- `alumni` — Graduating & Alumni
+
+Each person looks like this:
+
+```yaml
+  - name: "Jane Doe"
+    role: "Postdoctoral Researcher - AI for Security"
+    image: "/people/jane.jpg"
+    homepage: "https://janedoe.com"
+```
+
+To add a new person:
+1. Add their photo to the `people/` folder (upload it via GitHub)
+2. Add their entry under the right section in `_data/people.yml`
+
+If the person doesn't have a photo yet, use initials instead of an image:
+
+```yaml
+  - name: "Z. Liu (Tony)"
+    role: "(Incoming) PhD student"
+    initials: "ZL"
+    homepage: "https://example.com"
+```
+
+---
+
+### Edit the About page
+
+Edit `index.md`.
+
+### Edit the navigation bar
+
+Edit `_includes/header.html`.
+
+### Edit the homepage carousel
+
+Edit `_includes/carousel.html`.
+
+---
+
+## Where things are
+
+```
+_data/
+  events.yml      ← Events on the News & Events page
+  news.yml        ← News items on the News & Events page
+  research.yml    ← Research topics on the Upcoming Efforts page
+  people.yml      ← Everyone on the People page
+
+people/            ← Photos of team members
+assets/images/     ← Other images (logos, carousel, etc.)
+
+index.md           ← About page
+news.md            ← News & Events page
+research.md        ← Upcoming Efforts page
+people.md          ← People page (template, reads from _data/people.yml)
+contact.md         ← Contact page
+agentfuture.md     ← Coding Agents of The Future page
+
+_includes/
+  header.html      ← Navigation bar
+  footer.html      ← Footer
+  carousel.html    ← Homepage carousel
+
+_layouts/
+  default.html     ← Main page layout
+```
+
+## Adding images
+
+Upload images via GitHub into the appropriate folder:
+- Team member photos go in `people/`
+- Other images go in `assets/images/`
+
+Then reference them in your content as `/people/filename.jpg` or `/assets/images/filename.png`.
