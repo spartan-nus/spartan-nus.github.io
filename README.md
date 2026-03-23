@@ -92,6 +92,23 @@ If the person doesn't have a photo yet, use initials instead of an image:
 
 ---
 
+### Add or edit a Publication
+
+Edit `_data/publications.yml`. Each entry looks like this:
+
+```yaml
+- venue: "ICSE"
+  title: "My Paper Title"
+  authors: "Author One, Author Two, Abhik Roychoudhury"
+  where: "ACM/IEEE International Conference on Software Engineering, 2026"
+  note: "Optional note, e.g. Best Paper Award"
+  link: "https://arxiv.org/abs/..."
+```
+
+`note` and `link` are optional — remove those lines if not needed. Publications appear in the order listed, so put the newest ones at the top.
+
+---
+
 ### Edit the About page
 
 Edit `index.md`.
@@ -110,10 +127,11 @@ Edit `_includes/carousel.html`.
 
 ```
 _data/
-  events.yml      ← Events on the News & Events page
-  news.yml        ← News items on the News & Events page
-  research.yml    ← Research topics on the Upcoming Efforts page
-  people.yml      ← Everyone on the People page
+  events.yml        ← Events on the News & Events page
+  news.yml          ← News items on the News & Events page
+  research.yml      ← Research topics on the Upcoming Efforts page
+  people.yml        ← Everyone on the People page
+  publications.yml  ← All publications
 
 people/            ← Photos of team members
 assets/images/     ← Other images (logos, carousel, etc.)
@@ -122,6 +140,7 @@ index.md           ← About page
 news.md            ← News & Events page
 research.md        ← Upcoming Efforts page
 people.md          ← People page (template, reads from _data/people.yml)
+publications.md    ← Publications page (template, reads from _data/publications.yml)
 contact.md         ← Contact page
 agentfuture.md     ← Coding Agents of The Future page
 
