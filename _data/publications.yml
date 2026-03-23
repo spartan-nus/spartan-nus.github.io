@@ -1,3 +1,11 @@
+- venue: "arxiv"
+  title: "VeriGrey: Greybox Agent Validation"
+  authors: "Yuntong Zhang, Sungmin Kang, Ruijie Meng, Marcel Boehme, Abhik Roychoudhury"
+  where: "arxiv:2603 pre-print 2026"
+  note: "Released via blog post to show agent testing in OpenClaw and other agents"
+  link: "https://medium.com/@abhik.roychoudhury/verigrey-grey-behaviors-in-agents-2611ec72722f"
+
+
 - venue: "CACM"
   title: "Agentic AI Software Engineers: Programming with Trust"
   authors: "Abhik Roychoudhury, Corina Păsăreanu, Michael Pradel, Baishakhi Ray"
