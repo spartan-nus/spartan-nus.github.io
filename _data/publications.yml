@@ -1,0 +1,53 @@
+- venue: "CACM"
+  title: "Agentic AI Software Engineers: Programming with Trust"
+  authors: "Abhik Roychoudhury, Corina Păsăreanu, Michael Pradel, Baishakhi Ray"
+  where: "Communications of the ACM (CACM), 69(5), May 2026"
+  note: "Released in arxiv Feb 19 2025, coinciding with AutoCodeRover acquisition announcement"
+  link: "https://arxiv.org/pdf/2502.13767"
+
+- venue: "FSE"
+  title: "AutoCodeRover: Agentic Program Repair for SonarQube Issues"
+  authors: "Martin Mirchev, Ridwan Shariffdeen, Haifeng Ruan, Yuntong Zhang, Abhik Roychoudhury"
+  where: "ACM International Conference on Foundations of Software Engineering (FSE), Industry Track, 2026"
+  note: "Tech Transfer of AutoCodeRover agent to SonarQube"
+
+- venue: "S&P"
+  title: "Agentic Concolic Execution"
+  authors: "Zhengxiong Luo, Huan Zhao, Dylan Wolff, Cristian Cadar, Abhik Roychoudhury"
+  where: "47th IEEE Symposium on Security and Privacy, 2026"
+
+- venue: "ICSE"
+  title: "Unified Software Engineering agent as AI Software Engineer"
+  authors: "Leonhard Applis, Yuntong Zhang, Shanchao Liang, Nan Jiang, Lin Tan, Abhik Roychoudhury"
+  where: "ACM/IEEE International Conference on Software Engineering, 2026"
+
+- venue: "ICSE"
+  title: "Repairing LLM Executions for Secure Automatic Programming"
+  authors: "Ali El Husseini, Yacine Izza, Blaise Genest, Abhik Roychoudhury"
+  where: "ACM/IEEE International Conference on Software Engineering, 2026"
+
+- venue: "ICSE-SEIP"
+  title: "Fixing Security Vulnerabilities with Agentic AI in OSS-Fuzz"
+  authors: "Yuntong Zhang, Jiawei Wang, Dominic Berzin, Martin Mirchev, Abhik Roychoudhury"
+  where: "ACM/IEEE International Conference on Software Engineering, 2026 (SEIP track)"
+
+- venue: "CACM"
+  title: "Large Language Models in Software Security Analysis"
+  authors: "Dylan Wolff, Martin Mirchev, Abhik Roychoudhury"
+  where: "Communications of the ACM (CACM), To appear"
+
+- venue: "ICSE"
+  title: "SpecRover: Code Intent Extraction via LLMs"
+  authors: "Haifeng Ruan, Yuntong Zhang, Abhik Roychoudhury"
+  where: "47th International Conference on Software Engineering (ICSE) 2025"
+
+- venue: "ISSTA"
+  title: "AutoCodeRover: Autonomous Program Improvement"
+  authors: "Yuntong Zhang, Haifeng Ruan, Zhiyu Fan, Abhik Roychoudhury"
+  where: "ACM International Symposium on Software Testing and Analysis (ISSTA) 2024, arXiv:2404.05427, Publicly released 8th April 2024"
+  link: "https://arxiv.org/abs/2404.05427"
+
+- venue: "ISSTA"
+  title: "Oracle-guided Program Selection from Large Language Models"
+  authors: "Zhiyu Fan, Haifeng Ruan, Sergey Mechtaev, Abhik Roychoudhury"
+  where: "ACM International Symposium on Software Testing and Analysis (ISSTA) 2024"
