@@ -15,31 +15,37 @@
   title: "Agentic Concolic Execution"
   authors: "Zhengxiong Luo, Huan Zhao, Dylan Wolff, Cristian Cadar, Abhik Roychoudhury"
   where: "47th IEEE Symposium on Security and Privacy, 2026"
+  link: "https://abhikrc.com/pdf/SP26.pdf"
 
 - venue: "ICSE"
   title: "Unified Software Engineering agent as AI Software Engineer"
   authors: "Leonhard Applis, Yuntong Zhang, Shanchao Liang, Nan Jiang, Lin Tan, Abhik Roychoudhury"
   where: "ACM/IEEE International Conference on Software Engineering, 2026"
+  link: "https://abhikrc.com/pdf/ICSE26-USEagent.pdf"
 
 - venue: "ICSE"
   title: "Repairing LLM Executions for Secure Automatic Programming"
   authors: "Ali El Husseini, Yacine Izza, Blaise Genest, Abhik Roychoudhury"
   where: "ACM/IEEE International Conference on Software Engineering, 2026"
+  link: "https://abhikrc.com/pdf/ICSE26-security.pdf"
 
 - venue: "ICSE-SEIP"
   title: "Fixing Security Vulnerabilities with Agentic AI in OSS-Fuzz"
   authors: "Yuntong Zhang, Jiawei Wang, Dominic Berzin, Martin Mirchev, Abhik Roychoudhury"
   where: "ACM/IEEE International Conference on Software Engineering, 2026 (SEIP track)"
+  link: "https://abhikrc.com/pdf/icse2026-seip.pdf"
 
 - venue: "CACM"
   title: "Large Language Models in Software Security Analysis"
   authors: "Dylan Wolff, Martin Mirchev, Abhik Roychoudhury"
   where: "Communications of the ACM (CACM), To appear"
+  link: "https://abhikrc.com/pdf/CACM26Security.pdf"
 
 - venue: "ICSE"
   title: "SpecRover: Code Intent Extraction via LLMs"
   authors: "Haifeng Ruan, Yuntong Zhang, Abhik Roychoudhury"
   where: "47th International Conference on Software Engineering (ICSE) 2025"
+  link: "https://abhikrc.com/pdf/ICSE25.pdf"
 
 - venue: "ISSTA"
   title: "AutoCodeRover: Autonomous Program Improvement"
@@ -51,3 +57,12 @@
   title: "Oracle-guided Program Selection from Large Language Models"
   authors: "Zhiyu Fan, Haifeng Ruan, Sergey Mechtaev, Abhik Roychoudhury"
   where: "ACM International Symposium on Software Testing and Analysis (ISSTA) 2024"
+  link: "https://abhikrc.com/pdf/ISSTA24_Oracle_Guided.pdf"
+
+- venue: "ICSE"
+  title: "Automated Repair of Programs from Large Language Models"
+  authors: "Zhiyu Fan, Xiang Gao, Martin Mirchev, Abhik Roychoudhury, Shin Hwei Tan"
+  where: "IEEE/ACM International Conference on Software Engineering (ICSE) 2023"
+  link: "https://abhikrc.com/pdf/ICSE23.pdf"
+
+ 
