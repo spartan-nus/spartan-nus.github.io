@@ -8,7 +8,7 @@ permalink: /agentfuture/
 <p style="text-align: center; font-size: 1.125rem; color: #555; margin-bottom: 3rem;">NRF Investigator funded by the National Research Foundation, Singapore (2026-31)</p>
 
 <div style="text-align: center; margin: 2rem 0;">
-  <img src="/agent_workflow_diagram.png" alt="Agent Future Workflow" style="max-width: 100%; height: auto; border-radius: 0.5rem; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);">
+  <img src="images/agent_workflow_diagram.png" alt="Agent Future Workflow" style="max-width: 100%; height: auto; border-radius: 0.5rem; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);">
   <p style="text-align: center; font-size: 0.875rem; color: #999; margin-top: 1rem;"><em>Figure: An envisioned workflow for future software development with agentic AI.</em></p>
 </div>
 
