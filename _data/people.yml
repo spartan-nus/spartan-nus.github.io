@@ -81,7 +81,7 @@ team:
 
   - name: "Huan Zhao"
     role: "PhD student - AI for Verification"
-    initials: "ZH"
+    image: "/people/zhaohuan.jpeg"
     homepage: "https://zhaohuanqdcn.github.io/"
 
 alumni:
