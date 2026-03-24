@@ -65,24 +65,24 @@ team:
     homepage: "https://haoxintu.github.io/"
 
   - name: "Martin Mirchev"
-    role: "PhD student, On leave to Sonar - AutoCodeRover"
+    role: "PhD student, AutoCodeRover"
     image: "/people/martin.jpg"
     homepage: "https://marti2203.github.io"
 
-  - name: "Leonhard Applis"
-    role: "Postdoctoral Researcher - Unified Agent"
-    image: "/people/applis.jpeg"
-    homepage: "https://github.com/lapplislazuli"
+  - name: "David Trabish"
+    role: "Postdoctoral Researcher"
+    image: "/people/DavidTrabish.jpg"
+    homepage: "https://davidtr1037.github.io/about/"
 
-  - name: "I.N.B. Yusuf"
-    role: "Postdoctoral Researcher - AI for Security"
+  - name: "Imam Nur Bani Yusuf"
+    role: "Postdoctoral Researcher"
     image: "/people/yusuf.jpg"
     homepage: "https://imamnurby.github.io/"
 
-  - name: "Z. Liu (Tony)"
-    role: "(Incoming) PhD student - AI for Security"
-    initials: "ZL"
-    homepage: "https://conf.researchr.org/profile/icsme-2025/zhengyaoliu"
+  - name: "Huan Zhao"
+    role: "PhD student - AI for Verification"
+    initials: "ZH"
+    homepage: "https://zhaohuanqdcn.github.io/"
 
 alumni:
   - name: "Ruijie Meng"
