@@ -14,6 +14,12 @@
   link: "https://arxiv.org/pdf/2502.13767"
 
 - venue: "FSE"
+  title: "Agentic Verification of Software Systems"
+  authors: "Haoxin Tu, Huan Zhao, Yahui Song, Mehtab Zafar, Ruijie Meng Abhik Roychoudhury"
+  where: "ACM International Conference on Foundations of Software Engineering (FSE), 2026"
+  note: "A proposal to conduct formal verification using LLM agents"
+
+- venue: "FSE"
   title: "AutoCodeRover: Agentic Program Repair for SonarQube Issues"
   authors: "Martin Mirchev, Ridwan Shariffdeen, Haifeng Ruan, Yuntong Zhang, Abhik Roychoudhury"
   where: "ACM International Conference on Foundations of Software Engineering (FSE), Industry Track, 2026"
