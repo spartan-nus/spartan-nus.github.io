@@ -18,6 +18,7 @@
   authors: "Haoxin Tu, Huan Zhao, Yahui Song, Mehtab Zafar, Ruijie Meng Abhik Roychoudhury"
   where: "ACM International Conference on Foundations of Software Engineering (FSE), 2026"
   note: "A proposal to conduct formal verification using LLM agents"
+  link: https://arxiv.org/abs/2511.17330
 
 - venue: "FSE"
   title: "AutoCodeRover: Agentic Program Repair for SonarQube Issues"
