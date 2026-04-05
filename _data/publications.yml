@@ -11,7 +11,7 @@
   authors: "Abhik Roychoudhury, Corina Păsăreanu, Michael Pradel, Baishakhi Ray"
   where: "Communications of the ACM (CACM), 69(5), May 2026"
   note: "Released in arxiv Feb 19 2025, coinciding with AutoCodeRover acquisition announcement"
-  link: "https://dl.acm.org/doi/full/10.1145/3769314"
+  link: "https://cacm.acm.org/opinion/agentic-ai-software-engineers-programming-with-trust/"
 
 - venue: "FSE"
   title: "Agentic Verification of Software Systems"
