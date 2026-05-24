@@ -2,8 +2,9 @@
   title: "SonarQube Remediation Agent: from NUS research to commercial product"
   description: "SonarQube Remediation Agent which is built from AutoCodeRover  acquisition, made available
 				commercially to enterprises !!"
-  link: "https://www.linkedin.com/posts/abhik-roychoudhury-189352137_autocoderover-work-on-program-repair-launched-share-7463221834130464768-f22r/"
+  link: "https://www.sonarsource.com/company/press-releases/sonar-globally-launches-sonarqube-remediation-agent-at-atxsummit/"
 
+  
 - date: "Aug 27, 2025"
   title: "Prof. Abhik Roychoudhury Comments in IEEE Spectrum on Trust in AI Coding"
   description: "A recent article in IEEE Spectrum examines the capabilities and limits of AI coding tools. Professor Abhik Roychoudhury, Principal Investigator of SPARTAN, emphasizes the importance of capturing programmer intent, highlights the challenges of ensuring trust in AI coding, and views the rise of agentic software engineering as an inevitable trend."
