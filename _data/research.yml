@@ -4,7 +4,7 @@
 
 - title: "AI for Program Reasoning"
   description: "Use AI agents for specification inference in software verification"
-  link: "https://ai4pr.github.io/"
+  link: "https://ai4pr.github.io"
 
 - title: "Explainable AI Agents"
   description: "An agent which is more trustworthy since it can explain its actions"
