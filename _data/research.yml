@@ -2,9 +2,9 @@
   description: "Being integrated in Production with SonarQube Static Analyzer"
   link: "https://autocoderover.dev"
 
-- title: "VeriGrey: Agent Security Assurance"
-  description: "Security testing of Agents like OpenClaw"
-  link: "https://medium.com/@abhik.roychoudhury/verigrey-grey-behaviors-in-agents-2611ec72722f"
+- title: "AI for Program Reasoning"
+  description: "Use AI agents for specification inference in software verification"
+  link: "https://ai4pr.github.io/"
 
 - title: "Explainable AI Agents"
   description: "An agent which is more trustworthy since it can explain its actions"
