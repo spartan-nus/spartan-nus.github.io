@@ -24,6 +24,8 @@ In pursuit of the vision of shifting research from scale to trust, we will resea
 
 ## Publications 
 
+<a href="https://abhikrc.com/pdf/AutoCodeSherpa.pdf">AutoCodeSherpa: Symbolic Explanations in AI Coding Agents</a>, Sungmin Kang, Haifeng Ruan, Abhik Roychoudhury, ACM International Symposium on Software Testing and Analysis (ISSTA) 2026.
+
 <a href="https://abhikrc.com/pdf/ExplainBench.pdf">ExplainBench: Evaluating Code Explanations from Agents</a>, Zhiyuan Pan, Sungmin Kang, Imam Nur Bani Yusuf, Abhik Roychoudhury, 41st IEEE/ACM International Conference on Automated Software Engineering (ASE), 2026.
 
 <a href="https://abhikrc.com/pdf/ICSE26-USEagent.pdf">Unified Software Engineering agent as AI Software Engineer</a>,
