@@ -22,7 +22,7 @@
   where: "41st IEEE/ACM International Conference on Automated Software Engineering (ASE), 2026"
   link: "https://arxiv.org/pdf/2603.22114"
   
- - venue: "ISSTA"
+- venue: "ISSTA"
   title: "AutoCodeSherpa: Symbolic Explanations in AI Coding Agents"
   authors: "Sungmin Kang, Haifeng Ruan, Abhik Roychoudhury"
   where: "ACM International Symposium on Software Testing and Analysis (ISSTA) 2026"
