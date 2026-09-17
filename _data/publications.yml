@@ -15,6 +15,7 @@
   title: "ExplainBench: Evaluating Code Explanations from Agents"
   authors: "Zhiyuan Pan, Sungmin Kang, Imam Nur Bani Yusuf, Abhik Roychoudhury"
   where: "41st IEEE/ACM International Conference on Automated Software Engineering (ASE), 2026"
+  link: "https://abhikrc.com/pdf/ExplainBench.pdf"
 
 - venue: "ASE"
   title: "Lemma Discovery in Agentic Program Verification"
