@@ -28,6 +28,7 @@ In pursuit of the vision of shifting research from scale to trust, we will resea
 
 <a href="https://abhikrc.com/pdf/ExplainBench.pdf">ExplainBench: Evaluating Code Explanations from Agents</a>, Zhiyuan Pan, Sungmin Kang, Imam Nur Bani Yusuf, Abhik Roychoudhury, 41st IEEE/ACM International Conference on Automated Software Engineering (ASE), 2026.
 
+<b>Pre-cursor Initial work</b><br>
 <a href="https://abhikrc.com/pdf/ICSE26-USEagent.pdf">Unified Software Engineering agent as AI Software Engineer</a>,
 Leonhard Applis, Yuntong Zhang, Shanchao Liang, Nan Jiang, Lin Tan, Abhik Roychoudhury,
 ACM/IEEE International Conference on Software Engineering, 2026.
