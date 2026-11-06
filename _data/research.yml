@@ -6,9 +6,9 @@
   description: "Use AI agents for specification inference in software verification"
   link: "https://ai4pr.github.io"
 
-- title: "Explainable AI Agents"
-  description: "An agent which is more trustworthy since it can explain its actions"
-  link: "https://www.arxiv.org/abs/2507.22414"
+- title: "GreyZone: Agentic Application Threats"
+  description: "A benchmark for production quality agentic application threats"
+  link: "https://github.com/Ruoyyy/GreyZone"
 
 - title: "AI for Open Source Security"
   description: "Collaboration with Google OSS team"
