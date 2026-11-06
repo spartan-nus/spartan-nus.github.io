@@ -18,6 +18,11 @@
   description: "Agents for Code Vulnerability detection"
   link: "https://arxiv.org/abs/2606.18619"
 
+- title: "AutoCodeSherpa"
+  description: "Symbolic Explanations for Coding Agents"
+  link: "https://arxiv.org/abs/2507.22414"
+
+
 - title: "Accurate Table Question Answering"
   description: "Table Question Answering (TQA) is a task that aims to provide accurate answers to natural language questions based on the content of a given (database) table"
   link: "https://www.comp.nus.edu.sg/~xiaoxk/projects/tqa/tqa_project.html"
