@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Upcoming Efforts
+title: Research Efforts
 permalink: /research/
 ---
 
