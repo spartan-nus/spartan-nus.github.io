@@ -33,8 +33,13 @@ In pursuit of the vision of shifting research from scale to trust, we will resea
 Leonhard Applis, Yuntong Zhang, Shanchao Liang, Nan Jiang, Lin Tan, Abhik Roychoudhury,
 ACM/IEEE International Conference on Software Engineering, 2026.
 
-## Open Positions
+## Existing Staff and Open Positions
 
+Current Postdocs:  <a href="https://aryaze.github.io/">Aryaz Eghbali</a>  and <a href ="https://haifengruan.com/">Haifeng Ruan</a>
+<br>
+PhD students: <a href="https://marti2203.github.io/">Martin Mirchev</a> , <a href ="https://www.linkedin.com/in/ali-el-husseini-6b0b90b5/">Ali El-Husseini</a>, Ruoyu Zhou
+
+<br><br>
 We are immediately hiring 1 post-doctoral researcher based at NUS working on building trusted agents. Interested applicants can send their CV to vivien@nus.edu.sg with CC to <a href="https://abhikrc.com">Prof. Abhik Roychoudhury</a>.
 Details will be discussed with interested applicants only.
 
