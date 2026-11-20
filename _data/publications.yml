@@ -1,3 +1,24 @@
+
+- venue: "arxiv"
+  title: "GreyZone: Production-quality Agentic Application Threats"
+  authors: "Ruoyu Zhou, Shuyao Jiang, Haifeng Ruan, Abhik Roychoudhury"
+  where: "arXiv:2611.09161"
+  note: "Benchmark for production quality agentic application threats"
+  link: "https://arxiv.org/pdf/2611.09161"
+
+- venue: "Springer-book"
+  title: "Agentic AI based Trusted Software: Viewpoint from SE"
+  authors: "Abhik Roychoudhury and Hironori Washizaki"
+  where: "AI Engineering Patterns and Practices, Springer"
+  note: "chapter in book by Springer"
+  link: "https://abhikrc.com/pdf/AI-Engineering-bookchapter.pdf"
+
+- venue: "NDSS"
+  title: "Agentic Orchestration for Hybrid Fuzzing"
+  authors: "Zhengxiong Luo, Huan Zhao, Mehtab Zafar, Cristian Cadar, Abhik Roychoudhury"
+  where: "Network and Distributed Systems Security Symposium (NDSS), 2027"
+  link: "https://abhikrc.com/pdf/NDSS27.pdf"
+
 - venue: "arxiv"
   title: "Skills for the future software profession: beyond agentic AI!"
   authors: "Sungmin Kang, Baishakhi Ray, Abhik Roychoudhury"
