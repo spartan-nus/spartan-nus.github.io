@@ -55,6 +55,9 @@ Details will be discussed with interested applicants only.
     <p style="font-size: 0.875rem; font-weight: 500; color: #64748b; margin-bottom: 0.25rem;">
       <strong style="font-weight: 600; color: #475569;">26 Feb 2026</strong> — Project Funded
     </p>
+	<p style="font-size: 0.875rem; font-weight: 500; color: #64748b; margin-bottom: 0.25rem;">
+      <strong style="font-weight: 600; color: #475569;">4 Sept 2026</strong> — Abhik Roychoudhury receives <a href="https://nus.edu.sg/uawards/honour-roll/recipients/abhik-roychoudhury-2026">University Research Recognition Award 2026.
+    </p>
     <p style="margin-top: 0.25rem; font-size: 0.875rem; line-height: 1.6; color: rgba(51, 65, 85, 0.9);">
       The project was funded by the National Research Fund of Singapore.
     </p>
