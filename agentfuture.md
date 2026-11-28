@@ -24,6 +24,10 @@ In pursuit of the vision of shifting research from scale to trust, we will resea
 
 ## Publications 
 
+
+<b><a href = "https://arxiv.org/pdf/2611.09161">GreyZone: Production-quality Agentic Application Threats</a></b>,
+	Ruoyu Zhou, Shuyao Jiang, Haifeng Ruan, Abhik Roychoudhury, arXiv:2611.09161, November 2026.
+
 <a href="https://abhikrc.com/pdf/AutoCodeSherpa.pdf">AutoCodeSherpa: Symbolic Explanations in AI Coding Agents</a>, Sungmin Kang, Haifeng Ruan, Abhik Roychoudhury, ACM International Symposium on Software Testing and Analysis (ISSTA) 2026.
 
 <a href="https://abhikrc.com/pdf/ExplainBench.pdf">ExplainBench: Evaluating Code Explanations from Agents</a>, Zhiyuan Pan, Sungmin Kang, Imam Nur Bani Yusuf, Abhik Roychoudhury, 41st IEEE/ACM International Conference on Automated Software Engineering (ASE), 2026.
